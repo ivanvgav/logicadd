@@ -1,0 +1,36 @@
+---
+title: "Acerca del sitio"
+---
+
+Este sitio web es destinado para las clases dictadas por el Lic. Ivan Vladimir Gavriloff,
+auxiliar docente,
+de la cátedra de **Lógica** de la Facultad de Derecho y Ciencias Sociales de la Universidad Nacional de Tucumán.
+
+En este sitio se encontrará todo el material necesario para el cursado de la materia de Lógica
+de segundo año de la carrera de Abogacía de la Facultad de Derecho y Ciencias Sociales de la UNT.
+
+Aquí se encuentra alojados el material didactico, clases y ejercicios que la cátedra otorga dentro del cursado.
+
+El sitio web tiene como referencia al siguiente libro:
+
+> Zeballos, Alberto, y Sergio Cardozo. Elementos de Lógica. Una introducción a
+> la lógica estándar con ejercicios y problemas resueltos. San Miguel de
+> Tucumán, Tucumán, Argentina: Departamento de Publicaciones, FFyL UNT, 2019.
+
+::: {.callout-important title="A tener en cuenta"}
+Este sitio web se encuentra estructurado para las clases dictadas en las comisiones
+en que se encuentra el Lic. Ivan Vladimir Gavriloff. El material de las demás comisiones puede variar.
+:::
+
+::: {.callout-warning title="Sobre el estudio con este sitio web"}
+Cabe destacar que esto es simplemente es un ***complemento*** para el cursado.
+Este sitio web ***no reemplaza*** el material bibliográfico ni las clases impartidas por la cátedra.
+
+Si solo estudian de este material *no* van a tener los contenidos suficientes para aprobar los examenes y,
+por ende, promocionar la materia.
+:::
+
+::: {.callout-note title="Sobre el contenido del sitio web"}
+El material refleja el cursado del año 2024. Es posible que los años subsiguientes el material sea modificado
+y el sitio web cambie. Dado el caso, se informará en esta sección del sitio de dicho cambio.
+:::

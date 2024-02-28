@@ -1,0 +1,16 @@
+---
+title: "Clases"
+---
+
+En esta sección se encontrará el material dictado en las clases.
+El material se encuentra distribuido por unidades, no por clases estrictamente.
+Esto se debe a que el cronograma de clases se encuentra en continuo ajuste
+por cuestiones de cronograma académico, feriados o situaciones externas
+que provocan cambios en el cursado ordinario de la materia.
+La distribución respeta el orden dado en el programa
+(para leer el programa dirigirse al [programa](./programa.qmd).
+
+::: {.callout-note title="A tener en cuenta"}
+Si en esta sección del sitio web no se encuentran disponibles todas las unidades
+es porque no se han dictado las clases correspondientes a dicha unidad.
+:::

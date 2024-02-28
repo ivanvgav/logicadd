@@ -1,0 +1,17 @@
+---
+title: "Bienvenidos/as"
+---
+
+Bienvenidos/as al sitio web de la cátedra de Lógica de la Facultad de Derecho y Ciencias Sociales
+de la UNT.
+
+En el sitio se encuentran disponibles los recursos utilizados por el Lic. Ivan Vladimir Gavriloff
+en las clases y ejercitación complementaria para el estudio del curso.
+
+## Agradecimientos
+
+Agrecedemos todo el trabajo de la cátedra, al jefe de cátedra Lic. Sergio Cardozo
+y un homenaje al Dr. Alberto Zeballos que enseño tanto durante varias décadas y
+que se refleja en el libro usado por esta cátedra para dictar las clases. 
+
+Este sitio web se encuentra desarrollado en base a [Quarto](https://quarto.org).

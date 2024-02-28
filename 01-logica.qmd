@@ -1,0 +1,59 @@
+---
+title: "La lógica como disciplina"
+---
+
+Cuando entran en la carrera de abogacía lo que la mayoría piensa es que no van a ver nada relacionado con las matemáticas.
+Sin embargo, como veremos dentro de poco, para poder razonar correctamente se necesita algo de estructura.
+Se necesita poder ordenar los "pensamientos" de uno para expresarlos de la mejor manera posible.
+Para que los otros puedan escuchar y entenderlos lo más claro posible.
+
+Realizamos razonamientos todo el tiempo.
+Muchos de ellos sin darnos cuenta.
+[TODO: Pensar ideas de razonamientos cotidianos]
+Discutimos y debatimos con varias personas que nos encontramos todos los días,
+quieramos o no.
+Tomamos decisiones basandonos en razones, incluso incluyendo a las emociones
+como razones mismas para sostener nuestra tesis.
+
+Por todo esto es necesario tener algunos conocimientos de lógica.
+Les aseguramos que, si estudian a conciencia,
+la lógica les va a permitir estructurar mejor sus razonamientos,
+encontrar sus propios errores y en los demás,
+contruibir de mejor manera a la discusión
+y sobre todo, pensar de mejor manera.
+
+La lógica, como fue pensada desde sus inicios
+^[Quien fundó la lógica como una disciplina sistematizada fue Aristóteles.
+Esto no quiere decir que antes de él no se usaba lógica o los seres humanos no hacían cosas lógicas.
+Por supuesto que si, pero fue él quien pudo sistematizar en varios obras parte de lo que veremos en la materia.],
+fue considerada como un *organon*, como una herramienta.
+
+Esa herramienta la usamos para hacer mejores razonamientos.
+Ahora bien, ¿qué es un razonamiento?
+Antes de poder responder la pregunta hay que aclarar la perspectiva, la postura
+desde la cual la lógica va a considerar a la lógica.
+La lógica es una disciplina formal.
+Esto quiere decir que el punto central para la lógica son las *formas de los razonamientos*,
+es decir la estructura última de los razonamientos.
+A diferencia de otras ciencias a la lógica no le interesa un objeto particular de estudio
+(como ser la vida para la biología, la tierra para la geología o la interacción de entidades materiales para la física)
+solo le interesa las relaciones formales que usamos, hacemos al momento de realizar razonamientos.
+
+Lógicamente hablando un razonamiento es lo siguiente:
+
+> Una secuencia de proposiciones las cuales un grupo de ellas serán denominadas *premisas*
+> y otra proposición denominada *conclusión* que puede derivarse del primer grupo.
+
+Explicitado formalmente:
+
+> $P_{1}, P_{2}, ... , P_{1} \Rightarrow C$
+
+Donde las $P$ serán las premisas, la $C$ es la conclusión
+y el signo "$\Rightarrow$" es la denominada *relación de consecuencia lógica*
+que da cuenta de la relación entre las premisas y la conclusión.
+
+La lógica va a indagar como de un grupo de premisas cualquiera se llega a un conclusión.
+En particular se va a interesar por los razonamientos denominado *válidos*
+^[Esto lo veremos más adelante.]
+
+

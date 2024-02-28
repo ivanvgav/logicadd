@@ -1,0 +1,60 @@
+---
+title: "Programa de la materia"
+---
+
+Aquí presentamos el programa 2024 del curso de Lógica de la cátedra de Lógica
+de la Facultad de Derecho y Ciencias Sociales
+
+---
+
+### Unidad 1: lógica y lenguaje
+
+1.1 El objeto de estudio de la lógica. 1.2 la relación con el lenguaje. 1.3. El lenguaje como
+sistema de signos. 1.4 las dimensiones de la semiótica: sintaxis, semántica y pragmática. 1.5
+Funciones y usos del lenguaje. 1.6 lenguaje y metalenguaje jurídico. 1.7 lenguajes naturales y
+artificiales. 1.8 lógica y derecho: lenguaje lógico y lenguaje jurídico. 1.9 El discurso normativo
+
+### Unidad 2: la lógica proposicional
+
+2.1 la noción de proposición. 2.2 El concepto de variable proposicional. 2.3 las constantes
+lógicas 2.4 Proposiciones atómicas y moleculares. 2.5 Simbolización 2.6 El concepto de función
+de verdad. 2.7 las tautologías como leyes lógicas 2.8 las formulas contradictorias. 2.9 El uso de
+mecanismos de decisión para formulas lógicas: tablas de verdad y reducción al absurdo
+
+### Unidad 3: Razonamientos
+
+3.1 Caracterización y tipos de razonamientos: razonamientos no deductivos 3.2 Razonamientos
+deductivos. Definición 3.3 Simbolización de razonamientos. 3.4 El concepto de validez:
+definición sintáctica y restricción semántica. 3.5 Mecanismo de decisión: tablas de verdad y
+reducción al absurdo. 3.6 Razonamiento por analogía
+
+### Unidad 4: la lógica tradicional
+
+4.1 Aristóteles y la lógica tradicional. La lógica como instrumento 4.2 los juicios categóricos. 4.3
+El cuadro tradicional de oposición: relaciones de los juicios categóricos. 4.4 otras inferencias
+inmediatas: conversión, obversion y contraposición 4.5 El silogismo categórico: concepto,
+juicio y razonamiento.
+
+### Unidad 5: Introducción a la lógica Deóntica y sistema
+
+5.1 Nociones básicas de lógica deóntica y su relación con la lógica modal. 5.2 los conceptos
+primitivos: permitido, prohibido, obligatorio. Su interdefinibilidad. 5.3 Aspectos generales
+sobre la lógica de normas y la lógica de proposiciones normativas. 5.5 Introducción a los
+sistemas axiomáticos. El derecho como un sistema de normas.
+
+### Unidad 6: logica informal I: Falacias, Clasificaciones
+
+6.1 ¿lógica informal o Teoría de la argumentación? 6.2 ¿Qué es la lógica informal? Tres
+enfoques: El análisis de las falacias, la teoría dialógica, y el punto de vista de la retorica 6.3
+Definiciones de Falacia. Clasificación.
+
+### Unidad 7 : logica informal II: Objetivos y estrategias
+
+7.1 El fin de la argumentación. 7.2 El orador y el auditorio. 7.3 Premisas de la argumentación
+7.4 las técnicas argumentativas. 7.5 El orden de los argumentos en el discurso. 7.6
+Desacuerdos: Clasificación y análisis 7.7 tretas de juego sucio y ética de la disputa 7.8 El
+razonamiento falaz en los contextos legales. 7.9 Razonamiento judicial: clasificación.
+
+## En formato PDF:
+
+{{< pdf programa.pdf width=100% height=1000px >}}
