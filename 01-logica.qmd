@@ -11,15 +11,15 @@ Realizamos razonamientos todo el tiempo.
 Muchos de ellos sin darnos cuenta.
 [TODO: Pensar ideas de razonamientos cotidianos]
 Discutimos y debatimos con varias personas que nos encontramos todos los días,
-quieramos o no.
-Tomamos decisiones basandonos en razones, incluso incluyendo a las emociones
+queramos o no.
+Tomamos decisiones basándonos en razones, incluso incluyendo a las emociones
 como razones mismas para sostener nuestra tesis.
 
 Por todo esto es necesario tener algunos conocimientos de lógica.
 Les aseguramos que, si estudian a conciencia,
 la lógica les va a permitir estructurar mejor sus razonamientos,
 encontrar sus propios errores y en los demás,
-contruibir de mejor manera a la discusión
+contribuir de mejor manera a la discusión
 y sobre todo, pensar de mejor manera.
 
 La lógica, como fue pensada desde sus inicios
@@ -50,10 +50,96 @@ Explicitado formalmente:
 
 Donde las $P$ serán las premisas, la $C$ es la conclusión
 y el signo "$\Rightarrow$" es la denominada *relación de consecuencia lógica*
+^[El signo de la flecha en otros libros aparece como $\vdash, \models, \rightarrow$.
+Si bien cada uno de los signos tiene sus diferencias conceptuales, la idea general se sostiene.
+Todos indican una relación de consecuencia lógica.]
 que da cuenta de la relación entre las premisas y la conclusión.
 
-La lógica va a indagar como de un grupo de premisas cualquiera se llega a un conclusión.
+La lógica va a indagar como de un conjunto de premisas cualquiera se llega a un conclusión.
 En particular se va a interesar por los razonamientos denominado *válidos*
-^[Esto lo veremos más adelante.]
+^[A qué llamamos razonamiento válido lo veremos más adelante.]
 
+Como se puede observar, el razonamiento al ser una cadena de enunciados,
+esta se tiene que expresar gracias al lenguaje.
+Sea escrito u oral.
+Nuestras ideas y pensamientos siempre se tienen que expresar en base al lenguaje
+para poder ser comunicadas a resto.
 
+Por más que la lógica sea una disciplina formal,
+tiene que tener alguna noción de cómo analizar el lenguaje.
+Para ello va a nutrirse de la teoría de los signos,
+ya que todo aquello que digamos, escribamos, o expresemos
+puede ser considerado como un signo.
+La teoría de los signos, o también denominada semiótica
+se divide en tres subareas.
+Estas áreas se caracterizan por hacer foco en cierta dimensión del lenguaje.
+Éstas son:
+
+1. La sintaxis
+2. La semántica
+3. La Pragmática
+
+La primera hace referencia a la relación que tienen los signos entre sí.
+Recuerden cuando en la escuela secundaria se ejercitaba el análisis sintáctico de las oraciones.
+Lo que se hacía en dicho análisis era ver como cada una de las palabras de la oración se encontraba relacionada con las otras.
+Como la oración tenía un sujeto, un predicado un verbo, entre otros elementos sintácticos.
+El análisis sintáctico de oraciones es solo un ejemplo de lo que comprende la sintaxis dentro de la semiótica.
+
+La segunda hace referencia a la relación que tienen el signo con aquello a lo cual refiere.
+La relación entre el signo y la realidad.
+Por ejemplo, enunciar lo siguiente:
+
+> "El gato del profesor Gavriloff se llama simba" es verdadero
+
+Nos habla de una relación semántica debido a que esta diciendo que la oración
+"El gato del profesor Gavriloff se llama Simba" porta verdad, es verdadera
+puesto que de hecho es así en la realidad
+(el gato del profesor Gavriloff si se llama Simba,
+uno lo llama por ese nombre y responde)
+es que podemos decir que es verdadera.
+Todo este ejemplo es un ejemplo de un análisis semántico,
+un análisis acerca de la relación entre lo que se dice con como es el mundo.
+
+La tercera área es la pragmática.
+Aquí se va a estudiar la relación de cómo se hace uso de los signos.
+Ni siquiera en cómo es la relación con las cosas en sí mismas,
+sino en como los agentes hacen uso de los signos.
+Un ejemplo típico de análisis pragmático es considerar al semáforo y lo que indican sus colores:
+los colores rojo, amarillo y verde no dicen nada acerca de lo que tenemos que hacer en la calle cuando lo vemos
+pero en un semáforo todos los peatones y conductores entienden que cuando está en rojo
+esto significa que los vehículos no pueden avanzar,
+y que los peatones pueden cruzar la calle;
+cuando está en amarillo indica que hay que tener precaución al conducir
+y cuando está en verde significa que los vehículos pueden avanzar
+y los peatones tienen que esperar hasta que el semáforo esté en rojo para poder cruzar la calle.
+
+Esto es muy necesario como pre requisito para estudiar apropiadamente lógica.
+Incluso algunos lógicos han indicado que la lógica puede ser considera una disciplina de la semiótica.
+Aunque no indagaremos esto por el momento.
+Lo que es necesario de todo esto es que la lógica trabaja con el lenguaje.
+Como tiene como objeto de estudio a los razonamientos,
+tiene que tener ciertas nociones de las disciplinas sobre el lenguaje como base
+para poder llevar a cabo un mejor análisis.
+
+Ahora bien, las premisas y las conclusiones son proposiciones.
+A primer visto uno puede denominarlas oraciones,
+pero el problema con ello es que el concepto de oración se encuentra asociado a la lengua,
+no a la lógica.
+Los lógicos han usado el término proposición para referirse a las premisas y a la conclusión de los razonamientos.
+
+Teniendo en cuenta las siguientes oraciones:
+
+> "El gato está sobre la mesa"
+>
+> "The cat is on the table"
+>
+> "Die Katze ist auf dem Tisch"
+
+Todas tienen la misma proposición $p$ "El gato está sobre la mesa".
+Es decir, una proposición es un enunciado completo que tiene la característica de poder ser verdadero o falso.
+Es un enunciado que es portador de verdad.
+Como se puede observar las oraciones del ejemplo están en distintos idiomas:
+español, ingles y alemán respectivamente,
+pero todas comparten la misma proposición.
+Si supiésemos los tres idiomas sabríamos que dicen lo mismo,
+eso común que tienen estas oraciones es el *contenido proposicional*.
