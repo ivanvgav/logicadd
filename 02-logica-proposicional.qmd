@@ -1,0 +1,52 @@
+---
+title: Lógica Proposicional
+---
+
+## Introducción
+
+Como habiamos visto en la unidad anterior vamos a trabajar con un sistema lógico en particular.
+El sistema de la lógica proposicional.
+
+Ya lo habíamos caracterizado también.
+El sistema consta de:
+
+1. Variables proposicional, las cuales servirán para formalizar cada una de las proposiciones.
+   Ejemplo: $p, q, r, ...$.
+2. Constantes o conectivas proposicionales: las cuales servirán para formalizar
+   las particular que realizan uniones o modifican a las proposisiones.
+   Estas eran:
+    * La negación ($\neg, \sim$).
+    * La conjunción ($\land, \bullet$).
+    * La disyunción ($\lor$).
+    * El condicional ($\superset, \rightarrow$).
+    * El bicondicional ($\equiv, \leftrightarrow$).
+3. Los símbolos axiliares, los cuales sirven para delimitar el alcance de las conectivas.
+   Entre ellos encontramos a los paréntesis ($( \ )$), los cohorchetes ($[ \ ]$) y las llaves (${ \ }$).
+
+Estos son los elementos que necesitamos para la poder llevar a cabo la formalización.
+
+Antes de poder llevar a ver cómo analizamos los razonamientos,
+es primordial tener conocimiento y entrenamiento en cómo formalizar las proposiciones.
+Recordemos que lo que se trata es de pasar de lo que decimos en lenguaje natural
+-en nuestro caso el castellano-
+a un lenguaje formalizado
+-en este caso la lógica proposicional-.
+
+Recordemos la noción de proposición:
+
+> Un enunciado completo descriptivo con la capacidad de ser verdadero o falso.
+
+Entonces cuando nos embarquemos en la tarea de formalizar proposiciones,
+tenemos que tener en cuenta su definición,
+puesto que en ella se encuentran las características que nos diran cómo tenemos que formalizar.
+
+Además es importante tener en cuenta también las apariciones de las particulas
+que hacen referencia a las conectivas lógicas.
+Así como los signos de puntuación nos indican donde empieza y termina un oración,
+o como tiene que ser el énfasis y las pausas de la misma,
+las conectivas también nos pueden indicar donde empieza y termina una proposición
+y cómo es que se unen unas con otras.
+^[Incluso algunos lógicos las consideran *como* signos de puntuación.
+Es decir, van más allá de la analogía aquí propuesta.
+Esto es un tema de filosofía de la lógica,
+no es necesario indagar esto en un curso introductorio de lógico como el presente.]

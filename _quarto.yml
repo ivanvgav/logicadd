@@ -25,6 +25,7 @@ website:
       align: left
       contents:
         - href: clases.qmd
+        - href: 01-logica.qmd
         - href: 06-logica-deontica.qmd
         - href: 07-teoria-de-la-argumentacion.qmd
 

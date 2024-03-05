@@ -56,7 +56,7 @@ Todos indican una relación de consecuencia lógica.]
 que da cuenta de la relación entre las premisas y la conclusión.
 
 La lógica va a indagar como de un conjunto de premisas cualquiera se llega a un conclusión.
-En particular se va a interesar por los razonamientos denominado *válidos*
+En particular se va a interesar por los razonamientos denominado *válidos*.
 ^[A qué llamamos razonamiento válido lo veremos más adelante.]
 
 Como se puede observar, el razonamiento al ser una cadena de enunciados,
@@ -138,8 +138,102 @@ Teniendo en cuenta las siguientes oraciones:
 Todas tienen la misma proposición $p$ "El gato está sobre la mesa".
 Es decir, una proposición es un enunciado completo que tiene la característica de poder ser verdadero o falso.
 Es un enunciado que es portador de verdad.
+
+::: {.callout-important title="Definición"}
+Una proposición es un enunciado descriptivo completo el cual es capaz de ser verdadero o falso.
+:::
+
 Como se puede observar las oraciones del ejemplo están en distintos idiomas:
 español, ingles y alemán respectivamente,
 pero todas comparten la misma proposición.
 Si supiésemos los tres idiomas sabríamos que dicen lo mismo,
 eso común que tienen estas oraciones es el *contenido proposicional*.
+La proposición tiene que ser un enunciado completo,
+es decir debe constar de todos los elementos básicos de una oración que tiene sentido.
+No podemos considerar una proposición que solo sea un nombre como "Pedro"
+o una oración incompleta como "Juan iba".
+Tiene que tener sentido por sí misma,
+sino no puede extraerse ni formalizarse su contenido proposicional.
+
+::: {.callout-warning title="Diferencias a tener en cuenta"}
+Esto es importante porque como veremos a lo largo de todo el cursado,
+el análisis lógico es distinto al análisis gramatical o de lengua
+que hemos estudiado en la escuela.
+:::
+
+En la nota más arriba, hemos dicho que la proposición es descriptiva,
+esto es así debido a que los enunciados de las proposiciones dan cuenta del mundo,
+por ello es que pueden ser verdaderos o falsos.
+El lenguaje tiene muchas funciones.
+Es gracias a esto que podemos realizar muchas acciones en el mundo.
+Algunas de las funciones del lenguaje son:
+
+* Descriptiva
+* Cuestionar
+* Comandar
+
+Nosotros nos concentraremos en la descriptiva.
+Solo vamos a formalizar y a concentrarnos en aquellos enunciados que cumplen una función descriptiva.
+¿Que hacemos con los otros enunciados?
+Por el momento no les prestaremos atención ni intentaremos formalizarlos.
+Esto se debe que, por ejemplo, ni las preguntas ni las ordenes pueden tener algún valor de verdad,
+no son ni verdaderas ni falsas.
+
+## Sistema de lógica proposicional
+
+Con los conocmientos preliminares ya cubiertos,
+es necesario pasar a presentar al sistema lógico que vamos a usar durante la materia.
+
+El nombre del sistema es el de Lógica proposicional o cálculo de lógica proposicional.
+
+El sistema consta de varios elementos que vamos a explicar uno por uno.
+
+El sistema consta de dos grandes grupos: las variables lógicas y las constantes o conectivas lógicas.
+
+### Variables lógicas
+
+Las variables lógicas son las denominadas variables proposicionales.
+Son aquellos signos que nos permiten poder formalizar cualquier enunciado.
+Comunmente los lógicos utilizan letras minúsculas que van desde la p en adelante
+(en orden alfabético): $p, q, r, s, t, ...$.
+
+### Constantes o conectivas lógicas
+
+El segundo grupo a considerar son las constantes o conectivas lógicas.
+Denominadas así porque su significado no cambian
+(en contraposición a las variables, que *varian* su contenido).
+También son llamadas conectivas porque la mayoría de ellas conectan dos o más proposiciones.
+
+Las conectivas pueden clasificarse en dos grupos:
+
+1. Monádicas: Son aquellas que solo afectan a una proposición.
+   * Este es el caso de la negación. 
+     La negación es la partícula del lenguaje que nosotros usamos como:
+     "No"; "no es cierto que...": "No es verdad que...".
+   * Sus símbolos pueden ser $\neg$ o $\sim$
+   * **Ejemplo:** $\neg p$ o $\sim p$
+2. Diádicas: Son aquellas que afectan al menos dos proposiciones.
+    * **Conjunción**: Corresponde a la partícula "y"; "pero"; "aunque".
+      Sus símbolos son: $\land$ o $\bullet$. Ejemplo: $p \land q$
+    * **Disyunción**: Corresponde a la partícula "o"; "o bien... o bien...".
+      Su símbolo es: $\lor$. Ejemplo: $p \lor q$
+    * **Condicional**: Corresponde a las partículas "Si..., entonces..."
+      Sus símbolos son: $\rightarrow$; $\supset$. Ejemplo: $p \supset q$
+    * **Bicondicional**: Corresponde a las partículas "si y solo si..."
+      sus símbolos son: $\rightleftarrows$ o $\equiv$. Ejemplo: $p \equiv q$
+
+### Símbolos auxiliares
+
+Por último tenemos los símbolos auxiliares que nos servirán para poder delimitar alcances de las proposiciones.
+Estos son las llaves, los corchetes y los paréntesis: ${ }; [ ]; ( )$.
+Estos nos permiten realizar ciertas delimitaciones importantes a la hora de entender lo que cada fórmula o proposición afirma.
+Por ejemplo no es lo mismo $(p \supset q) \land p$ que $p \supset q \land p$.
+En el segundo caso no podemos saber a ciencia cierta si el condicional afecta solo a $q$ o también a la conjunción con $p$.
+La importancia de estos signos se va a ver mejor cuando se realicen los ejercicios de simbolización.
+
+## Conclusión
+
+De esta manera hemos introducido los conceptos básicos de lo que es la lógica,
+su objeto de estudio, las nociones necesarias para poder comprender cuál es la finalidad e la lógica,
+y hemos presentado brevemente el sistema de lógica proposicional.
+En la siguiente unidad vamos a introducirnos más en el cáculo proposicional y en su utilidad.
