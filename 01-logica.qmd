@@ -65,6 +65,8 @@ Sea escrito u oral.
 Nuestras ideas y pensamientos siempre se tienen que expresar en base al lenguaje
 para poder ser comunicadas a resto.
 
+## La semiótica
+
 Por más que la lógica sea una disciplina formal,
 tiene que tener alguna noción de cómo analizar el lenguaje.
 Para ello va a nutrirse de la teoría de los signos,
@@ -194,25 +196,25 @@ El sistema consta de dos grandes grupos: las variables lógicas y las constantes
 
 Las variables lógicas son las denominadas variables proposicionales.
 Son aquellos signos que nos permiten poder formalizar cualquier enunciado.
-Comunmente los lógicos utilizan letras minúsculas que van desde la p en adelante
+Comúnmente los lógicos utilizan letras minúsculas que van desde la p en adelante
 (en orden alfabético): $p, q, r, s, t, ...$.
 
 ### Constantes o conectivas lógicas
 
 El segundo grupo a considerar son las constantes o conectivas lógicas.
 Denominadas así porque su significado no cambian
-(en contraposición a las variables, que *varian* su contenido).
+(en contraposición a las variables, que *varían* su contenido).
 También son llamadas conectivas porque la mayoría de ellas conectan dos o más proposiciones.
 
 Las conectivas pueden clasificarse en dos grupos:
 
-1. Monádicas: Son aquellas que solo afectan a una proposición.
+1. **Monádicas**: Son aquellas que solo afectan a una proposición.
    * Este es el caso de la negación. 
      La negación es la partícula del lenguaje que nosotros usamos como:
      "No"; "no es cierto que...": "No es verdad que...".
    * Sus símbolos pueden ser $\neg$ o $\sim$
    * **Ejemplo:** $\neg p$ o $\sim p$
-2. Diádicas: Son aquellas que afectan al menos dos proposiciones.
+2. **Diádicas**: Son aquellas que afectan al menos dos proposiciones.
     * **Conjunción**: Corresponde a la partícula "y"; "pero"; "aunque".
       Sus símbolos son: $\land$ o $\bullet$. Ejemplo: $p \land q$
     * **Disyunción**: Corresponde a la partícula "o"; "o bien... o bien...".
@@ -225,7 +227,7 @@ Las conectivas pueden clasificarse en dos grupos:
 ### Símbolos auxiliares
 
 Por último tenemos los símbolos auxiliares que nos servirán para poder delimitar alcances de las proposiciones.
-Estos son las llaves, los corchetes y los paréntesis: ${ }; [ ]; ( )$.
+Estos son las llaves, los corchetes y los paréntesis: $(\ ); [\ ]; \{\ \}$.
 Estos nos permiten realizar ciertas delimitaciones importantes a la hora de entender lo que cada fórmula o proposición afirma.
 Por ejemplo no es lo mismo $(p \supset q) \land p$ que $p \supset q \land p$.
 En el segundo caso no podemos saber a ciencia cierta si el condicional afecta solo a $q$ o también a la conjunción con $p$.

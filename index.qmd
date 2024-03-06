@@ -10,8 +10,11 @@ en las clases y ejercitación complementaria para el estudio del curso.
 
 ## Agradecimientos
 
-Agrecedemos todo el trabajo de la cátedra, al jefe de cátedra Lic. Sergio Cardozo
+Agradecemos todo el trabajo de la cátedra, al jefe de cátedra Lic. Sergio Cardozo
 y un homenaje al Dr. Alberto Zeballos que enseño tanto durante varias décadas y
 que se refleja en el libro usado por esta cátedra para dictar las clases. 
+
+Además a toda la cátedra de lógica ya que en este sitio se ve reflejado el esfuerzo en conjunto
+por la tarea docente y la investigación en lógica.
 
 Este sitio web se encuentra desarrollado en base a [Quarto](https://quarto.org).

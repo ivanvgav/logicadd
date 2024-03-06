@@ -4,24 +4,24 @@ title: Lógica Proposicional
 
 ## Introducción
 
-Como habiamos visto en la unidad anterior vamos a trabajar con un sistema lógico en particular.
+Como habíamos visto en la unidad anterior vamos a trabajar con un sistema lógico en particular.
 El sistema de la lógica proposicional.
 
 Ya lo habíamos caracterizado también.
 El sistema consta de:
 
 1. Variables proposicional, las cuales servirán para formalizar cada una de las proposiciones.
-   Ejemplo: $p, q, r, ...$.
+   Ejemplo: $p, q, r, ...$
 2. Constantes o conectivas proposicionales: las cuales servirán para formalizar
-   las particular que realizan uniones o modifican a las proposisiones.
+   las particular que realizan uniones o modifican a las proposiciones.
    Estas eran:
     * La negación ($\neg, \sim$).
     * La conjunción ($\land, \bullet$).
     * La disyunción ($\lor$).
-    * El condicional ($\superset, \rightarrow$).
+    * El condicional ($\supset, \rightarrow$).
     * El bicondicional ($\equiv, \leftrightarrow$).
-3. Los símbolos axiliares, los cuales sirven para delimitar el alcance de las conectivas.
-   Entre ellos encontramos a los paréntesis ($( \ )$), los cohorchetes ($[ \ ]$) y las llaves (${ \ }$).
+3. Los símbolos auxiliares, los cuales sirven para delimitar el alcance de las conectivas.
+   Entre ellos encontramos a los paréntesis ($( \ )$), los corchetes ($[ \ ]$) y las llaves ($\{ \ \}$).
 
 Estos son los elementos que necesitamos para la poder llevar a cabo la formalización.
 
@@ -38,11 +38,11 @@ Recordemos la noción de proposición:
 
 Entonces cuando nos embarquemos en la tarea de formalizar proposiciones,
 tenemos que tener en cuenta su definición,
-puesto que en ella se encuentran las características que nos diran cómo tenemos que formalizar.
+puesto que en ella se encuentran las características que nos dirán cómo tenemos que formalizar.
 
-Además es importante tener en cuenta también las apariciones de las particulas
+Además es importante tener en cuenta también las apariciones de las partículas
 que hacen referencia a las conectivas lógicas.
-Así como los signos de puntuación nos indican donde empieza y termina un oración,
+Así como los signos de puntuación nos indican donde empieza y termina una oración,
 o como tiene que ser el énfasis y las pausas de la misma,
 las conectivas también nos pueden indicar donde empieza y termina una proposición
 y cómo es que se unen unas con otras.
@@ -50,3 +50,70 @@ y cómo es que se unen unas con otras.
 Es decir, van más allá de la analogía aquí propuesta.
 Esto es un tema de filosofía de la lógica,
 no es necesario indagar esto en un curso introductorio de lógico como el presente.]
+
+## Simbolización
+
+Para poder pasar del lenguaje ordinario al lenguaje formal,
+es necesario tener un entrenamiento que sea capaz de
+adquirir las habilidades para identificar cada uno de los elementos formales
+en el lenguaje ordinario.
+Es decir, poder leer cualquier oración
+y poder indicar qué parte de la oración es una proposición,
+una conectiva lógica
+y donde poner los símbolos auxiliares para
+que la formula en lógica proposicional tenga el mismo sentido que en lenguaje ordinario.
+
+Aquí vamos a colocar algunos ejemplos básicos para que puedan entender,
+y luego se irá acompleja cada vez más.
+
+:::{.callout-note title="Sobre los ejercicios"}
+En el sitio web se encuentran en una solapa separada todos los ejercicios de las unidades.
+
+Ir al [link]()
+<!-- TODO: Agregar link de los ejericios -->
+:::
+
+Primero que nada vamos a ver algunos ejemplos de simbolizaciones básicas:
+
+**Dadas los siguientes enunciados simbolice usando la el sistema de lógica proposicional:**
+
+1. Juan trabaja todos los días.
+1. María y Diego están de vacaciones.
+1. El agua hierve a una temperatura de 100°C al nivel del mar
+
+**Resolución:**
+
+1. En el primero vemos que solo tenemos una proposición debido a que el enunciado es completo 
+   y es un enunciado descriptivo por lo que simplemente lo simbolizamos:
+   $$p$$
+1. En el segundo caso vemos que tenemos dos sujetos: Maria *y* Diego.
+   Por lo que tenemos que ver qué es lo que están haciendo cada uno de ello.
+   María está de vacaciones. Diego está de vacaciones también.
+   Si bien los dos se encuentran en el mismo estado, son dos sujetos distintos.
+   Por lo que para la lógica proposicional son dos proposiciones distintas:
+   $p$ para Maria y $q$ para Diego.
+   Cuando analizamos un enunciado que, a primera vista, parece una sola proposición pero no lo es,
+   la recomendación es armar un *diccionario*.
+   Esto quiere decir indicar cual es la referencia de cada una de las proposiciones.
+   * Para este ejercicio sería así:
+     $$p: María\ está\ de\ vacaciones$$
+
+     $$q: Diego\ está\ de\ vacaciones$$
+
+     $$p \bullet q$$
+   * Como pueden ver aquí hemos introducido una conectiva lógica,
+     la conjunción entre las dos proposiciones.
+     Así se realiza una unión entre las proposiciones.
+1. En el tercer caso, por más que parezca un enunciado bastante largo y de cierta complejidad es solo una proposición.
+   * Por lo que su simbolización es la siguiente: $$p$$
+
+Como hemos dicho más arriba estos son algunos ejemplos básicos,
+pero ya nos llevan a que tengamos ciertas cuestiones a considerar.
+Estas van a estar marcadas en el apartado en los *pro tips*:
+
+::: {.callout-important title="Pro tips"}
+* Verificar si el enunciado que se desea formalizar es un enunciado descriptivo capaz de ser verdadero o falso.
+* Siempre hacer diccionario a la hora de simbolizar.
+  Ayuda a ordenar mejor las proposiciones y evitar confusiones.
+* Ubicar las conectivas lógicas para encontrar donde puede haber más de una proposición.
+:::
