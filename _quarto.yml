@@ -2,35 +2,34 @@ project:
   type: website
   output-dir: docs
     
-  title: "Lógica - FDyCS UNT"
-  description: "Sitio web de Lógica de la Facultad de Derecho y Ciencias
-    Sociales de la UNT - 2024"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
+title: "Lógica - FDyCS UNT"
+    #description: "Sitio web de Lógica de la Facultad de Derecho y Ciencias Sociales de la UNT - 2024"
+navbar:
+  left:
+    - href: index.qmd
+      text: Home
+    - href: clases.qmd
+      text: Clases
+    - href: ejercicios.qmd
+      text: Ejercicios
+    - href: programa.qmd
+      text: Programa
+    - href: about.qmd
+      text: Acerca de
+
+page-footer:
+  left: "Creado por Lic. Ivan Vladimir Gavriloff - UNT - FDyCS - 2024"
+
+sidebar:
+  - id: clases
+    title: "Unidades"
+    align: left
+    contents:
       - href: clases.qmd
-        text: Clases
-      - href: ejercicios.qmd
-        text: Ejercicios
-      - href: programa.qmd
-        text: Programa
-      - href: about.qmd
-        text: Acerca de
-
-  page-footer:
-    left: "Creado por Lic. Ivan Vladimir Gavriloff - UNT - FDyCS - 2024"
-
-  sidebar:
-    - id: clases
-      title: "Unidades"
-      align: left
-      contents:
-        - href: clases.qmd
-        - href: 01-logica.qmd
-        - href: 02-logica-proposicional.qmd
-        - href: 06-logica-deontica.qmd
-        - href: 07-teoria-de-la-argumentacion.qmd
+      - href: 01-logica.qmd
+      - href: 02-logica-proposicional.qmd
+      - href: 06-logica-deontica.qmd
+      - href: 07-teoria-de-la-argumentacion.qmd
 
 lang: es
 

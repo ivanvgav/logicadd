@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>La lógica como disciplina</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#la-semiótica" id="toc-la-semiótica" class="nav-link active" data-scroll-target="#la-semiótica">La semiótica</a></li>
+  <li><a href="#sistema-de-lógica-proposicional" id="toc-sistema-de-lógica-proposicional" class="nav-link" data-scroll-target="#sistema-de-lógica-proposicional">Sistema de lógica proposicional</a>
+  <ul class="collapse">
+  <li><a href="#variables-lógicas" id="toc-variables-lógicas" class="nav-link" data-scroll-target="#variables-lógicas">Variables lógicas</a></li>
+  <li><a href="#constantes-o-conectivas-lógicas" id="toc-constantes-o-conectivas-lógicas" class="nav-link" data-scroll-target="#constantes-o-conectivas-lógicas">Constantes o conectivas lógicas</a></li>
+  <li><a href="#símbolos-auxiliares" id="toc-símbolos-auxiliares" class="nav-link" data-scroll-target="#símbolos-auxiliares">Símbolos auxiliares</a></li>
+  </ul></li>
+  <li><a href="#conclusión" id="toc-conclusión" class="nav-link" data-scroll-target="#conclusión">Conclusión</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">La lógica como disciplina</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Cuando entran en la carrera de abogacía lo que la mayoría piensa es que no van a ver nada relacionado con las matemáticas. Sin embargo, como veremos dentro de poco, para poder razonar correctamente se necesita algo de estructura. Se necesita poder ordenar los “pensamientos” de uno para expresarlos de la mejor manera posible. Para que los otros puedan escuchar y entenderlos lo más claro posible.</p>
+<p>Realizamos razonamientos todo el tiempo. Muchos de ellos sin darnos cuenta. [TODO: Pensar ideas de razonamientos cotidianos] Discutimos y debatimos con varias personas que nos encontramos todos los días, queramos o no. Tomamos decisiones basándonos en razones, incluso incluyendo a las emociones como razones mismas para sostener nuestra tesis.</p>
+<p>Por todo esto es necesario tener algunos conocimientos de lógica. Les aseguramos que, si estudian a conciencia, la lógica les va a permitir estructurar mejor sus razonamientos, encontrar sus propios errores y en los demás, contribuir de mejor manera a la discusión y sobre todo, pensar de mejor manera.</p>
+<p>La lógica, como fue pensada desde sus inicios <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, fue considerada como un <em>organon</em>, como una herramienta.</p>
+<p>Esa herramienta la usamos para hacer mejores razonamientos. Ahora bien, ¿qué es un razonamiento? Antes de poder responder la pregunta hay que aclarar la perspectiva, la postura desde la cual la lógica va a considerar a la lógica. La lógica es una disciplina formal. Esto quiere decir que el punto central para la lógica son las <em>formas de los razonamientos</em>, es decir la estructura última de los razonamientos. A diferencia de otras ciencias a la lógica no le interesa un objeto particular de estudio (como ser la vida para la biología, la tierra para la geología o la interacción de entidades materiales para la física) solo le interesa las relaciones formales que usamos, hacemos al momento de realizar razonamientos.</p>
+<p>Lógicamente hablando un razonamiento es lo siguiente:</p>
+<blockquote class="blockquote">
+<p>Una secuencia de proposiciones las cuales un grupo de ellas serán denominadas <em>premisas</em> y otra proposición denominada <em>conclusión</em> que puede derivarse del primer grupo.</p>
+</blockquote>
+<p>Explicitado formalmente:</p>
+<blockquote class="blockquote">
+<p><span class="math inline">\(P_{1}, P_{2}, ... , P_{1} \Rightarrow C\)</span></p>
+</blockquote>
+<p>Donde las <span class="math inline">\(P\)</span> serán las premisas, la <span class="math inline">\(C\)</span> es la conclusión y el signo “<span class="math inline">\(\Rightarrow\)</span>” es la denominada <em>relación de consecuencia lógica</em> <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> que da cuenta de la relación entre las premisas y la conclusión.</p>
+<p>La lógica va a indagar como de un conjunto de premisas cualquiera se llega a un conclusión. En particular se va a interesar por los razonamientos denominado <em>válidos</em>. <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<p>Como se puede observar, el razonamiento al ser una cadena de enunciados, esta se tiene que expresar gracias al lenguaje. Sea escrito u oral. Nuestras ideas y pensamientos siempre se tienen que expresar en base al lenguaje para poder ser comunicadas a resto.</p>
+<section id="la-semiótica" class="level2">
+<h2 class="anchored" data-anchor-id="la-semiótica">La semiótica</h2>
+<p>Por más que la lógica sea una disciplina formal, tiene que tener alguna noción de cómo analizar el lenguaje. Para ello va a nutrirse de la teoría de los signos, ya que todo aquello que digamos, escribamos, o expresemos puede ser considerado como un signo. La teoría de los signos, o también denominada semiótica se divide en tres subareas. Estas áreas se caracterizan por hacer foco en cierta dimensión del lenguaje. Éstas son:</p>
+<ol type="1">
+<li>La sintaxis</li>
+<li>La semántica</li>
+<li>La Pragmática</li>
+</ol>
+<p>La primera hace referencia a la relación que tienen los signos entre sí. Recuerden cuando en la escuela secundaria se ejercitaba el análisis sintáctico de las oraciones. Lo que se hacía en dicho análisis era ver como cada una de las palabras de la oración se encontraba relacionada con las otras. Como la oración tenía un sujeto, un predicado un verbo, entre otros elementos sintácticos. El análisis sintáctico de oraciones es solo un ejemplo de lo que comprende la sintaxis dentro de la semiótica.</p>
+<p>La segunda hace referencia a la relación que tienen el signo con aquello a lo cual refiere. La relación entre el signo y la realidad. Por ejemplo, enunciar lo siguiente:</p>
+<blockquote class="blockquote">
+<p>“El gato del profesor Gavriloff se llama simba” es verdadero</p>
+</blockquote>
+<p>Nos habla de una relación semántica debido a que esta diciendo que la oración “El gato del profesor Gavriloff se llama Simba” porta verdad, es verdadera puesto que de hecho es así en la realidad (el gato del profesor Gavriloff si se llama Simba, uno lo llama por ese nombre y responde) es que podemos decir que es verdadera. Todo este ejemplo es un ejemplo de un análisis semántico, un análisis acerca de la relación entre lo que se dice con como es el mundo.</p>
+<p>La tercera área es la pragmática. Aquí se va a estudiar la relación de cómo se hace uso de los signos. Ni siquiera en cómo es la relación con las cosas en sí mismas, sino en como los agentes hacen uso de los signos. Un ejemplo típico de análisis pragmático es considerar al semáforo y lo que indican sus colores: los colores rojo, amarillo y verde no dicen nada acerca de lo que tenemos que hacer en la calle cuando lo vemos pero en un semáforo todos los peatones y conductores entienden que cuando está en rojo esto significa que los vehículos no pueden avanzar, y que los peatones pueden cruzar la calle; cuando está en amarillo indica que hay que tener precaución al conducir y cuando está en verde significa que los vehículos pueden avanzar y los peatones tienen que esperar hasta que el semáforo esté en rojo para poder cruzar la calle.</p>
+<p>Esto es muy necesario como pre requisito para estudiar apropiadamente lógica. Incluso algunos lógicos han indicado que la lógica puede ser considera una disciplina de la semiótica. Aunque no indagaremos esto por el momento. Lo que es necesario de todo esto es que la lógica trabaja con el lenguaje. Como tiene como objeto de estudio a los razonamientos, tiene que tener ciertas nociones de las disciplinas sobre el lenguaje como base para poder llevar a cabo un mejor análisis.</p>
+<p>Ahora bien, las premisas y las conclusiones son proposiciones. A primer visto uno puede denominarlas oraciones, pero el problema con ello es que el concepto de oración se encuentra asociado a la lengua, no a la lógica. Los lógicos han usado el término proposición para referirse a las premisas y a la conclusión de los razonamientos.</p>
+<p>Teniendo en cuenta las siguientes oraciones:</p>
+<blockquote class="blockquote">
+<p>“El gato está sobre la mesa”</p>
+<p>“The cat is on the table”</p>
+<p>“Die Katze ist auf dem Tisch”</p>
+</blockquote>
+<p>Todas tienen la misma proposición <span class="math inline">\(p\)</span> “El gato está sobre la mesa”. Es decir, una proposición es un enunciado completo que tiene la característica de poder ser verdadero o falso. Es un enunciado que es portador de verdad.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Definición">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definición
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Una proposición es un enunciado descriptivo completo el cual es capaz de ser verdadero o falso.</p>
+</div>
+</div>
+<p>Como se puede observar las oraciones del ejemplo están en distintos idiomas: español, ingles y alemán respectivamente, pero todas comparten la misma proposición. Si supiésemos los tres idiomas sabríamos que dicen lo mismo, eso común que tienen estas oraciones es el <em>contenido proposicional</em>. La proposición tiene que ser un enunciado completo, es decir debe constar de todos los elementos básicos de una oración que tiene sentido. No podemos considerar una proposición que solo sea un nombre como “Pedro” o una oración incompleta como “Juan iba”. Tiene que tener sentido por sí misma, sino no puede extraerse ni formalizarse su contenido proposicional.</p>
+<div class="callout callout-style-default callout-warning callout-titled" title="Diferencias a tener en cuenta">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Diferencias a tener en cuenta
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Esto es importante porque como veremos a lo largo de todo el cursado, el análisis lógico es distinto al análisis gramatical o de lengua que hemos estudiado en la escuela.</p>
+</div>
+</div>
+<p>En la nota más arriba, hemos dicho que la proposición es descriptiva, esto es así debido a que los enunciados de las proposiciones dan cuenta del mundo, por ello es que pueden ser verdaderos o falsos. El lenguaje tiene muchas funciones. Es gracias a esto que podemos realizar muchas acciones en el mundo. Algunas de las funciones del lenguaje son:</p>
+<ul>
+<li>Descriptiva</li>
+<li>Cuestionar</li>
+<li>Comandar</li>
+</ul>
+<p>Nosotros nos concentraremos en la descriptiva. Solo vamos a formalizar y a concentrarnos en aquellos enunciados que cumplen una función descriptiva. ¿Que hacemos con los otros enunciados? Por el momento no les prestaremos atención ni intentaremos formalizarlos. Esto se debe que, por ejemplo, ni las preguntas ni las ordenes pueden tener algún valor de verdad, no son ni verdaderas ni falsas.</p>
+</section>
+<section id="sistema-de-lógica-proposicional" class="level2">
+<h2 class="anchored" data-anchor-id="sistema-de-lógica-proposicional">Sistema de lógica proposicional</h2>
+<p>Con los conocmientos preliminares ya cubiertos, es necesario pasar a presentar al sistema lógico que vamos a usar durante la materia.</p>
+<p>El nombre del sistema es el de Lógica proposicional o cálculo de lógica proposicional.</p>
+<p>El sistema consta de varios elementos que vamos a explicar uno por uno.</p>
+<p>El sistema consta de dos grandes grupos: las variables lógicas y las constantes o conectivas lógicas.</p>
+<section id="variables-lógicas" class="level3">
+<h3 class="anchored" data-anchor-id="variables-lógicas">Variables lógicas</h3>
+<p>Las variables lógicas son las denominadas variables proposicionales. Son aquellos signos que nos permiten poder formalizar cualquier enunciado. Comúnmente los lógicos utilizan letras minúsculas que van desde la p en adelante (en orden alfabético): <span class="math inline">\(p, q, r, s, t, ...\)</span>.</p>
+</section>
+<section id="constantes-o-conectivas-lógicas" class="level3">
+<h3 class="anchored" data-anchor-id="constantes-o-conectivas-lógicas">Constantes o conectivas lógicas</h3>
+<p>El segundo grupo a considerar son las constantes o conectivas lógicas. Denominadas así porque su significado no cambian (en contraposición a las variables, que <em>varían</em> su contenido). También son llamadas conectivas porque la mayoría de ellas conectan dos o más proposiciones.</p>
+<p>Las conectivas pueden clasificarse en dos grupos:</p>
+<ol type="1">
+<li><strong>Monádicas</strong>: Son aquellas que solo afectan a una proposición.
+<ul>
+<li>Este es el caso de la negación. La negación es la partícula del lenguaje que nosotros usamos como: “No”; “no es cierto que…”: “No es verdad que…”.</li>
+<li>Sus símbolos pueden ser <span class="math inline">\(\neg\)</span> o <span class="math inline">\(\sim\)</span></li>
+<li><strong>Ejemplo:</strong> <span class="math inline">\(\neg p\)</span> o <span class="math inline">\(\sim p\)</span></li>
+</ul></li>
+<li><strong>Diádicas</strong>: Son aquellas que afectan al menos dos proposiciones.
+<ul>
+<li><strong>Conjunción</strong>: Corresponde a la partícula “y”; “pero”; “aunque”. Sus símbolos son: <span class="math inline">\(\land\)</span> o <span class="math inline">\(\bullet\)</span>. Ejemplo: <span class="math inline">\(p \land q\)</span></li>
+<li><strong>Disyunción</strong>: Corresponde a la partícula “o”; “o bien… o bien…”. Su símbolo es: <span class="math inline">\(\lor\)</span>. Ejemplo: <span class="math inline">\(p \lor q\)</span></li>
+<li><strong>Condicional</strong>: Corresponde a las partículas “Si…, entonces…” Sus símbolos son: <span class="math inline">\(\rightarrow\)</span>; <span class="math inline">\(\supset\)</span>. Ejemplo: <span class="math inline">\(p \supset q\)</span></li>
+<li><strong>Bicondicional</strong>: Corresponde a las partículas “si y solo si…” sus símbolos son: <span class="math inline">\(\rightleftarrows\)</span> o <span class="math inline">\(\equiv\)</span>. Ejemplo: <span class="math inline">\(p \equiv q\)</span></li>
+</ul></li>
+</ol>
+</section>
+<section id="símbolos-auxiliares" class="level3">
+<h3 class="anchored" data-anchor-id="símbolos-auxiliares">Símbolos auxiliares</h3>
+<p>Por último tenemos los símbolos auxiliares que nos servirán para poder delimitar alcances de las proposiciones. Estos son las llaves, los corchetes y los paréntesis: <span class="math inline">\((\ ); [\ ]; \{\ \}\)</span>. Estos nos permiten realizar ciertas delimitaciones importantes a la hora de entender lo que cada fórmula o proposición afirma. Por ejemplo no es lo mismo <span class="math inline">\((p \supset q) \land p\)</span> que <span class="math inline">\(p \supset q \land p\)</span>. En el segundo caso no podemos saber a ciencia cierta si el condicional afecta solo a <span class="math inline">\(q\)</span> o también a la conjunción con <span class="math inline">\(p\)</span>. La importancia de estos signos se va a ver mejor cuando se realicen los ejercicios de simbolización.</p>
+</section>
+</section>
+<section id="conclusión" class="level2">
+<h2 class="anchored" data-anchor-id="conclusión">Conclusión</h2>
+<p>De esta manera hemos introducido los conceptos básicos de lo que es la lógica, su objeto de estudio, las nociones necesarias para poder comprender cuál es la finalidad e la lógica, y hemos presentado brevemente el sistema de lógica proposicional. En la siguiente unidad vamos a introducirnos más en el cáculo proposicional y en su utilidad.</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas</h2>
+
+<ol>
+<li id="fn1"><p>Quien fundó la lógica como una disciplina sistematizada fue Aristóteles. Esto no quiere decir que antes de él no se usaba lógica o los seres humanos no hacían cosas lógicas. Por supuesto que si, pero fue él quien pudo sistematizar en varios obras parte de lo que veremos en la materia.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>El signo de la flecha en otros libros aparece como <span class="math inline">\(\vdash, \models, \rightarrow\)</span>. Si bien cada uno de los signos tiene sus diferencias conceptuales, la idea general se sostiene. Todos indican una relación de consecuencia lógica.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>A qué llamamos razonamiento válido lo veremos más adelante.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiado");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiado");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
