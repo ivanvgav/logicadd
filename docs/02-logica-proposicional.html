@@ -204,7 +204,10 @@ window.Quarto = {
    
   <ul>
   <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción">Introducción</a></li>
-  <li><a href="#simbolización" id="toc-simbolización" class="nav-link" data-scroll-target="#simbolización">Simbolización</a></li>
+  <li><a href="#simbolización" id="toc-simbolización" class="nav-link" data-scroll-target="#simbolización">Simbolización</a>
+  <ul class="collapse">
+  <li><a href="#reglas-de-formación" id="toc-reglas-de-formación" class="nav-link" data-scroll-target="#reglas-de-formación">Reglas de formación</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -313,8 +316,26 @@ Pro tips
 </ul>
 </div>
 </div>
+<section id="reglas-de-formación" class="level3">
+<h3 class="anchored" data-anchor-id="reglas-de-formación">Reglas de formación</h3>
+<p>Para poder realizar formalizaciones correctas todo sistema de lógica posee reglas que cumplen la función de indicar cuándo y cómo las formulas del sistema se encuentran bien formadas.</p>
+<p>La sintáxis del lenguaje natural también hace esto, por ejemplo:</p>
+<p>“<em>Hoy vamos a tener clase de lógica</em>” es una oración bien formulada. Todos la podemos entender.</p>
+<p>“<em>De Vamos a hoy</em>” por ejemplo no se encuentra bien formulada, no puede entender lo que dice.</p>
+<p>En este sentido en lógica proposicional, por ejemplo:</p>
+<p><span class="math display">\[p \bullet q\]</span> es una fórmula bien formada (fbf) mientras que <span class="math display">\[\bullet q p\]</span> no lo es.</p>
+<p>Las reglas de formación de la lógica proposicional son las siguientes:</p>
+<ol type="1">
+<li>Si <span class="math inline">\(\alpha\)</span> <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> es una fbf, entonces <span class="math inline">\(\sim \alpha\)</span> también es una fbf.</li>
+<li>Si <span class="math inline">\(\alpha\)</span> y <span class="math inline">\(\beta\)</span> es una fbf, entonces <span class="math inline">\(\alpha \lor \beta\)</span> es una fbf.</li>
+<li>No hay más fbf.</li>
+</ol>
+<p>Como pueden ver las reglas de formación solo hacen uso de la negación y de la disyunción. Esto se debe a que todas las demás conectivas lógicas pueden definirse en base a la negación y disyunción. La negación y la disyunción son denominadas como <em>terminos primitivos</em>, es decir no se pueden definir por ninguna otra conectiva.</p>
+<p>Por otro lado, la tercera regla indica una <em>cancelación</em> o <em>clausura</em> de todo tipo de regla de formación. Solo y solo esas reglas son las necesarias y suficientes para poder formalizar cualquier fórmula.</p>
+<p>Como puede verse las reglas de formación también indican el orden en que las conectivas deben ser escritas. La negación va antes de cualquier proposición y las demás conectivas diádicas van entre dos proposiciones.</p>
 
 
+</section>
 </section>
 
 
@@ -322,6 +343,7 @@ Pro tips
 
 <ol>
 <li id="fn1"><p>Incluso algunos lógicos las consideran <em>como</em> signos de puntuación. Es decir, van más allá de la analogía aquí propuesta. Esto es un tema de filosofía de la lógica, no es necesario indagar esto en un curso introductorio de lógico como el presente.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Utilizamos <span class="math inline">\(\alpha\)</span> y <span class="math inline">\(\beta\)</span> para varible meta-logicas. Estas variables comprenden desde una simple proposición cualquiera como <span class="math inline">\(p\)</span> hasta propociones de cualquier complejidad como por ejemplo <span class="math inline">\((p \lor t) \supset [q \supset (r \bullet s)]\)</span><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
