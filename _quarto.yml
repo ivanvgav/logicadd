@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
   resources:
-    - "slides/"
+    - "docs/slides/"
     
 website:
   title: "Lógica - FDyCS UNT"
