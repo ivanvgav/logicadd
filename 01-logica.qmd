@@ -239,3 +239,13 @@ De esta manera hemos introducido los conceptos básicos de lo que es la lógica,
 su objeto de estudio, las nociones necesarias para poder comprender cuál es la finalidad e la lógica,
 y hemos presentado brevemente el sistema de lógica proposicional.
 En la siguiente unidad vamos a introducirnos más en el cáculo proposicional y en su utilidad.
+
+# Presentación de clase
+
+::: slide-deck
+
+::: slide
+[Diapositivas](https://ivanvgav.github.io/logica-2024/slides/unidad1.html)
+:::
+
+:::

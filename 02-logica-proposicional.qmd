@@ -153,3 +153,9 @@ Solo y solo esas reglas son las necesarias y suficientes para poder formalizar c
 
 Como puede verse las reglas de formación también indican el orden en que las conectivas deben ser escritas.
 La negación va antes de cualquier proposición y las demás conectivas diádicas van entre dos proposiciones.
+
+# Presentación de clase
+
+::: slide-deck
+
+:::
