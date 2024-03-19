@@ -289,8 +289,15 @@ Ahora lo que tenemos que hacer es poder indicar como son los valores de las cone
 En nuetros ejemplo es solo la conjunción, a medida que se vaya complicando los ejericios serán más conectivas.
 Para ello tenemos que ver las tablas de verdad de cada una de las conectivas lógicas.
 
-![Tablas de verdad de las conectivas lógicas. Extraidas de (Zeballos y Cardozo 2019, <!-- TODO: Colocar página -->)](./imgs/tabla_de_verdad_conectivas.png)
-<!-- TODO: Colocar imagen de las tablas de verdad -->
+![Tabla de verdad de la negación Extraida de (Zeballos y Cardozo 2019, 44)](./imgs/tabla-negacion.png)
+
+![Tabla de verdad de la conjunción. Extraidas de (Zeballos y Cardozo 2019, 44)](./imgs/tabla-conjuncion.png)
+
+![Tabla de verdad de la disyunción. Extraidas de (Zeballos y Cardozo 2019, 44)](./imgs/tabla-disyuncion.png)
+
+![Tablas de verdad del condicional. Extraidas de (Zeballos y Cardozo 2019, 44)](./imgs/tabla-condicional.png)
+
+![Tablas de verdad del bicondicional. Extraidas de (Zeballos y Cardozo 2019, 45)](./imgs/tabla-bicondicional.png)
 
 En el ejemplo que estamos trabajando el la misma tabla de verdad que la conjunción.
 Como pueden ver la conjunción se comporta de una determinada manera:
@@ -313,10 +320,10 @@ Con todo esto ahora podemos ver como quería nuestra tabla de verdad de ejemplo:
 <!-- % letter ’l’, left-aligned, and ’r’, right-aligned. -->
 p & q & p \land q\\ <!-- % Use & to separate the columns -->
 \hline <!-- % Put a horizontal line between the table header and the rest. -->
-V & V & V\\
-V & F & F\\
-F & V & F\\
-F & F & F\\
+V & V & \textcolor{red}{V}\\
+V & F & \textcolor{red}{F}\\
+F & V & \textcolor{red}{F}\\
+F & F & \textcolor{red}{F}\\
 \end{array}
 \end{displaymath}
 
