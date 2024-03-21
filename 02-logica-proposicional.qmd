@@ -344,6 +344,10 @@ y luego abajo colocar (dado el caso):
 * Fórmula contradictoria
 * Fórmula contingente
 
+Ahora es momento de ejercitarse con las tablas de verdad:
+pueden hacer click en el siguiente [aquí]() para ir a los ejercicios.
+<!-- TODO: agregar link de ejercicios -->
+
 # Presentación de clase
 
 ::: slide-deck

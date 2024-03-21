@@ -1,0 +1,11 @@
+---
+title: Razonamientos
+---
+
+## ¿Qué es un razonamiento?
+
+## Mecanismos de decisión
+
+### Tablas de verdad
+
+### Reducción al absurdo

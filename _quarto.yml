@@ -31,6 +31,7 @@ website:
         - href: clases.qmd
         - href: 01-logica.qmd
         - href: 02-logica-proposicional.qmd
+        - href: 03-razonamiento.qmd
         - href: 06-logica-deontica.qmd
         - href: 07-teoria-de-la-argumentacion.qmd
 
