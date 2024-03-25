@@ -1,0 +1,50 @@
+---
+title: Razonamientos
+---
+
+## ¿Qué es un razonamiento?
+
+Ya hemos visto la definición de razonamiento desde la primera unidad.
+Ahora que tenemos todo los fundamentos y prerequisitos para trabajar con ellos,
+es necesario volver sobre ella para tenerla con mayor claridad.
+
+> Un razonamiento es una secuencia finita de enunciados o proposiciones
+> las cuales un grupo de ellas llamamos *premisas* y otro grupo (unitario) es la conclusión.
+
+Formalmente:
+$$ P_{1}, P_{2}, ... , P_{n} \Rightarrow C $$
+^[Donde $n$ es mayor o igual a 1.]
+
+Ahora que sabemos formalizar, podemos comenzar a formalizar razonamientos.
+Por ejemplo:
+
+> Si tiene cuatro patas, es un perro. Tiene cuatro patas. Por tanto, es un perro.
+
+Este razonamiento se formaliza de la siguiente manera:
+
+$$ p \supset q; p / \therefore q $$
+
+Como podemos ver hay algunos elementos nuevos para la formalización de razonamientos.
+Primero que nada se encuentran los puntos y coma, los cuales sirven para delimitar las premisas.
+Luego también aparece este signo $\therefore$
+que simboliza el "Por tanto" o "Por lo tanto" de la oración.
+El "por tanto" o "por lo tanto" hace referencia a la noción de consecuencia lógica
+que en la definición se encuentra simbolizada por $\Rightarrow$.
+A su vez este signo permite delimitar el grupo de las premisas y la conclusión.
+Por ello la barra diagonal ($/$).
+
+Lo más interesante del razonamiento es que podemos ver que no es una sola fórmula proposicional,
+sino que es un conjunto de proposiciones
+(las premisas por un lado y luego la conclusión).
+Como pueden ver en las oraciones que hemos simbolizado,
+cada una de ellas se encuentra separada por un punto.
+Esto indica que va a venir otro enunciado y por ello en la simbolización usamos los puntos y comas.
+
+Teniendo estos elementos en cuenta, ya podemos realizar el trabajo de simbolizar razonamientos.
+Para ello hacer click [aquí]() para ir a los ejercicios.
+
+## Mecanismos de decisión
+
+### Tablas de verdad
+
+### Reducción al absurdo
