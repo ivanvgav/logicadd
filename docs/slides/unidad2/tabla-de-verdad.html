@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Gavriloff, Ivan Vladimir">
+
+<title>Lógica - FDyCS UNT - Tablas de verdad</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+
+
+<header id="title-block-header">
+<h1 class="title">Tablas de verdad</h1>
+<p class="subtitle">Facultad de derecho y cs. sociales - UNT - 2024</p>
+<p class="author">Gavriloff, Ivan Vladimir</p>
+
+</header>
+
+<nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#tablas-de-verdad" id="toc-tablas-de-verdad">Tablas de verdad</a>
+  <ul>
+  <li><a href="#a-tener-en-cuenta" id="toc-a-tener-en-cuenta">A tener en cuenta</a></li>
+  <li><a href="#tablas-de-verdad-de-las-conectivas" id="toc-tablas-de-verdad-de-las-conectivas">Tablas de verdad de las conectivas</a></li>
+  <li><a href="#pro-tips" id="toc-pro-tips">Pro tips</a></li>
+  <li><a href="#ejercicios" id="toc-ejercicios">Ejercicios</a></li>
+  </ul></li>
+  </ul>
+</nav>
+<h1 id="tablas-de-verdad">Tablas de verdad</h1>
+<!--# class="middle center" -->
+<p>Mecanismo de decisión para determinar si la fórmula es:</p>
+<p>Una tautología</p>
+<p>Una contradicción</p>
+<p>Una función de verdad o fórmula contigente</p>
+<h2 id="a-tener-en-cuenta">A tener en cuenta</h2>
+<!--# class="middle center" -->
+<p>Cantidad de proposiciones de la fórmula</p>
+<p>Recordar que hay solo 2 valores de verdad</p>
+<h2 id="tablas-de-verdad-de-las-conectivas">Tablas de verdad de las conectivas</h2>
+<!--# class="middle center" -->
+<table>
+<colgroup>
+<col style="width: 2%">
+<col style="width: 2%">
+<col style="width: 7%">
+<col style="width: 11%">
+<col style="width: 10%">
+<col style="width: 31%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>-</th>
+<th>-</th>
+<th>Negación</th>
+<th style="text-align: center;">Conjunción</th>
+<th style="text-align: center;">Disyunción</th>
+<th style="text-align: center;">Condicional</th>
+<th style="text-align: center;">Bicondicional</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline"><em>p</em></span></td>
+<td><span class="math inline"><em>q</em></span></td>
+<td><span class="math inline">¬<em>p</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>p</em> ∧ <em>q</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>p</em> ∨ <em>q</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>p</em> → <em>q</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>p</em> ≡ <em>q</em></span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline"><em>V</em></span></td>
+<td><span class="math inline"><em>V</em></span></td>
+<td><span class="math inline"><em>F</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>V</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>V</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>V</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>V</em></span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline"><em>V</em></span></td>
+<td><span class="math inline"><em>F</em></span></td>
+<td><span class="math inline"><em>F</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>F</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>V</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>F</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>F</em></span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline"><em>F</em></span></td>
+<td><span class="math inline"><em>V</em></span></td>
+<td><span class="math inline"><em>V</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>F</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>V</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>V</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>F</em></span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline"><em>F</em></span></td>
+<td><span class="math inline"><em>F</em></span></td>
+<td><span class="math inline"><em>V</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>F</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>F</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>V</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>V</em></span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="pro-tips">Pro tips</h2>
+<!--# class="middle center" -->
+<p>Recordar siempre la fórmula <span class="math inline">2<sup><em>n</em></sup></span> donde <span class="math inline"><em>n</em></span> es la cantidad de proposiciones de la fórmula</p>
+<p>Recordar de ir dividiendo en <span class="math inline">2</span> hasta llegar a <span class="math inline">1</span> para poder saber cuántos valores intercalar para cada proposición</p>
+<h2 id="ejercicios">Ejercicios</h2>
+<!--# contenteditable -->
+<ol type="1">
+<li>Democracia signiﬁca un modo de vida en el que la libertad y la justicia están presentes.</li>
+<li>Las teorías cientíﬁcas no contienen conceptos que denoten <em>qualia</em>.</li>
+<li>No es cierto que la luna no es blanca.</li>
+<li>“Si sigues cumpliendo años, acabarás muriéndote” (Groucho Marx)</li>
+<li>Si le regañas, entonces, si se molesta se marchará.</li>
+<li>O estoy en la facultad de derecho o no estoy en la facultad de derecho.</li>
+<li>Ivan camina y no camina.</li>
+</ol>
+
+
+<script src="https://cdn.jsdelivr.net/gh/rstudio/markdown@1.8/inst/resources/snap.min.js" defer=""></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/rstudio/markdown@1.8/inst/resources/default.min.css,gh/rstudio/markdown@1.8/inst/resources/snap.min.css">
+<style type="text/css">header{text-align: center;}</style>
+
+
+
+
+</body></html>
