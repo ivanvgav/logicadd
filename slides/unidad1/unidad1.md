@@ -14,6 +14,18 @@ author:
 #date: last-modified
 ---
 
+## Objetivos de la materia
+
+---
+
+1. Suministrar los elementos lógicos indispensables para la formación de un pensamiento crítico en el ámbito del derecho.
+2. Adquirir la capacidad suficiente para aplicar los principios fundamentales de la lógica al discurso jurídico y normativo.
+3. Desarrollar la capacidad para distinguir las formas argumentativas válidas de las inválidas.
+4. Brindarle al alumno las estrategias lógico-argumentativas para que pueda fundamentar y exponer convincentemente hipótesis y doctrinas.
+5. Desarrollar una conciencia racional, crítica y responsable sobre los problemas jurídicos–argumentativos que involucran a los profesionales del derecho y su relación con el medio social donde se desarrolla su actividad.
+
+---
+
 ## ¿Qué es la lógica?
 
 ---
