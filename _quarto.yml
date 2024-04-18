@@ -17,6 +17,8 @@ website:
         text: Ejercicios
       - href: programa.qmd
         text: Programa
+      - href: clases-virtuales.qmd
+        text: Clases virtuales
       - href: about.qmd
         text: Acerca de
 
