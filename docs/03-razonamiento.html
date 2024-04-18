@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lógica - FDyCS UNT - Bienvenidos/as</title>
+<title>Lógica - FDyCS UNT - Razonamientos</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,11 +69,40 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -91,11 +120,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./clases.html"> 
+    <a class="nav-link active" href="./clases.html" aria-current="page"> 
 <span class="menu-text">Clases</span></a>
   </li>  
   <li class="nav-item">
@@ -117,17 +146,81 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03-razonamiento.html">Razonamientos</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./clases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Clases</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-logica.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">La lógica como disciplina</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-logica-proposicional.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lógica Proposicional</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-razonamiento.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Razonamientos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-silogismo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Silogismo aristotélico</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-logica-deontica.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introducción a la Lógica deóntica</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-teoria-de-la-argumentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Teoría de la argumentación</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#agradecimientos" id="toc-agradecimientos" class="nav-link active" data-scroll-target="#agradecimientos">Agradecimientos</a></li>
+  <li><a href="#qué-es-un-razonamiento" id="toc-qué-es-un-razonamiento" class="nav-link active" data-scroll-target="#qué-es-un-razonamiento">¿Qué es un razonamiento?</a></li>
+  <li><a href="#mecanismos-de-decisión" id="toc-mecanismos-de-decisión" class="nav-link" data-scroll-target="#mecanismos-de-decisión">Mecanismos de decisión</a>
+  <ul class="collapse">
+  <li><a href="#tablas-de-verdad" id="toc-tablas-de-verdad" class="nav-link" data-scroll-target="#tablas-de-verdad">Tablas de verdad</a></li>
+  <li><a href="#reducción-al-absurdo" id="toc-reducción-al-absurdo" class="nav-link" data-scroll-target="#reducción-al-absurdo">Reducción al absurdo</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -136,7 +229,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Bienvenidos/as</h1>
+<h1 class="title">Razonamientos</h1>
 </div>
 
 
@@ -153,18 +246,42 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Bienvenidos/as al sitio web de la cátedra de Lógica de la Facultad de Derecho y Ciencias Sociales de la UNT.</p>
-<p>En el sitio se encuentran disponibles los recursos utilizados por el Lic. Ivan Vladimir Gavriloff en las clases y ejercitación complementaria para el estudio del curso.</p>
-<section id="agradecimientos" class="level2">
-<h2 class="anchored" data-anchor-id="agradecimientos">Agradecimientos</h2>
-<p>Agradecemos todo el trabajo de la cátedra, al jefe de cátedra Lic. Sergio Cardozo y un homenaje al Dr.&nbsp;Alberto Zeballos que enseño tanto durante varias décadas y que se refleja en el libro usado por esta cátedra para dictar las clases.</p>
-<p>Además a toda la cátedra de lógica ya que en este sitio se ve reflejado el esfuerzo en conjunto por la tarea docente y la investigación en lógica.</p>
-<p>Este sitio web se encuentra desarrollado en base a <a href="https://quarto.org">Quarto</a>.</p>
+<section id="qué-es-un-razonamiento" class="level2">
+<h2 class="anchored" data-anchor-id="qué-es-un-razonamiento">¿Qué es un razonamiento?</h2>
+<p>Ya hemos visto la definición de razonamiento desde la primera unidad. Ahora que tenemos todo los fundamentos y prerequisitos para trabajar con ellos, es necesario volver sobre ella para tenerla con mayor claridad.</p>
+<blockquote class="blockquote">
+<p>Un razonamiento es una secuencia finita de enunciados o proposiciones las cuales un grupo de ellas llamamos <em>premisas</em> y otro grupo (unitario) es la conclusión.</p>
+</blockquote>
+<p>Formalmente: <span class="math display">\[ P_{1}, P_{2}, ... , P_{n} \Rightarrow C \]</span> <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>Ahora que sabemos formalizar, podemos comenzar a formalizar razonamientos. Por ejemplo:</p>
+<blockquote class="blockquote">
+<p>Si tiene cuatro patas, es un perro. Tiene cuatro patas. Por tanto, es un perro.</p>
+</blockquote>
+<p>Este razonamiento se formaliza de la siguiente manera:</p>
+<p><span class="math display">\[ p \supset q; p / \therefore q \]</span></p>
+<p>Como podemos ver hay algunos elementos nuevos para la formalización de razonamientos. Primero que nada se encuentran los puntos y coma, los cuales sirven para delimitar las premisas. Luego también aparece este signo <span class="math inline">\(\therefore\)</span> que simboliza el “Por tanto” o “Por lo tanto” de la oración. El “por tanto” o “por lo tanto” hace referencia a la noción de consecuencia lógica que en la definición se encuentra simbolizada por <span class="math inline">\(\Rightarrow\)</span>. A su vez este signo permite delimitar el grupo de las premisas y la conclusión. Por ello la barra diagonal (<span class="math inline">\(/\)</span>).</p>
+<p>Lo más interesante del razonamiento es que podemos ver que no es una sola fórmula proposicional, sino que es un conjunto de proposiciones (las premisas por un lado y luego la conclusión). Como pueden ver en las oraciones que hemos simbolizado, cada una de ellas se encuentra separada por un punto. Esto indica que va a venir otro enunciado y por ello en la simbolización usamos los puntos y comas.</p>
+<p>Teniendo estos elementos en cuenta, ya podemos realizar el trabajo de simbolizar razonamientos. Para ello hacer click <a href="">aquí</a> para ir a los ejercicios.</p>
+</section>
+<section id="mecanismos-de-decisión" class="level2">
+<h2 class="anchored" data-anchor-id="mecanismos-de-decisión">Mecanismos de decisión</h2>
+<section id="tablas-de-verdad" class="level3">
+<h3 class="anchored" data-anchor-id="tablas-de-verdad">Tablas de verdad</h3>
+</section>
+<section id="reducción-al-absurdo" class="level3">
+<h3 class="anchored" data-anchor-id="reducción-al-absurdo">Reducción al absurdo</h3>
 
 
 </section>
+</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas</h2>
+
+<ol>
+<li id="fn1"><p>Donde <span class="math inline">\(n\)</span> es mayor o igual a 1.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

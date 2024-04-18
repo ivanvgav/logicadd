@@ -128,7 +128,7 @@ window.Quarto = {
 <span class="menu-text">Clases</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./ejercicios.qmd"> 
+    <a class="nav-link" href="./ejercicios.html"> 
 <span class="menu-text">Ejercicios</span></a>
   </li>  
   <li class="nav-item">
@@ -183,6 +183,18 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./03-razonamiento.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Razonamientos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-silogismo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Silogismo aristotélico</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./06-logica-deontica.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introducción a la Lógica deóntica</span></a>
   </div>
@@ -208,6 +220,9 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#reglas-de-formación" id="toc-reglas-de-formación" class="nav-link" data-scroll-target="#reglas-de-formación">Reglas de formación</a></li>
   </ul></li>
+  <li><a href="#mecanismos-de-decisión" id="toc-mecanismos-de-decisión" class="nav-link" data-scroll-target="#mecanismos-de-decisión">Mecanismos de decisión</a></li>
+  <li><a href="#tabla-de-verdad" id="toc-tabla-de-verdad" class="nav-link" data-scroll-target="#tabla-de-verdad">Tabla de verdad</a></li>
+  <li><a href="#como-hacer-las-tablas-de-verdad" id="toc-como-hacer-las-tablas-de-verdad" class="nav-link" data-scroll-target="#como-hacer-las-tablas-de-verdad">¿Como hacer las tablas de verdad?</a></li>
   <li><a href="#presentación-de-clase" id="toc-presentación-de-clase" class="nav-link" data-scroll-target="#presentación-de-clase">Presentación de clase</a></li>
   </ul>
 </nav>
@@ -261,7 +276,7 @@ window.Quarto = {
 </section>
 <section id="simbolización" class="level2">
 <h2 class="anchored" data-anchor-id="simbolización">Simbolización</h2>
-<p>Para poder pasar del lenguaje ordinario al lenguaje formal, es necesario tener un entrenamiento que sea capaz de adquirir las habilidades para identificar cada uno de los elementos formales en el lenguaje ordinario. Es decir, poder leer cualquier oración y poder indicar qué parte de la oración es una proposición, una conectiva lógica y donde poner los símbolos auxiliares para que la formula en lógica proposicional tenga el mismo sentido que en lenguaje ordinario.</p>
+<p>Para poder pasar del lenguaje ordinario al lenguaje formal, es necesario tener un entrenamiento que sea capaz de adquirir las habilidades para identificar cada uno de los elementos formales en el lenguaje ordinario. Es decir, poder leer cualquier oración y poder indicar qué parte de la oración es una proposición, una conectiva lógica y donde poner los símbolos auxiliares para que la fórmula en lógica proposicional tenga el mismo sentido que en lenguaje ordinario.</p>
 <p>Aquí vamos a colocar algunos ejemplos básicos para que puedan entender, y luego se irá acompleja cada vez más.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Sobre los ejercicios">
 <div class="callout-header d-flex align-content-center">
@@ -319,10 +334,10 @@ Pro tips
 </div>
 <section id="reglas-de-formación" class="level3">
 <h3 class="anchored" data-anchor-id="reglas-de-formación">Reglas de formación</h3>
-<p>Para poder realizar formalizaciones correctas todo sistema de lógica posee reglas que cumplen la función de indicar cuándo y cómo las formulas del sistema se encuentran bien formadas.</p>
+<p>Para poder realizar formalizaciones correctas todo sistema de lógica posee reglas que cumplen la función de indicar cuándo y cómo las fórmulas del sistema se encuentran bien formadas.</p>
 <p>La sintáxis del lenguaje natural también hace esto, por ejemplo:</p>
-<p>“<em>Hoy vamos a tener clase de lógica</em>” es una oración bien formulada. Todos la podemos entender.</p>
-<p>“<em>De Vamos a hoy</em>” por ejemplo no se encuentra bien formulada, no puede entender lo que dice.</p>
+<p>“<em>Hoy vamos a tener clase de lógica</em>” es una oración bien fórmulada. Todos la podemos entender.</p>
+<p>“<em>De Vamos a hoy</em>” por ejemplo no se encuentra bien fórmulada, no puede entender lo que dice.</p>
 <p>En este sentido en lógica proposicional, por ejemplo:</p>
 <p><span class="math display">\[p \bullet q\]</span> es una fórmula bien formada (fbf) mientras que <span class="math display">\[\bullet q p\]</span> no lo es.</p>
 <p>Las reglas de formación de la lógica proposicional son las siguientes:</p>
@@ -335,6 +350,138 @@ Pro tips
 <p>Por otro lado, la tercera regla indica una <em>cancelación</em> o <em>clausura</em> de todo tipo de regla de formación. Solo y solo esas reglas son las necesarias y suficientes para poder formalizar cualquier fórmula.</p>
 <p>Como puede verse las reglas de formación también indican el orden en que las conectivas deben ser escritas. La negación va antes de cualquier proposición y las demás conectivas diádicas van entre dos proposiciones.</p>
 </section>
+</section>
+<section id="mecanismos-de-decisión" class="level2">
+<h2 class="anchored" data-anchor-id="mecanismos-de-decisión">Mecanismos de decisión</h2>
+<p>Una vez que ya hemos realizado varios ejercicios de simbolización, podemos pasar al siguiente punto.</p>
+<p>Como ya podemos formalizar los enunciados descriptivos, ahora nos queda por saber cuando dichas fórmulas son verdaderas y cuando falsas.</p>
+<p>Para ello el sistema de lógica proposicional tiene sus <em>mecanismos de decisión</em>.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Noción de mecanismo de decisión">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Noción de mecanismo de decisión
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Un mecanismo de decisión es una serie de acciones determinadas y numeradas que permiten obtener algún beneficio. En estos casos es saber ciertas características de la verdad y falsedad de las proposiciones.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="A tener en cuenta">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+A tener en cuenta
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Cuando veamos razonamientos también habrá otros mecanismos de decisión a considerar. Por ahora nos quedaremos con los mecanismos para las fórmulas propocisionales.</p>
+</div>
+</div>
+<p>Los mecanismos de decisión pueden ser de distintos tipos:</p>
+<ul>
+<li>Sintácticos</li>
+<li>Semánticos:
+<ul>
+<li>Tabla de verdad</li>
+<li>Reducción al absurdo</li>
+</ul></li>
+</ul>
+<p>Además de que cada uno de ellos tiene una metodología distinta, la mayor diferencia que se encuentra entre ellos es que en los mecanismos de decisión semánticos hay una apelación a la noción de <em>verdad</em> que no se encuentra en los mecanismos de decisión sintácticos.</p>
+<div class="callout callout-style-default callout-warning callout-titled" title="Sobre los mecanismos que veremos en el curso">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Sobre los mecanismos que veremos en el curso
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Nosotros solo vamos a ver los mecanismos de decisión semánticos. Los mecanismos sintácticos los vamos a dejar para aquellos que quieran profundizar en el conocimiento lógico.</p>
+</div>
+</div>
+<p>Como marcamos más arriba los mecanismos semánticos que veremos son dos: las tablas de verdad y la reducción al absurdo. La reducción al absurdo la veremos cuando veamos razonamientos.</p>
+</section>
+<section id="tabla-de-verdad" class="level2">
+<h2 class="anchored" data-anchor-id="tabla-de-verdad">Tabla de verdad</h2>
+<p>La tabla de verdad es un mecanismo de decisión que consta de realizar una tabla con todos los valores de verdad posible de la fórmula proposicional que deseamos analizar.</p>
+<p>El propósito de la tabla de verdad es la de determinar si la fórmula proposicional es o bien <em>tautológica</em>, o bien <em>contradictoria</em> o una <em>función de verdad o contingente</em>. ¿Que quiere decir todo esto? Dependidendo del resultado de la tabla de verdad indicará distintas características de la fórmula:</p>
+<ul>
+<li>Si la fórmula es tautológica quiere decir que la matriz resultante de la tabla de verdad es siempre verdadera. Bajo cualquier valor de verdad de los componentes de la fórmula, esta siempre será verdadera.</li>
+<li>Si la fórmula es contradictoria quiere decir que la matriz resultante de la tabla de verdad es siempre falsa. Bajo cualquier valor de verdad de los componentes de la fórmula, esta siempre será falsa.</li>
+<li>Si la fórmula es contingente (o función de verdad) quiere decir que el valor de la matriz resultante va a depender del valor de los componentes. Puede que algunas veces sea verdadera y otra falsa.</li>
+</ul>
+</section>
+<section id="como-hacer-las-tablas-de-verdad" class="level2">
+<h2 class="anchored" data-anchor-id="como-hacer-las-tablas-de-verdad">¿Como hacer las tablas de verdad?</h2>
+<p>Para poder hacer las tablas de verdad vamos a realizar un procedimiento.</p>
+<div class="callout callout-style-default callout-warning callout-titled" title="Atención">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Atención
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Tienen que aprender bien el procedimiento, una vez que lo hagan las suficientes veces se vuelve mecánico. Pero para que sea mecánico, deben practicar varias veces.</p>
+</div>
+</div>
+<p>El procedimiento es el siguiente:</p>
+<p>Dado cualquier formula proposcional siempre fijarse en la cantidad de proposiciones componentes de la fórmula. Por ejemplo si tenemos <span class="math inline">\(p \land q\)</span> entonces serán dos proposisciones, si tenemos <span class="math inline">\(p\)</span> será solo una y si tenemos <span class="math inline">\((p \lor q) \supset r\)</span> serán tres.</p>
+<p>Una vez que sabemos cuantas son debemos realizar tantas columnas haya de proposiciones atómicas. Para tomar un ejemplo vamos a tomar a <span class="math inline">\(p \land q\)</span>. Como tenemos dos escribiremos <span class="math inline">\(p\)</span> en la primera fila y será nuestra primera columna, luego <span class="math inline">\(q\)</span> y será nuestra segunda columna, a continuación vamos a escribir la fórmula proposicional: <span class="math inline">\(p \land q\)</span>.</p>
+<p>Una vez terminado esto vamos a combinar todos los valores de verdad posibles que puede haber entre <span class="math inline">\(p\)</span> y <span class="math inline">\(q\)</span>. Recordemos que la lógica proposicional es <em>bivalente</em>, es decir que solo tiene dos valores de verdad: verdadero (<span class="math inline">\(V\)</span>) y falso (<span class="math inline">\(F\)</span>). Entonces con <span class="math inline">\(V\)</span> y con <span class="math inline">\(F\)</span> tenemos que armar todas las posibilidades. Para ello vamos a recurrir a una pequeña fórmula matemática: <span class="math display">\[2^n\]</span> donde <span class="math inline">\(n\)</span> es la cantidad de proposiciones atómicas que tiene la formula proposicional. En nuestro ejemplo tiene 2 (<span class="math inline">\(p\)</span> y <span class="math inline">\(q\)</span>) entonces tenemos que hacer <span class="math inline">\(2^2 = 4\)</span> por lo que tendremos 4 posibilidades de mezclar los valores. Esto se traduce a que tenemos que hacer 4 filas para la tabla de verdad. Cada una de las filas es una posible interpretación de los valores de verdad.</p>
+<p>Ahora para no olvidar ninguna combinación posible de valores, lo que vamos a hacer es tomar el resultado de la fórmula <span class="math inline">\(2^n\)</span> y empezar a dividirlo en dos. Con nuestro ejemplo, tomamos el número <span class="math inline">\(4\)</span> y lo dividimos en <span class="math inline">\(2\)</span>. El resultado es dos. Esto quiere decir que en la primera columna (<span class="math inline">\(p\)</span>) de la tabla de verdad vamos a intercalar de a <span class="math inline">\(2\)</span> los valores de verdad hasta agotar las líneas de interpretación. En la columna de <span class="math inline">\(p\)</span> se intercalará 2 <span class="math inline">\(V\)</span> y luego 2 <span class="math inline">\(F\)</span>. Luego al número que habíamos divido en 2 lo volvemos a dividir en 2, en nuestro ejemplo nos da 1. Es decir que vamos a intercalar 1 a 1 <span class="math inline">\(V\)</span> y <span class="math inline">\(F\)</span>. Cuando llegamos a 1 no seguimos dividiendo. Ahí termina el procedimiento para determinar todos los posibles valores de verdad de las proposiciones atómicas de la tabla.</p>
+<p>Una vez hecho eso la tabla nos quedará de esta manera: </p>
+<p>Ahora lo que tenemos que hacer es poder indicar como son los valores de las conectivas de la fórmula proposicional. En nuetros ejemplo es solo la conjunción, a medida que se vaya complicando los ejericios serán más conectivas. Para ello tenemos que ver las tablas de verdad de cada una de las conectivas lógicas.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imgs/tabla-negacion.png" class="img-fluid figure-img"></p>
+<figcaption>Tabla de verdad de la negación Extraida de (Zeballos y Cardozo 2019, 44)</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imgs/tabla-conjuncion.png" class="img-fluid figure-img"></p>
+<figcaption>Tabla de verdad de la conjunción. Extraidas de (Zeballos y Cardozo 2019, 44)</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imgs/tabla-disyuncion.png" class="img-fluid figure-img"></p>
+<figcaption>Tabla de verdad de la disyunción. Extraidas de (Zeballos y Cardozo 2019, 44)</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imgs/tabla-condicional.png" class="img-fluid figure-img"></p>
+<figcaption>Tablas de verdad del condicional. Extraidas de (Zeballos y Cardozo 2019, 44)</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imgs/tabla-bicondicional.png" class="img-fluid figure-img"></p>
+<figcaption>Tablas de verdad del bicondicional. Extraidas de (Zeballos y Cardozo 2019, 45)</figcaption>
+</figure>
+</div>
+<p>En el ejemplo que estamos trabajando el la misma tabla de verdad que la conjunción. Como pueden ver la conjunción se comporta de una determinada manera: solo es verdadera cuando ambos coyuntos (ambas proposiciones componentes) son verdaderas. En los demás casos es falsa. Pensemos que es lo que significa una conjunción. Dados dos hechos, estos se dan en conjunto, a la vez. Esto quiere decir que si uno de ellos no es verdadero, no puede ser que ambos se den a la vez.</p>
+<p>Para las demas constantes lógicas recomendamos leer Zeballos y Cardozo (2019).</p>
+<p>Con todo esto ahora podemos ver como quería nuestra tabla de verdad de ejemplo:</p>
+<p></p>
+<p>Una vez completada nuestra tabla podemos ver qué es la fórmula (una tautología, una contradicción o una función de verdad o contingente). En este caso si nos fijamos en la matriz resultante (la conectiva de mayor alcance) es contingente, puesto que tenemos valores de verdad y falsedad. No hay un solo valor de verdad, sino que nos aparecen los dos valores. Por lo que en la mayoría de los casos la conjunción será falsa, pero cuando ambos coyuntos sean verdaderos, será verdadera.</p>
+<p>Para poder terminar el mecanismo se debe señalar la matriz resultante (en este caso vamos a colorear la matriz, lo ideal es encerrar con otro color la columna de la matriz) y luego abajo colocar (dado el caso):</p>
+<ul>
+<li>Fórmula tautológica</li>
+<li>Fórmula contradictoria</li>
+<li>Fórmula contingente</li>
+</ul>
+<p>Ahora es momento de ejercitarse con las tablas de verdad: pueden hacer click en el siguiente <a href="">aquí</a> para ir a los ejercicios. <!-- TODO: agregar link de ejercicios --></p>
 </section>
 <section id="presentación-de-clase" class="level1">
 <h1>Presentación de clase</h1>

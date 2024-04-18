@@ -1,5 +1,104 @@
 [
   {
+    "objectID": "04-silogismo.html",
+    "href": "04-silogismo.html",
+    "title": "Silogismo aristotélico",
+    "section": "",
+    "text": "Diapositivas de la clase",
+    "crumbs": [
+      "Clases",
+      "Silogismo aristotélico"
+    ]
+  },
+  {
+    "objectID": "04-silogismo.html#presentación",
+    "href": "04-silogismo.html#presentación",
+    "title": "Silogismo aristotélico",
+    "section": "",
+    "text": "Diapositivas de la clase",
+    "crumbs": [
+      "Clases",
+      "Silogismo aristotélico"
+    ]
+  },
+  {
+    "objectID": "02-logica-proposicional.html",
+    "href": "02-logica-proposicional.html",
+    "title": "Lógica Proposicional",
+    "section": "",
+    "text": "Como habíamos visto en la unidad anterior vamos a trabajar con un sistema lógico en particular. El sistema de la lógica proposicional.\nYa lo habíamos caracterizado también. El sistema consta de:\n\nVariables proposicional, las cuales servirán para formalizar cada una de las proposiciones. Ejemplo: \\(p, q, r, ...\\)\nConstantes o conectivas proposicionales: las cuales servirán para formalizar las particular que realizan uniones o modifican a las proposiciones. Estas eran:\n\nLa negación (\\(\\neg, \\sim\\)).\nLa conjunción (\\(\\land, \\bullet\\)).\nLa disyunción (\\(\\lor\\)).\nEl condicional (\\(\\supset, \\rightarrow\\)).\nEl bicondicional (\\(\\equiv, \\leftrightarrow\\)).\n\nLos símbolos auxiliares, los cuales sirven para delimitar el alcance de las conectivas. Entre ellos encontramos a los paréntesis (\\(( \\ )\\)), los corchetes (\\([ \\ ]\\)) y las llaves (\\(\\{ \\ \\}\\)).\n\nEstos son los elementos que necesitamos para la poder llevar a cabo la formalización.\nAntes de poder llevar a ver cómo analizamos los razonamientos, es primordial tener conocimiento y entrenamiento en cómo formalizar las proposiciones. Recordemos que lo que se trata es de pasar de lo que decimos en lenguaje natural -en nuestro caso el castellano- a un lenguaje formalizado -en este caso la lógica proposicional-.\nRecordemos la noción de proposición:\n\nUn enunciado completo descriptivo con la capacidad de ser verdadero o falso.\n\nEntonces cuando nos embarquemos en la tarea de formalizar proposiciones, tenemos que tener en cuenta su definición, puesto que en ella se encuentran las características que nos dirán cómo tenemos que formalizar.\nAdemás es importante tener en cuenta también las apariciones de las partículas que hacen referencia a las conectivas lógicas. Así como los signos de puntuación nos indican donde empieza y termina una oración, o como tiene que ser el énfasis y las pausas de la misma, las conectivas también nos pueden indicar donde empieza y termina una proposición y cómo es que se unen unas con otras. 1",
+    "crumbs": [
+      "Clases",
+      "Lógica Proposicional"
+    ]
+  },
+  {
+    "objectID": "02-logica-proposicional.html#introducción",
+    "href": "02-logica-proposicional.html#introducción",
+    "title": "Lógica Proposicional",
+    "section": "",
+    "text": "Como habíamos visto en la unidad anterior vamos a trabajar con un sistema lógico en particular. El sistema de la lógica proposicional.\nYa lo habíamos caracterizado también. El sistema consta de:\n\nVariables proposicional, las cuales servirán para formalizar cada una de las proposiciones. Ejemplo: \\(p, q, r, ...\\)\nConstantes o conectivas proposicionales: las cuales servirán para formalizar las particular que realizan uniones o modifican a las proposiciones. Estas eran:\n\nLa negación (\\(\\neg, \\sim\\)).\nLa conjunción (\\(\\land, \\bullet\\)).\nLa disyunción (\\(\\lor\\)).\nEl condicional (\\(\\supset, \\rightarrow\\)).\nEl bicondicional (\\(\\equiv, \\leftrightarrow\\)).\n\nLos símbolos auxiliares, los cuales sirven para delimitar el alcance de las conectivas. Entre ellos encontramos a los paréntesis (\\(( \\ )\\)), los corchetes (\\([ \\ ]\\)) y las llaves (\\(\\{ \\ \\}\\)).\n\nEstos son los elementos que necesitamos para la poder llevar a cabo la formalización.\nAntes de poder llevar a ver cómo analizamos los razonamientos, es primordial tener conocimiento y entrenamiento en cómo formalizar las proposiciones. Recordemos que lo que se trata es de pasar de lo que decimos en lenguaje natural -en nuestro caso el castellano- a un lenguaje formalizado -en este caso la lógica proposicional-.\nRecordemos la noción de proposición:\n\nUn enunciado completo descriptivo con la capacidad de ser verdadero o falso.\n\nEntonces cuando nos embarquemos en la tarea de formalizar proposiciones, tenemos que tener en cuenta su definición, puesto que en ella se encuentran las características que nos dirán cómo tenemos que formalizar.\nAdemás es importante tener en cuenta también las apariciones de las partículas que hacen referencia a las conectivas lógicas. Así como los signos de puntuación nos indican donde empieza y termina una oración, o como tiene que ser el énfasis y las pausas de la misma, las conectivas también nos pueden indicar donde empieza y termina una proposición y cómo es que se unen unas con otras. 1",
+    "crumbs": [
+      "Clases",
+      "Lógica Proposicional"
+    ]
+  },
+  {
+    "objectID": "02-logica-proposicional.html#simbolización",
+    "href": "02-logica-proposicional.html#simbolización",
+    "title": "Lógica Proposicional",
+    "section": "Simbolización",
+    "text": "Simbolización\nPara poder pasar del lenguaje ordinario al lenguaje formal, es necesario tener un entrenamiento que sea capaz de adquirir las habilidades para identificar cada uno de los elementos formales en el lenguaje ordinario. Es decir, poder leer cualquier oración y poder indicar qué parte de la oración es una proposición, una conectiva lógica y donde poner los símbolos auxiliares para que la fórmula en lógica proposicional tenga el mismo sentido que en lenguaje ordinario.\nAquí vamos a colocar algunos ejemplos básicos para que puedan entender, y luego se irá acompleja cada vez más.\n\n\n\n\n\n\nSobre los ejercicios\n\n\n\nEn el sitio web se encuentran en una solapa separada todos los ejercicios de las unidades.\nIr al link \n\n\nPrimero que nada vamos a ver algunos ejemplos de simbolizaciones básicas:\nDadas los siguientes enunciados simbolice usando la el sistema de lógica proposicional:\n\nJuan trabaja todos los días.\nMaría y Diego están de vacaciones.\nEl agua hierve a una temperatura de 100°C al nivel del mar\n\nResolución:\n\nEn el primero vemos que solo tenemos una proposición debido a que el enunciado es completo y es un enunciado descriptivo por lo que simplemente lo simbolizamos: \\[p\\]\nEn el segundo caso vemos que tenemos dos sujetos: Maria y Diego. Por lo que tenemos que ver qué es lo que están haciendo cada uno de ello. María está de vacaciones. Diego está de vacaciones también. Si bien los dos se encuentran en el mismo estado, son dos sujetos distintos. Por lo que para la lógica proposicional son dos proposiciones distintas: \\(p\\) para Maria y \\(q\\) para Diego. Cuando analizamos un enunciado que, a primera vista, parece una sola proposición pero no lo es, la recomendación es armar un diccionario. Esto quiere decir indicar cual es la referencia de cada una de las proposiciones.\n\nPara este ejercicio sería así: \\[p: María\\ está\\ de\\ vacaciones\\]\n\\[q: Diego\\ está\\ de\\ vacaciones\\]\n\\[p \\bullet q\\]\nComo pueden ver aquí hemos introducido una conectiva lógica, la conjunción entre las dos proposiciones. Así se realiza una unión entre las proposiciones.\n\nEn el tercer caso, por más que parezca un enunciado bastante largo y de cierta complejidad es solo una proposición.\n\nPor lo que su simbolización es la siguiente: \\[p\\]\n\n\nComo hemos dicho más arriba estos son algunos ejemplos básicos, pero ya nos llevan a que tengamos ciertas cuestiones a considerar. Estas van a estar marcadas en el apartado en los pro tips:\n\n\n\n\n\n\nPro tips\n\n\n\n\nVerificar si el enunciado que se desea formalizar es un enunciado descriptivo capaz de ser verdadero o falso.\nSiempre hacer diccionario a la hora de simbolizar. Ayuda a ordenar mejor las proposiciones y evitar confusiones.\nUbicar las conectivas lógicas para encontrar donde puede haber más de una proposición.\n\n\n\n\nReglas de formación\nPara poder realizar formalizaciones correctas todo sistema de lógica posee reglas que cumplen la función de indicar cuándo y cómo las fórmulas del sistema se encuentran bien formadas.\nLa sintáxis del lenguaje natural también hace esto, por ejemplo:\n“Hoy vamos a tener clase de lógica” es una oración bien fórmulada. Todos la podemos entender.\n“De Vamos a hoy” por ejemplo no se encuentra bien fórmulada, no puede entender lo que dice.\nEn este sentido en lógica proposicional, por ejemplo:\n\\[p \\bullet q\\] es una fórmula bien formada (fbf) mientras que \\[\\bullet q p\\] no lo es.\nLas reglas de formación de la lógica proposicional son las siguientes:\n\nSi \\(\\alpha\\) 2 es una fbf, entonces \\(\\sim \\alpha\\) también es una fbf.\nSi \\(\\alpha\\) y \\(\\beta\\) es una fbf, entonces \\(\\alpha \\lor \\beta\\) es una fbf.\nNo hay más fbf.\n\nComo pueden ver las reglas de formación solo hacen uso de la negación y de la disyunción. Esto se debe a que todas las demás conectivas lógicas pueden definirse en base a la negación y disyunción. La negación y la disyunción son denominadas como terminos primitivos, es decir no se pueden definir por ninguna otra conectiva.\nPor otro lado, la tercera regla indica una cancelación o clausura de todo tipo de regla de formación. Solo y solo esas reglas son las necesarias y suficientes para poder formalizar cualquier fórmula.\nComo puede verse las reglas de formación también indican el orden en que las conectivas deben ser escritas. La negación va antes de cualquier proposición y las demás conectivas diádicas van entre dos proposiciones.",
+    "crumbs": [
+      "Clases",
+      "Lógica Proposicional"
+    ]
+  },
+  {
+    "objectID": "02-logica-proposicional.html#mecanismos-de-decisión",
+    "href": "02-logica-proposicional.html#mecanismos-de-decisión",
+    "title": "Lógica Proposicional",
+    "section": "Mecanismos de decisión",
+    "text": "Mecanismos de decisión\nUna vez que ya hemos realizado varios ejercicios de simbolización, podemos pasar al siguiente punto.\nComo ya podemos formalizar los enunciados descriptivos, ahora nos queda por saber cuando dichas fórmulas son verdaderas y cuando falsas.\nPara ello el sistema de lógica proposicional tiene sus mecanismos de decisión.\n\n\n\n\n\n\nNoción de mecanismo de decisión\n\n\n\nUn mecanismo de decisión es una serie de acciones determinadas y numeradas que permiten obtener algún beneficio. En estos casos es saber ciertas características de la verdad y falsedad de las proposiciones.\n\n\n\n\n\n\n\n\nA tener en cuenta\n\n\n\nCuando veamos razonamientos también habrá otros mecanismos de decisión a considerar. Por ahora nos quedaremos con los mecanismos para las fórmulas propocisionales.\n\n\nLos mecanismos de decisión pueden ser de distintos tipos:\n\nSintácticos\nSemánticos:\n\nTabla de verdad\nReducción al absurdo\n\n\nAdemás de que cada uno de ellos tiene una metodología distinta, la mayor diferencia que se encuentra entre ellos es que en los mecanismos de decisión semánticos hay una apelación a la noción de verdad que no se encuentra en los mecanismos de decisión sintácticos.\n\n\n\n\n\n\nSobre los mecanismos que veremos en el curso\n\n\n\nNosotros solo vamos a ver los mecanismos de decisión semánticos. Los mecanismos sintácticos los vamos a dejar para aquellos que quieran profundizar en el conocimiento lógico.\n\n\nComo marcamos más arriba los mecanismos semánticos que veremos son dos: las tablas de verdad y la reducción al absurdo. La reducción al absurdo la veremos cuando veamos razonamientos.",
+    "crumbs": [
+      "Clases",
+      "Lógica Proposicional"
+    ]
+  },
+  {
+    "objectID": "02-logica-proposicional.html#tabla-de-verdad",
+    "href": "02-logica-proposicional.html#tabla-de-verdad",
+    "title": "Lógica Proposicional",
+    "section": "Tabla de verdad",
+    "text": "Tabla de verdad\nLa tabla de verdad es un mecanismo de decisión que consta de realizar una tabla con todos los valores de verdad posible de la fórmula proposicional que deseamos analizar.\nEl propósito de la tabla de verdad es la de determinar si la fórmula proposicional es o bien tautológica, o bien contradictoria o una función de verdad o contingente. ¿Que quiere decir todo esto? Dependidendo del resultado de la tabla de verdad indicará distintas características de la fórmula:\n\nSi la fórmula es tautológica quiere decir que la matriz resultante de la tabla de verdad es siempre verdadera. Bajo cualquier valor de verdad de los componentes de la fórmula, esta siempre será verdadera.\nSi la fórmula es contradictoria quiere decir que la matriz resultante de la tabla de verdad es siempre falsa. Bajo cualquier valor de verdad de los componentes de la fórmula, esta siempre será falsa.\nSi la fórmula es contingente (o función de verdad) quiere decir que el valor de la matriz resultante va a depender del valor de los componentes. Puede que algunas veces sea verdadera y otra falsa.",
+    "crumbs": [
+      "Clases",
+      "Lógica Proposicional"
+    ]
+  },
+  {
+    "objectID": "02-logica-proposicional.html#como-hacer-las-tablas-de-verdad",
+    "href": "02-logica-proposicional.html#como-hacer-las-tablas-de-verdad",
+    "title": "Lógica Proposicional",
+    "section": "¿Como hacer las tablas de verdad?",
+    "text": "¿Como hacer las tablas de verdad?\nPara poder hacer las tablas de verdad vamos a realizar un procedimiento.\n\n\n\n\n\n\nAtención\n\n\n\nTienen que aprender bien el procedimiento, una vez que lo hagan las suficientes veces se vuelve mecánico. Pero para que sea mecánico, deben practicar varias veces.\n\n\nEl procedimiento es el siguiente:\nDado cualquier formula proposcional siempre fijarse en la cantidad de proposiciones componentes de la fórmula. Por ejemplo si tenemos \\(p \\land q\\) entonces serán dos proposisciones, si tenemos \\(p\\) será solo una y si tenemos \\((p \\lor q) \\supset r\\) serán tres.\nUna vez que sabemos cuantas son debemos realizar tantas columnas haya de proposiciones atómicas. Para tomar un ejemplo vamos a tomar a \\(p \\land q\\). Como tenemos dos escribiremos \\(p\\) en la primera fila y será nuestra primera columna, luego \\(q\\) y será nuestra segunda columna, a continuación vamos a escribir la fórmula proposicional: \\(p \\land q\\).\nUna vez terminado esto vamos a combinar todos los valores de verdad posibles que puede haber entre \\(p\\) y \\(q\\). Recordemos que la lógica proposicional es bivalente, es decir que solo tiene dos valores de verdad: verdadero (\\(V\\)) y falso (\\(F\\)). Entonces con \\(V\\) y con \\(F\\) tenemos que armar todas las posibilidades. Para ello vamos a recurrir a una pequeña fórmula matemática: \\[2^n\\] donde \\(n\\) es la cantidad de proposiciones atómicas que tiene la formula proposicional. En nuestro ejemplo tiene 2 (\\(p\\) y \\(q\\)) entonces tenemos que hacer \\(2^2 = 4\\) por lo que tendremos 4 posibilidades de mezclar los valores. Esto se traduce a que tenemos que hacer 4 filas para la tabla de verdad. Cada una de las filas es una posible interpretación de los valores de verdad.\nAhora para no olvidar ninguna combinación posible de valores, lo que vamos a hacer es tomar el resultado de la fórmula \\(2^n\\) y empezar a dividirlo en dos. Con nuestro ejemplo, tomamos el número \\(4\\) y lo dividimos en \\(2\\). El resultado es dos. Esto quiere decir que en la primera columna (\\(p\\)) de la tabla de verdad vamos a intercalar de a \\(2\\) los valores de verdad hasta agotar las líneas de interpretación. En la columna de \\(p\\) se intercalará 2 \\(V\\) y luego 2 \\(F\\). Luego al número que habíamos divido en 2 lo volvemos a dividir en 2, en nuestro ejemplo nos da 1. Es decir que vamos a intercalar 1 a 1 \\(V\\) y \\(F\\). Cuando llegamos a 1 no seguimos dividiendo. Ahí termina el procedimiento para determinar todos los posibles valores de verdad de las proposiciones atómicas de la tabla.\nUna vez hecho eso la tabla nos quedará de esta manera: \nAhora lo que tenemos que hacer es poder indicar como son los valores de las conectivas de la fórmula proposicional. En nuetros ejemplo es solo la conjunción, a medida que se vaya complicando los ejericios serán más conectivas. Para ello tenemos que ver las tablas de verdad de cada una de las conectivas lógicas.\n\n\n\nTabla de verdad de la negación Extraida de (Zeballos y Cardozo 2019, 44)\n\n\n\n\n\nTabla de verdad de la conjunción. Extraidas de (Zeballos y Cardozo 2019, 44)\n\n\n\n\n\nTabla de verdad de la disyunción. Extraidas de (Zeballos y Cardozo 2019, 44)\n\n\n\n\n\nTablas de verdad del condicional. Extraidas de (Zeballos y Cardozo 2019, 44)\n\n\n\n\n\nTablas de verdad del bicondicional. Extraidas de (Zeballos y Cardozo 2019, 45)\n\n\nEn el ejemplo que estamos trabajando el la misma tabla de verdad que la conjunción. Como pueden ver la conjunción se comporta de una determinada manera: solo es verdadera cuando ambos coyuntos (ambas proposiciones componentes) son verdaderas. En los demás casos es falsa. Pensemos que es lo que significa una conjunción. Dados dos hechos, estos se dan en conjunto, a la vez. Esto quiere decir que si uno de ellos no es verdadero, no puede ser que ambos se den a la vez.\nPara las demas constantes lógicas recomendamos leer Zeballos y Cardozo (2019).\nCon todo esto ahora podemos ver como quería nuestra tabla de verdad de ejemplo:\n\nUna vez completada nuestra tabla podemos ver qué es la fórmula (una tautología, una contradicción o una función de verdad o contingente). En este caso si nos fijamos en la matriz resultante (la conectiva de mayor alcance) es contingente, puesto que tenemos valores de verdad y falsedad. No hay un solo valor de verdad, sino que nos aparecen los dos valores. Por lo que en la mayoría de los casos la conjunción será falsa, pero cuando ambos coyuntos sean verdaderos, será verdadera.\nPara poder terminar el mecanismo se debe señalar la matriz resultante (en este caso vamos a colorear la matriz, lo ideal es encerrar con otro color la columna de la matriz) y luego abajo colocar (dado el caso):\n\nFórmula tautológica\nFórmula contradictoria\nFórmula contingente\n\nAhora es momento de ejercitarse con las tablas de verdad: pueden hacer click en el siguiente aquí para ir a los ejercicios.",
+    "crumbs": [
+      "Clases",
+      "Lógica Proposicional"
+    ]
+  },
+  {
+    "objectID": "02-logica-proposicional.html#footnotes",
+    "href": "02-logica-proposicional.html#footnotes",
+    "title": "Lógica Proposicional",
+    "section": "Notas",
+    "text": "Notas\n\n\nIncluso algunos lógicos las consideran como signos de puntuación. Es decir, van más allá de la analogía aquí propuesta. Esto es un tema de filosofía de la lógica, no es necesario indagar esto en un curso introductorio de lógico como el presente.↩︎\nUtilizamos \\(\\alpha\\) y \\(\\beta\\) para varible meta-logicas. Estas variables comprenden desde una simple proposición cualquiera como \\(p\\) hasta propociones de cualquier complejidad como por ejemplo \\((p \\lor t) \\supset [q \\supset (r \\bullet s)]\\)↩︎",
+    "crumbs": [
+      "Clases",
+      "Lógica Proposicional"
+    ]
+  },
+  {
     "objectID": "01-logica.html",
     "href": "01-logica.html",
     "title": "La lógica como disciplina",
@@ -53,249 +152,6 @@
       "Clases",
       "La lógica como disciplina"
     ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Bienvenidos/as",
-    "section": "",
-    "text": "Bienvenidos/as al sitio web de la cátedra de Lógica de la Facultad de Derecho y Ciencias Sociales de la UNT.\nEn el sitio se encuentran disponibles los recursos utilizados por el Lic. Ivan Vladimir Gavriloff en las clases y ejercitación complementaria para el estudio del curso."
-  },
-  {
-    "objectID": "index.html#agradecimientos",
-    "href": "index.html#agradecimientos",
-    "title": "Bienvenidos/as",
-    "section": "Agradecimientos",
-    "text": "Agradecimientos\nAgradecemos todo el trabajo de la cátedra, al jefe de cátedra Lic. Sergio Cardozo y un homenaje al Dr. Alberto Zeballos que enseño tanto durante varias décadas y que se refleja en el libro usado por esta cátedra para dictar las clases.\nAdemás a toda la cátedra de lógica ya que en este sitio se ve reflejado el esfuerzo en conjunto por la tarea docente y la investigación en lógica.\nEste sitio web se encuentra desarrollado en base a Quarto."
-  },
-  {
-    "objectID": "06-logica-deontica.html",
-    "href": "06-logica-deontica.html",
-    "title": "Introducción a la Lógica deóntica",
-    "section": "",
-    "text": "“Es obligatorio el uso de barbijo”\n\n\n“Está permitido caminar sobre el pasto”\n\n\n“Está prohibido estacionar las 24 horas”\n\nLas proposiciones deónticas tienen una característica ausente en las proposciones con las que venimos trabajando. Las proposiciones deónticas no describen hechos del mundo, no dan cuenta de la realidad, sino que dicen ordenan al agente a hacer (o no hacer) algo o posibilitan o imposibilitan alguna acción.\nDadas las siguientes proposiciones:\n\n“Está prohibido estacionar las 24 horas”\n\n\n“Estamos en la secretaría de investigaciones de la Facultad de Derecho y Cs. Sociales de la UNT”\n\nLa primera no podemos decir si es una proposición verdadera o falsa, mientras que la segunda si. La primera tiene un contenido deóntico que la segunda no.\nHay que tener en cuenta esta diferencia entre las proposiciones porque va a ser determinante más adelante.",
-    "crumbs": [
-      "Clases",
-      "Introducción a la Lógica deóntica"
-    ]
-  },
-  {
-    "objectID": "06-logica-deontica.html#ejemplo-de-proposiciones-deónticas",
-    "href": "06-logica-deontica.html#ejemplo-de-proposiciones-deónticas",
-    "title": "Introducción a la Lógica deóntica",
-    "section": "",
-    "text": "“Es obligatorio el uso de barbijo”\n\n\n“Está permitido caminar sobre el pasto”\n\n\n“Está prohibido estacionar las 24 horas”\n\nLas proposiciones deónticas tienen una característica ausente en las proposciones con las que venimos trabajando. Las proposiciones deónticas no describen hechos del mundo, no dan cuenta de la realidad, sino que dicen ordenan al agente a hacer (o no hacer) algo o posibilitan o imposibilitan alguna acción.\nDadas las siguientes proposiciones:\n\n“Está prohibido estacionar las 24 horas”\n\n\n“Estamos en la secretaría de investigaciones de la Facultad de Derecho y Cs. Sociales de la UNT”\n\nLa primera no podemos decir si es una proposición verdadera o falsa, mientras que la segunda si. La primera tiene un contenido deóntico que la segunda no.\nHay que tener en cuenta esta diferencia entre las proposiciones porque va a ser determinante más adelante.",
-    "crumbs": [
-      "Clases",
-      "Introducción a la Lógica deóntica"
-    ]
-  },
-  {
-    "objectID": "06-logica-deontica.html#nociones-preliminares-para-la-lógica-deóntico",
-    "href": "06-logica-deontica.html#nociones-preliminares-para-la-lógica-deóntico",
-    "title": "Introducción a la Lógica deóntica",
-    "section": "Nociones preliminares para la lógica deóntico",
-    "text": "Nociones preliminares para la lógica deóntico\n\nLógica modal\nLa lógica modal alética va a dar cuenta de las siguientes nociones:\n\n“Es necesario que…”; “Es posible que…”; “Es imposible que…”; “No es posible que…”\n\nPor ejemplo:\n\n“Es necesario que \\('2+2=4'\\)”; “Es posible que hoy llueva”; “Es imposible que salga sorteado el mismo número dos veces”\n\nLa lógica modal internaliza expresiones como “necesario”, “posible”, “imposible”, etc. Aquellas que hablen acerca de la modalidad de la verdad. Es decir los modos en que la verdad puede prensetarse acerca de la proposición. Si es necesaria una proposición hace referencia a que su valor de verdad no cambia, mientras que si es posible quiere decir que la proposición puede que algunas veces sea verdadera pero otras veces no.\nPara poder formalizar este tipo de expresiones el sistema lógico incorpora dos denominados operadores. Los lógicos han añadido al sistema lógico dos operadores para dar cuenta de la posibilidad y la necesidad:\n\n\\(N\\): Necesario\n\\(M\\): Posible\n\nAhora bien, estos operadores se pueden definir entre si como se muestra en la siguiente figura:\n\n\n\nInterdefinibilidad de los operadores modales. Extraida de Zeballos y Cardozo (2019, 240)\n\n\nDada la interdefinibildad de los operadores modales, podemos analizar como se relacionan las proposiciones modales entre si.\nBasandonos en el cuadro de oposiciones modales:\n\n\n\nCuadro de oposiciones modales. (Zeballos y Cardozo 2019, 242)\n\n\nEsta incorporación de los operadores modales permiten expandir la expresividad del sistema lógico, algunas de las características relevantes para la lógica deóntica son los siguientes:\n\nLa interdefinibilidad de operadores.\nLa conectiva lógica de la impliación necesaria: \\(p \\Rightarrow q\\) (\\(p\\) implica necesariamente \\(q\\))\nLos operadores modales no son veritativos-funcionales.\nNuevas expresiones válidas:\n\n\\(Np \\supset p\\) (Si es necesario \\(p\\) entonces \\(p\\))\n\\(p \\supset Mp\\) (Si \\(p\\) entonces es posible que \\(p\\))\n\nSi \\(\\alpha\\) es una fórmula válida, entonces \\(N \\alpha\\) también lo es\nTodo lo que se sigue de una verdad necesaria es también necesariamente verdadero\n\nCon esto ya es posible entender de mejor manera el sistema de lógica deóntica",
-    "crumbs": [
-      "Clases",
-      "Introducción a la Lógica deóntica"
-    ]
-  },
-  {
-    "objectID": "06-logica-deontica.html#el-sistema-de-lógica-deóntica-de-von-wright",
-    "href": "06-logica-deontica.html#el-sistema-de-lógica-deóntica-de-von-wright",
-    "title": "Introducción a la Lógica deóntica",
-    "section": "El sistema de lógica deóntica de Von Wright",
-    "text": "El sistema de lógica deóntica de Von Wright\nLógica Deóntica El sistema clásico de Von Wright 13\n\nUn poco de historia de la lógica deóntica\nA continuación haremos un pequeño desvio para comentar algo de la historia de la lógica deóntica. Varios filósofos y lógicos han contribuido a su desarrollo. Algunos no lograron verla sistematizada como ser los casos de Alois Höffer (1853 – 1922) y Ernst Mally (1879-1944). El mayor exponente que logró sistematizar la lógica deóntica fue Georg Henrik von Wright (1916 - 2003). En la Argentina tuvimos dos grandes lógicos deónticos que hicieron sus propios aportes y desarrollos a la lógica deóntica y ellos fueron Carlos Eduardo Alchourrón (1931- 1996) y Eugenio Buligyn (1931 - 2021).\nAquí nos enfocaremos en el sitema de lógica ideado por Von Wright y algunos desarrollos posteriores por parte de Buligyn para responder a algunos problemas abiertos dejados por el sistema de Von Wright.",
-    "crumbs": [
-      "Clases",
-      "Introducción a la Lógica deóntica"
-    ]
-  },
-  {
-    "objectID": "06-logica-deontica.html#operadores-modales-deónticos",
-    "href": "06-logica-deontica.html#operadores-modales-deónticos",
-    "title": "Introducción a la Lógica deóntica",
-    "section": "Operadores modales deónticos",
-    "text": "Operadores modales deónticos\nComo hemos visto más arriba, la lógica modal introduce los operadores modales para poder formalizar las proposiciones aléticas. El sistema de lógica deóntica va a realizar una analógica con los operadores modales y las nociones deónticas que hemos visto al inicio (permitido, no permitido, obligatorio, prohibido).\nPara ello va a analogar cada uno de los operadores modales, con los operadores deónticos:\n\n\n\nAnalogía entre operadores modales y deónticos. Extraido de Zeballos y Cardozo (2019, 248)\n\n\nPor consiguiente también podemos realizar una interdefinibildad de operadores deónticos:\n\n\n\nInterdefinibilidad de operadores deónticos. Extraido de Zeballos y Cardozo (2019, 248)\n\n\n\nComo queda conformado el sistema clásico deóntico\nCon los operadores deónticos añadidos a la lógica proposicional genera el sistema clásico (SC) Von Wright. Dado de esta manera el sistema tiene algunas características importantes:\n\nToda tautología de lógica proposicional es válida en SC si las variables proposicionales son reemplazadas por fórmulas deónticas.\nSe aceptan las siguientes definiciones:\n\n\\(Ph =_{def} \\sim P\\)\n\\(O =_{def} \\sim P \\sim\\)\n\nSe aceptan como axiomas las leyes de distribución\nSe acepta el principio de permutación:\n\n\\(Pp \\lor P\\sim p . \\equiv . Op \\supset Pp\\)\n\n\nEste sistema lógico es un gran avance para la lógica deóntica ya que permite formalizar las proposiciones deónticas (como las que hemos visto en un principio) pero en su analogía con la lógica modal, trae aparejado algunos problemas que no pueden ser resueltos con los recursos propios del sistema.",
-    "crumbs": [
-      "Clases",
-      "Introducción a la Lógica deóntica"
-    ]
-  },
-  {
-    "objectID": "06-logica-deontica.html#dilema-de-jørgensen",
-    "href": "06-logica-deontica.html#dilema-de-jørgensen",
-    "title": "Introducción a la Lógica deóntica",
-    "section": "Dilema de Jørgensen",
-    "text": "Dilema de Jørgensen\nEl denominado dilema de Jörgiensen fue presentado en Jörgensen (1937).1 Consta de un dilema entre las relaciones que hay entre las normas y la disciplina lógica.\nEl dilema puede presentarse de la siguiente manera:\n\nEn contextos normativos también se usan los términos “y”, “o”, “si…entonces…”, “no” de manera similar al lenguaje descriptivo. Y al hacer inferencias se usan normas como premisas y conclusiones y parecen ser lógicamente válidas. Por tanto, hay una lógica de normas.\nLa relación de implicación (consecuencia lógica) y contradicción se definen en términos de verdad (como las conectivas lógicas). Por tanto, solo expresiones V o F pueden ser estudiadas por la lógica.\nLas normas carecen de valor de verdad.\nNo hay relación lógica entre normas y, por tanto, no hay lógica de normas.\n\nPara poder evitar la conclusión se puede tomar varias posturas:\nSi se quiere evitar la Tesis 4:\n\nSe abandona la Tesis 2 o\nSe abandona la Tesis 3.\n\nSi se acepta la Tesis 4:\n\nSe tiene que desarrollar una teoría alternativa para dar cuenta lo expresado en la Tesis 1.",
-    "crumbs": [
-      "Clases",
-      "Introducción a la Lógica deóntica"
-    ]
-  },
-  {
-    "objectID": "06-logica-deontica.html#algunas-posibles-soluciones-al-dilema",
-    "href": "06-logica-deontica.html#algunas-posibles-soluciones-al-dilema",
-    "title": "Introducción a la Lógica deóntica",
-    "section": "Algunas posibles soluciones al dilema",
-    "text": "Algunas posibles soluciones al dilema\n\nInterpretaciones descriptivas o prescriptivas\nPara poder encontrar algunas de las soluciones del dilema de Jörgensen pueden hacer ciertas distinciones conceptuales. Los términos deónticos permitido, prohibido, obligatorio son ambiguos. No tienen una sola definición, sino múltiples. Por lo que pueden ser interpretados de dos maneras, al menos:\n\nInterpretaciones prescriptivas (expresión de normas)\n\nLo que expresan son lo que la norma ordena.\n\nInterpretaciones descriptivas (expresión de proposiciones acerca de normas)\n\nLo que expresan son proposiciones que hablan acerca de las normas. No son normas en sí misma.\n\n\nPor ejemplo Bulygin (1995) utiliza los operadores O y P como prescriptivos:\n\n\\(Op\\) expresa una norma que ordena \\(p\\)\n\\(O\\sim p\\) expresa una norma que prohíbe \\(p\\)\n\\(Pp\\) expresa una norma que permite \\(p\\)\n\nConsiderar a los operadores descriptivos enuncian el estatus deóntico de un estado de cosas o acciones. Dicho estatus está conferido por la norma. Las acciones suponen que un agente ejecute o no la norma. Por lo que hay una referencia a la norma la cual antes no estaba.",
-    "crumbs": [
-      "Clases",
-      "Introducción a la Lógica deóntica"
-    ]
-  },
-  {
-    "objectID": "06-logica-deontica.html#sistema-de-normas",
-    "href": "06-logica-deontica.html#sistema-de-normas",
-    "title": "Introducción a la Lógica deóntica",
-    "section": "Sistema de normas",
-    "text": "Sistema de normas\nOtra posible solución es entender al derecho como un sistema de normas. Cada una de las proposiciones deónticas se encuentran dentro de un sistema de normas \\((\\alpha)\\)\nLas considiciones en que los operadores deónticos aparecen dentro de un conjunto de normas se complejiza:\n\n\n\nEjemplo de complejización. Extraido de Zeballos y Cardozo (2019, 251)\n\n\nPara el caso de la permisión hay que considerar:\n\nPermisión positiva: Está permitido en \\(\\alpha\\)\nPermisión negativa: No está prohibido en \\(\\alpha\\)\n\n\nAñadido del sistema normativo \\(\\alpha\\)\nDado un sistema normativo \\(\\alpha\\):\n\n\\(Op\\alpha\\) (\\(p\\) es obligatorio en \\(\\alpha\\))\n\\(P^{+}p\\alpha\\) (\\(p\\) está positivamente permitido en \\(\\alpha\\))\n\\(P^{-}p\\alpha\\) (\\(p\\) está negativamente permitido en \\(\\alpha\\))\n\nDefinidas formalmente como:\n\n\\(Op\\alpha =_{def} Op \\in Cn(\\alpha)\\)\n\\(P^{+}p\\alpha =_{def} Pp \\in Cn(\\alpha)\\)\n\\(P^{-}p\\alpha =_{def} O\\sim p \\notin Cn(\\alpha)\\)\n\n\n\nDiferencias con el Sistema Clásico\nLas expresiones de la lógica de proposiciones normativas son relativas a un sistema de normas. Al incorporar la noción de sistema de normas, esto permite que el concepto de permisión se complejise: hay dos conceptos de permisión. También lleva a que los operadores prescriptivos sean interdefinibles.\nClaramente la idea de sistema de normas, presupone que existe una relación lógica entre normas. Por lo que las s consecuencias de \\(\\alpha\\), es el conjunto de normas que se siguen lógicamente de \\(\\alpha\\).\nAsí como hay dos tipos de permisión, también este sistema da lugar a dos tipos de negaciones:\nHay una negación interna y otra externa. Negar algo dentro de las proposiciones normativas: * \\(\\alpha\\) contiene una norma que prohibe \\(p\\) * \\(\\alpha\\) no contiene una norma que permite \\(p\\)\nEsto lleva a considerar estas dos negaciones de la siguiente manera:\n\nExterna (\\(-\\)): Significa que la norma que ordena \\(p\\) no pertenece a \\(\\alpha\\).\nInterna (\\(\\neg\\)): Significa que la norma que permite no \\(p\\) pertenece a \\(\\alpha\\).\n\n\n\n\n\n\n\nDato Importante\n\n\n\nLa negación interna puede mostrar un sistema de normas inconsistente o incompleto.",
-    "crumbs": [
-      "Clases",
-      "Introducción a la Lógica deóntica"
-    ]
-  },
-  {
-    "objectID": "06-logica-deontica.html#operador-facultativo-f",
-    "href": "06-logica-deontica.html#operador-facultativo-f",
-    "title": "Introducción a la Lógica deóntica",
-    "section": "Operador facultativo \\((F)\\)",
-    "text": "Operador facultativo \\((F)\\)\nAnte la fórmula \\(Pp \\lor P\\sim p\\) puede interpretarse como “uno puede hacer \\(p\\) y/o dejar de hacerlo” es decir, queda en la decisión del agente el hacerlo o no. Esto lleva a presentar otro tipo de operador que refleje este hecho normativo, el operador facultativo. Denominado de esta manera ya que es el agente quien tiene la facultad de llevar a cabo (o no llevar a cabo) la acción.\nEsto quiere decir que seguir la acción \\(p\\) es facultativo, formalmente de la siguiente manera:\n\n\\(Fp . \\equiv . Pp \\land P\\sim p\\)\n\\(Fp . \\equiv . \\sim Op \\land \\sim O\\sim p\\)\n\\(Fp . \\equiv . \\sim Php \\land \\sim Ph\\sim p\\)",
-    "crumbs": [
-      "Clases",
-      "Introducción a la Lógica deóntica"
-    ]
-  },
-  {
-    "objectID": "06-logica-deontica.html#cuadro-de-oposiciones-deónticas.",
-    "href": "06-logica-deontica.html#cuadro-de-oposiciones-deónticas.",
-    "title": "Introducción a la Lógica deóntica",
-    "section": "Cuadro de oposiciones deónticas.",
-    "text": "Cuadro de oposiciones deónticas.\nPor último, las relaciones de oposición deónticos queda de esta determinada manera respecto del cuadro de oposición de los operadores modales:\n\n\n\nCuadro de oposición deóntico. Extraido de (Zeballos y Cardozo 2019, 256)",
-    "crumbs": [
-      "Clases",
-      "Introducción a la Lógica deóntica"
-    ]
-  },
-  {
-    "objectID": "06-logica-deontica.html#footnotes",
-    "href": "06-logica-deontica.html#footnotes",
-    "title": "Introducción a la Lógica deóntica",
-    "section": "Notas",
-    "text": "Notas\n\n\nUn dilema es una presentación de dos opciones o situaciones las cuales ambas presentan el mismo resultado trágico o no deseado.↩︎",
-    "crumbs": [
-      "Clases",
-      "Introducción a la Lógica deóntica"
-    ]
-  },
-  {
-    "objectID": "clases.html",
-    "href": "clases.html",
-    "title": "Clases",
-    "section": "",
-    "text": "En esta sección se encontrará el material dictado en las clases. El material se encuentra distribuido por unidades, no por clases estrictamente. Esto se debe a que el cronograma de clases se encuentra en continuo ajuste por cuestiones de cronograma académico, feriados o situaciones externas que provocan cambios en el cursado ordinario de la materia. La distribución respeta el orden dado en el programa (para leer el programa dirigirse al programa.\n\n\n\n\n\n\nA tener en cuenta\n\n\n\nSi en esta sección del sitio web no se encuentran disponibles todas las unidades es porque no se han dictado las clases correspondientes a dicha unidad.",
-    "crumbs": [
-      "Clases"
-    ]
-  },
-  {
-    "objectID": "slides/unidad1/unidad1.html#qué-es-la-lógica",
-    "href": "slides/unidad1/unidad1.html#qué-es-la-lógica",
-    "title": "Lógica y Lenguaje",
-    "section": "¿Qué es la lógica?",
-    "text": "¿Qué es la lógica?"
-  },
-  {
-    "objectID": "slides/unidad1/unidad1.html#cuál-es-la-tarea-de-la-lógica",
-    "href": "slides/unidad1/unidad1.html#cuál-es-la-tarea-de-la-lógica",
-    "title": "Lógica y Lenguaje",
-    "section": "¿Cuál es la tarea de la lógica?",
-    "text": "¿Cuál es la tarea de la lógica?\n\nDemostrar la correción formal o validez de los razonamientos."
-  },
-  {
-    "objectID": "slides/unidad1/unidad1.html#semiótica",
-    "href": "slides/unidad1/unidad1.html#semiótica",
-    "title": "Lógica y Lenguaje",
-    "section": "Semiótica",
-    "text": "Semiótica\nCiencia de los signos"
-  },
-  {
-    "objectID": "slides/unidad1/unidad1.html#sintaxis",
-    "href": "slides/unidad1/unidad1.html#sintaxis",
-    "title": "Lógica y Lenguaje",
-    "section": "Sintaxis",
-    "text": "Sintaxis"
-  },
-  {
-    "objectID": "slides/unidad1/unidad1.html#semántica",
-    "href": "slides/unidad1/unidad1.html#semántica",
-    "title": "Lógica y Lenguaje",
-    "section": "Semántica",
-    "text": "Semántica"
-  },
-  {
-    "objectID": "slides/unidad1/unidad1.html#lenguaje-y-metalenguaje",
-    "href": "slides/unidad1/unidad1.html#lenguaje-y-metalenguaje",
-    "title": "Lógica y Lenguaje",
-    "section": "Lenguaje y metalenguaje",
-    "text": "Lenguaje y metalenguaje"
-  },
-  {
-    "objectID": "slides/unidad1/unidad1.html#lenguaje-objeto",
-    "href": "slides/unidad1/unidad1.html#lenguaje-objeto",
-    "title": "Lógica y Lenguaje",
-    "section": "Lenguaje objeto",
-    "text": "Lenguaje objeto"
-  },
-  {
-    "objectID": "slides/unidad1/unidad1.html#meta-lenguaje",
-    "href": "slides/unidad1/unidad1.html#meta-lenguaje",
-    "title": "Lógica y Lenguaje",
-    "section": "Meta lenguaje",
-    "text": "Meta lenguaje"
-  },
-  {
-    "objectID": "slides/unidad1/unidad1.html#usos-del-lenguaje",
-    "href": "slides/unidad1/unidad1.html#usos-del-lenguaje",
-    "title": "Lógica y Lenguaje",
-    "section": "Usos del lenguaje",
-    "text": "Usos del lenguaje"
-  },
-  {
-    "objectID": "slides/unidad1/unidad1.html#algunos-ejercicios",
-    "href": "slides/unidad1/unidad1.html#algunos-ejercicios",
-    "title": "Lógica y Lenguaje",
-    "section": "Algunos ejercicios",
-    "text": "Algunos ejercicios\nEntrecomille, en los casos donde sea necesario, los diferentes niveles de lenguaje de las siguientes expresiones y determine cuál es la dimensión de la semiótica que predomina.\n\nLa palabra cielo se escribe con c. \nEn el pizarrón se lee María dijo Kant escribió la Crítica de la Razón Pura a los cincuenta y siete años.\nLógica es una palabra esdrújula.\nAristóteles fue discípulo de Platón es una proposición verdadera."
-  },
-  {
-    "objectID": "slides/unidad1/unidad1.html#comentarios-dudas",
-    "href": "slides/unidad1/unidad1.html#comentarios-dudas",
-    "title": "Lógica y Lenguaje",
-    "section": "Comentarios, dudas ¿?",
-    "text": "Comentarios, dudas ¿?"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Acerca del sitio",
-    "section": "",
-    "text": "Este sitio web es destinado para las clases dictadas por el Lic. Ivan Vladimir Gavriloff, auxiliar docente, de la cátedra de Lógica de la Facultad de Derecho y Ciencias Sociales de la Universidad Nacional de Tucumán.\nEn este sitio se encontrará todo el material necesario para el cursado de la materia de Lógica de segundo año de la carrera de Abogacía de la Facultad de Derecho y Ciencias Sociales de la UNT.\nAquí se encuentra alojados el material didactico, clases y ejercicios que la cátedra otorga dentro del cursado.\nEl sitio web tiene como referencia al siguiente libro:\n\nZeballos, Alberto, y Sergio Cardozo. Elementos de Lógica. Una introducción a la lógica estándar con ejercicios y problemas resueltos. San Miguel de Tucumán, Tucumán, Argentina: Departamento de Publicaciones, FFyL UNT, 2019.\n\n\n\n\n\n\n\nA tener en cuenta\n\n\n\nEste sitio web se encuentra estructurado para las clases dictadas en las comisiones en que se encuentra el Lic. Ivan Vladimir Gavriloff. El material de las demás comisiones puede variar.\n\n\n\n\n\n\n\n\nSobre el estudio con este sitio web\n\n\n\nCabe destacar que esto es simplemente es un complemento para el cursado. Este sitio web no reemplaza el material bibliográfico ni las clases impartidas por la cátedra.\nSi solo estudian de este material no van a tener los contenidos suficientes para aprobar los examenes y, por ende, promocionar la materia.\n\n\n\n\n\n\n\n\nSobre el contenido del sitio web\n\n\n\nEl material refleja el cursado del año 2024. Es posible que los años subsiguientes el material sea modificado y el sitio web cambie. Dado el caso, se informará en esta sección del sitio de dicho cambio."
-  },
-  {
-    "objectID": "programa.html",
-    "href": "programa.html",
-    "title": "Programa de la materia",
-    "section": "",
-    "text": "Aquí presentamos el programa 2024 del curso de Lógica de la cátedra de Lógica de la Facultad de Derecho y Ciencias Sociales"
-  },
-  {
-    "objectID": "programa.html#en-formato-pdf",
-    "href": "programa.html#en-formato-pdf",
-    "title": "Programa de la materia",
-    "section": "En formato PDF:",
-    "text": "En formato PDF:\nUnable to display PDF file. Download instead."
   },
   {
     "objectID": "07-teoria-de-la-argumentacion.html",
@@ -507,48 +363,25 @@
     ]
   },
   {
-    "objectID": "02-logica-proposicional.html",
-    "href": "02-logica-proposicional.html",
-    "title": "Lógica Proposicional",
+    "objectID": "programa.html",
+    "href": "programa.html",
+    "title": "Programa de la materia",
     "section": "",
-    "text": "Como habíamos visto en la unidad anterior vamos a trabajar con un sistema lógico en particular. El sistema de la lógica proposicional.\nYa lo habíamos caracterizado también. El sistema consta de:\n\nVariables proposicional, las cuales servirán para formalizar cada una de las proposiciones. Ejemplo: \\(p, q, r, ...\\)\nConstantes o conectivas proposicionales: las cuales servirán para formalizar las particular que realizan uniones o modifican a las proposiciones. Estas eran:\n\nLa negación (\\(\\neg, \\sim\\)).\nLa conjunción (\\(\\land, \\bullet\\)).\nLa disyunción (\\(\\lor\\)).\nEl condicional (\\(\\supset, \\rightarrow\\)).\nEl bicondicional (\\(\\equiv, \\leftrightarrow\\)).\n\nLos símbolos auxiliares, los cuales sirven para delimitar el alcance de las conectivas. Entre ellos encontramos a los paréntesis (\\(( \\ )\\)), los corchetes (\\([ \\ ]\\)) y las llaves (\\(\\{ \\ \\}\\)).\n\nEstos son los elementos que necesitamos para la poder llevar a cabo la formalización.\nAntes de poder llevar a ver cómo analizamos los razonamientos, es primordial tener conocimiento y entrenamiento en cómo formalizar las proposiciones. Recordemos que lo que se trata es de pasar de lo que decimos en lenguaje natural -en nuestro caso el castellano- a un lenguaje formalizado -en este caso la lógica proposicional-.\nRecordemos la noción de proposición:\n\nUn enunciado completo descriptivo con la capacidad de ser verdadero o falso.\n\nEntonces cuando nos embarquemos en la tarea de formalizar proposiciones, tenemos que tener en cuenta su definición, puesto que en ella se encuentran las características que nos dirán cómo tenemos que formalizar.\nAdemás es importante tener en cuenta también las apariciones de las partículas que hacen referencia a las conectivas lógicas. Así como los signos de puntuación nos indican donde empieza y termina una oración, o como tiene que ser el énfasis y las pausas de la misma, las conectivas también nos pueden indicar donde empieza y termina una proposición y cómo es que se unen unas con otras. 1",
-    "crumbs": [
-      "Clases",
-      "Lógica Proposicional"
-    ]
+    "text": "Aquí presentamos el programa 2024 del curso de Lógica de la cátedra de Lógica de la Facultad de Derecho y Ciencias Sociales"
   },
   {
-    "objectID": "02-logica-proposicional.html#introducción",
-    "href": "02-logica-proposicional.html#introducción",
-    "title": "Lógica Proposicional",
+    "objectID": "programa.html#en-formato-pdf",
+    "href": "programa.html#en-formato-pdf",
+    "title": "Programa de la materia",
+    "section": "En formato PDF:",
+    "text": "En formato PDF:\nUnable to display PDF file. Download instead."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Acerca del sitio",
     "section": "",
-    "text": "Como habíamos visto en la unidad anterior vamos a trabajar con un sistema lógico en particular. El sistema de la lógica proposicional.\nYa lo habíamos caracterizado también. El sistema consta de:\n\nVariables proposicional, las cuales servirán para formalizar cada una de las proposiciones. Ejemplo: \\(p, q, r, ...\\)\nConstantes o conectivas proposicionales: las cuales servirán para formalizar las particular que realizan uniones o modifican a las proposiciones. Estas eran:\n\nLa negación (\\(\\neg, \\sim\\)).\nLa conjunción (\\(\\land, \\bullet\\)).\nLa disyunción (\\(\\lor\\)).\nEl condicional (\\(\\supset, \\rightarrow\\)).\nEl bicondicional (\\(\\equiv, \\leftrightarrow\\)).\n\nLos símbolos auxiliares, los cuales sirven para delimitar el alcance de las conectivas. Entre ellos encontramos a los paréntesis (\\(( \\ )\\)), los corchetes (\\([ \\ ]\\)) y las llaves (\\(\\{ \\ \\}\\)).\n\nEstos son los elementos que necesitamos para la poder llevar a cabo la formalización.\nAntes de poder llevar a ver cómo analizamos los razonamientos, es primordial tener conocimiento y entrenamiento en cómo formalizar las proposiciones. Recordemos que lo que se trata es de pasar de lo que decimos en lenguaje natural -en nuestro caso el castellano- a un lenguaje formalizado -en este caso la lógica proposicional-.\nRecordemos la noción de proposición:\n\nUn enunciado completo descriptivo con la capacidad de ser verdadero o falso.\n\nEntonces cuando nos embarquemos en la tarea de formalizar proposiciones, tenemos que tener en cuenta su definición, puesto que en ella se encuentran las características que nos dirán cómo tenemos que formalizar.\nAdemás es importante tener en cuenta también las apariciones de las partículas que hacen referencia a las conectivas lógicas. Así como los signos de puntuación nos indican donde empieza y termina una oración, o como tiene que ser el énfasis y las pausas de la misma, las conectivas también nos pueden indicar donde empieza y termina una proposición y cómo es que se unen unas con otras. 1",
-    "crumbs": [
-      "Clases",
-      "Lógica Proposicional"
-    ]
-  },
-  {
-    "objectID": "02-logica-proposicional.html#simbolización",
-    "href": "02-logica-proposicional.html#simbolización",
-    "title": "Lógica Proposicional",
-    "section": "Simbolización",
-    "text": "Simbolización\nPara poder pasar del lenguaje ordinario al lenguaje formal, es necesario tener un entrenamiento que sea capaz de adquirir las habilidades para identificar cada uno de los elementos formales en el lenguaje ordinario. Es decir, poder leer cualquier oración y poder indicar qué parte de la oración es una proposición, una conectiva lógica y donde poner los símbolos auxiliares para que la formula en lógica proposicional tenga el mismo sentido que en lenguaje ordinario.\nAquí vamos a colocar algunos ejemplos básicos para que puedan entender, y luego se irá acompleja cada vez más.\n\n\n\n\n\n\nSobre los ejercicios\n\n\n\nEn el sitio web se encuentran en una solapa separada todos los ejercicios de las unidades.\nIr al link \n\n\nPrimero que nada vamos a ver algunos ejemplos de simbolizaciones básicas:\nDadas los siguientes enunciados simbolice usando la el sistema de lógica proposicional:\n\nJuan trabaja todos los días.\nMaría y Diego están de vacaciones.\nEl agua hierve a una temperatura de 100°C al nivel del mar\n\nResolución:\n\nEn el primero vemos que solo tenemos una proposición debido a que el enunciado es completo y es un enunciado descriptivo por lo que simplemente lo simbolizamos: \\[p\\]\nEn el segundo caso vemos que tenemos dos sujetos: Maria y Diego. Por lo que tenemos que ver qué es lo que están haciendo cada uno de ello. María está de vacaciones. Diego está de vacaciones también. Si bien los dos se encuentran en el mismo estado, son dos sujetos distintos. Por lo que para la lógica proposicional son dos proposiciones distintas: \\(p\\) para Maria y \\(q\\) para Diego. Cuando analizamos un enunciado que, a primera vista, parece una sola proposición pero no lo es, la recomendación es armar un diccionario. Esto quiere decir indicar cual es la referencia de cada una de las proposiciones.\n\nPara este ejercicio sería así: \\[p: María\\ está\\ de\\ vacaciones\\]\n\\[q: Diego\\ está\\ de\\ vacaciones\\]\n\\[p \\bullet q\\]\nComo pueden ver aquí hemos introducido una conectiva lógica, la conjunción entre las dos proposiciones. Así se realiza una unión entre las proposiciones.\n\nEn el tercer caso, por más que parezca un enunciado bastante largo y de cierta complejidad es solo una proposición.\n\nPor lo que su simbolización es la siguiente: \\[p\\]\n\n\nComo hemos dicho más arriba estos son algunos ejemplos básicos, pero ya nos llevan a que tengamos ciertas cuestiones a considerar. Estas van a estar marcadas en el apartado en los pro tips:\n\n\n\n\n\n\nPro tips\n\n\n\n\nVerificar si el enunciado que se desea formalizar es un enunciado descriptivo capaz de ser verdadero o falso.\nSiempre hacer diccionario a la hora de simbolizar. Ayuda a ordenar mejor las proposiciones y evitar confusiones.\nUbicar las conectivas lógicas para encontrar donde puede haber más de una proposición.\n\n\n\n\nReglas de formación\nPara poder realizar formalizaciones correctas todo sistema de lógica posee reglas que cumplen la función de indicar cuándo y cómo las formulas del sistema se encuentran bien formadas.\nLa sintáxis del lenguaje natural también hace esto, por ejemplo:\n“Hoy vamos a tener clase de lógica” es una oración bien formulada. Todos la podemos entender.\n“De Vamos a hoy” por ejemplo no se encuentra bien formulada, no puede entender lo que dice.\nEn este sentido en lógica proposicional, por ejemplo:\n\\[p \\bullet q\\] es una fórmula bien formada (fbf) mientras que \\[\\bullet q p\\] no lo es.\nLas reglas de formación de la lógica proposicional son las siguientes:\n\nSi \\(\\alpha\\) 2 es una fbf, entonces \\(\\sim \\alpha\\) también es una fbf.\nSi \\(\\alpha\\) y \\(\\beta\\) es una fbf, entonces \\(\\alpha \\lor \\beta\\) es una fbf.\nNo hay más fbf.\n\nComo pueden ver las reglas de formación solo hacen uso de la negación y de la disyunción. Esto se debe a que todas las demás conectivas lógicas pueden definirse en base a la negación y disyunción. La negación y la disyunción son denominadas como terminos primitivos, es decir no se pueden definir por ninguna otra conectiva.\nPor otro lado, la tercera regla indica una cancelación o clausura de todo tipo de regla de formación. Solo y solo esas reglas son las necesarias y suficientes para poder formalizar cualquier fórmula.\nComo puede verse las reglas de formación también indican el orden en que las conectivas deben ser escritas. La negación va antes de cualquier proposición y las demás conectivas diádicas van entre dos proposiciones.",
-    "crumbs": [
-      "Clases",
-      "Lógica Proposicional"
-    ]
-  },
-  {
-    "objectID": "02-logica-proposicional.html#footnotes",
-    "href": "02-logica-proposicional.html#footnotes",
-    "title": "Lógica Proposicional",
-    "section": "Notas",
-    "text": "Notas\n\n\nIncluso algunos lógicos las consideran como signos de puntuación. Es decir, van más allá de la analogía aquí propuesta. Esto es un tema de filosofía de la lógica, no es necesario indagar esto en un curso introductorio de lógico como el presente.↩︎\nUtilizamos \\(\\alpha\\) y \\(\\beta\\) para varible meta-logicas. Estas variables comprenden desde una simple proposición cualquiera como \\(p\\) hasta propociones de cualquier complejidad como por ejemplo \\((p \\lor t) \\supset [q \\supset (r \\bullet s)]\\)↩︎",
-    "crumbs": [
-      "Clases",
-      "Lógica Proposicional"
-    ]
+    "text": "Este sitio web es destinado para las clases dictadas por el Lic. Ivan Vladimir Gavriloff, auxiliar docente, de la cátedra de Lógica de la Facultad de Derecho y Ciencias Sociales de la Universidad Nacional de Tucumán.\nEn este sitio se encontrará todo el material necesario para el cursado de la materia de Lógica de segundo año de la carrera de Abogacía de la Facultad de Derecho y Ciencias Sociales de la UNT.\nAquí se encuentra alojados el material didactico, clases y ejercicios que la cátedra otorga dentro del cursado.\nEl sitio web tiene como referencia al siguiente libro:\n\nZeballos, Alberto, y Sergio Cardozo. Elementos de Lógica. Una introducción a la lógica estándar con ejercicios y problemas resueltos. San Miguel de Tucumán, Tucumán, Argentina: Departamento de Publicaciones, FFyL UNT, 2019.\n\n\n\n\n\n\n\nA tener en cuenta\n\n\n\nEste sitio web se encuentra estructurado para las clases dictadas en las comisiones en que se encuentra el Lic. Ivan Vladimir Gavriloff. El material de las demás comisiones puede variar.\n\n\n\n\n\n\n\n\nSobre el estudio con este sitio web\n\n\n\nCabe destacar que esto es simplemente es un complemento para el cursado. Este sitio web no reemplaza el material bibliográfico ni las clases impartidas por la cátedra.\nSi solo estudian de este material no van a tener los contenidos suficientes para aprobar los examenes y, por ende, promocionar la materia.\n\n\n\n\n\n\n\n\nSobre el contenido del sitio web\n\n\n\nEl material refleja el cursado del año 2024. Es posible que los años subsiguientes el material sea modificado y el sitio web cambie. Dado el caso, se informará en esta sección del sitio de dicho cambio."
   },
   {
     "objectID": "slides/unidad1/unidad1.html#objetivos-de-la-materia",
@@ -556,5 +389,278 @@
     "title": "Lógica y Lenguaje",
     "section": "Objetivos de la materia",
     "text": "Objetivos de la materia"
+  },
+  {
+    "objectID": "slides/unidad1/unidad1.html#qué-es-la-lógica",
+    "href": "slides/unidad1/unidad1.html#qué-es-la-lógica",
+    "title": "Lógica y Lenguaje",
+    "section": "¿Qué es la lógica?",
+    "text": "¿Qué es la lógica?"
+  },
+  {
+    "objectID": "slides/unidad1/unidad1.html#cuál-es-la-tarea-de-la-lógica",
+    "href": "slides/unidad1/unidad1.html#cuál-es-la-tarea-de-la-lógica",
+    "title": "Lógica y Lenguaje",
+    "section": "¿Cuál es la tarea de la lógica?",
+    "text": "¿Cuál es la tarea de la lógica?\n\nDemostrar la correción formal o validez de los razonamientos."
+  },
+  {
+    "objectID": "slides/unidad1/unidad1.html#semiótica",
+    "href": "slides/unidad1/unidad1.html#semiótica",
+    "title": "Lógica y Lenguaje",
+    "section": "Semiótica",
+    "text": "Semiótica\nCiencia de los signos"
+  },
+  {
+    "objectID": "slides/unidad1/unidad1.html#sintaxis",
+    "href": "slides/unidad1/unidad1.html#sintaxis",
+    "title": "Lógica y Lenguaje",
+    "section": "Sintaxis",
+    "text": "Sintaxis"
+  },
+  {
+    "objectID": "slides/unidad1/unidad1.html#semántica",
+    "href": "slides/unidad1/unidad1.html#semántica",
+    "title": "Lógica y Lenguaje",
+    "section": "Semántica",
+    "text": "Semántica"
+  },
+  {
+    "objectID": "slides/unidad1/unidad1.html#lenguaje-y-metalenguaje",
+    "href": "slides/unidad1/unidad1.html#lenguaje-y-metalenguaje",
+    "title": "Lógica y Lenguaje",
+    "section": "Lenguaje y metalenguaje",
+    "text": "Lenguaje y metalenguaje"
+  },
+  {
+    "objectID": "slides/unidad1/unidad1.html#lenguaje-objeto",
+    "href": "slides/unidad1/unidad1.html#lenguaje-objeto",
+    "title": "Lógica y Lenguaje",
+    "section": "Lenguaje objeto",
+    "text": "Lenguaje objeto"
+  },
+  {
+    "objectID": "slides/unidad1/unidad1.html#meta-lenguaje",
+    "href": "slides/unidad1/unidad1.html#meta-lenguaje",
+    "title": "Lógica y Lenguaje",
+    "section": "Meta lenguaje",
+    "text": "Meta lenguaje"
+  },
+  {
+    "objectID": "slides/unidad1/unidad1.html#usos-del-lenguaje",
+    "href": "slides/unidad1/unidad1.html#usos-del-lenguaje",
+    "title": "Lógica y Lenguaje",
+    "section": "Usos del lenguaje",
+    "text": "Usos del lenguaje"
+  },
+  {
+    "objectID": "slides/unidad1/unidad1.html#algunos-ejercicios",
+    "href": "slides/unidad1/unidad1.html#algunos-ejercicios",
+    "title": "Lógica y Lenguaje",
+    "section": "Algunos ejercicios",
+    "text": "Algunos ejercicios\nEntrecomille, en los casos donde sea necesario, los diferentes niveles de lenguaje de las siguientes expresiones y determine cuál es la dimensión de la semiótica que predomina.\n\nLa palabra cielo se escribe con c. \nEn el pizarrón se lee María dijo Kant escribió la Crítica de la Razón Pura a los cincuenta y siete años.\nLógica es una palabra esdrújula.\nAristóteles fue discípulo de Platón es una proposición verdadera."
+  },
+  {
+    "objectID": "slides/unidad1/unidad1.html#comentarios-dudas",
+    "href": "slides/unidad1/unidad1.html#comentarios-dudas",
+    "title": "Lógica y Lenguaje",
+    "section": "Comentarios, dudas ¿?",
+    "text": "Comentarios, dudas ¿?"
+  },
+  {
+    "objectID": "clases.html",
+    "href": "clases.html",
+    "title": "Clases",
+    "section": "",
+    "text": "En esta sección se encontrará el material dictado en las clases. El material se encuentra distribuido por unidades, no por clases estrictamente. Esto se debe a que el cronograma de clases se encuentra en continuo ajuste por cuestiones de cronograma académico, feriados o situaciones externas que provocan cambios en el cursado ordinario de la materia. La distribución respeta el orden dado en el programa (para leer el programa dirigirse al programa.\n\n\n\n\n\n\nA tener en cuenta\n\n\n\nSi en esta sección del sitio web no se encuentran disponibles todas las unidades es porque no se han dictado las clases correspondientes a dicha unidad.",
+    "crumbs": [
+      "Clases"
+    ]
+  },
+  {
+    "objectID": "06-logica-deontica.html",
+    "href": "06-logica-deontica.html",
+    "title": "Introducción a la Lógica deóntica",
+    "section": "",
+    "text": "“Es obligatorio el uso de barbijo”\n\n\n“Está permitido caminar sobre el pasto”\n\n\n“Está prohibido estacionar las 24 horas”\n\nLas proposiciones deónticas tienen una característica ausente en las proposciones con las que venimos trabajando. Las proposiciones deónticas no describen hechos del mundo, no dan cuenta de la realidad, sino que dicen ordenan al agente a hacer (o no hacer) algo o posibilitan o imposibilitan alguna acción.\nDadas las siguientes proposiciones:\n\n“Está prohibido estacionar las 24 horas”\n\n\n“Estamos en la secretaría de investigaciones de la Facultad de Derecho y Cs. Sociales de la UNT”\n\nLa primera no podemos decir si es una proposición verdadera o falsa, mientras que la segunda si. La primera tiene un contenido deóntico que la segunda no.\nHay que tener en cuenta esta diferencia entre las proposiciones porque va a ser determinante más adelante.",
+    "crumbs": [
+      "Clases",
+      "Introducción a la Lógica deóntica"
+    ]
+  },
+  {
+    "objectID": "06-logica-deontica.html#ejemplo-de-proposiciones-deónticas",
+    "href": "06-logica-deontica.html#ejemplo-de-proposiciones-deónticas",
+    "title": "Introducción a la Lógica deóntica",
+    "section": "",
+    "text": "“Es obligatorio el uso de barbijo”\n\n\n“Está permitido caminar sobre el pasto”\n\n\n“Está prohibido estacionar las 24 horas”\n\nLas proposiciones deónticas tienen una característica ausente en las proposciones con las que venimos trabajando. Las proposiciones deónticas no describen hechos del mundo, no dan cuenta de la realidad, sino que dicen ordenan al agente a hacer (o no hacer) algo o posibilitan o imposibilitan alguna acción.\nDadas las siguientes proposiciones:\n\n“Está prohibido estacionar las 24 horas”\n\n\n“Estamos en la secretaría de investigaciones de la Facultad de Derecho y Cs. Sociales de la UNT”\n\nLa primera no podemos decir si es una proposición verdadera o falsa, mientras que la segunda si. La primera tiene un contenido deóntico que la segunda no.\nHay que tener en cuenta esta diferencia entre las proposiciones porque va a ser determinante más adelante.",
+    "crumbs": [
+      "Clases",
+      "Introducción a la Lógica deóntica"
+    ]
+  },
+  {
+    "objectID": "06-logica-deontica.html#nociones-preliminares-para-la-lógica-deóntico",
+    "href": "06-logica-deontica.html#nociones-preliminares-para-la-lógica-deóntico",
+    "title": "Introducción a la Lógica deóntica",
+    "section": "Nociones preliminares para la lógica deóntico",
+    "text": "Nociones preliminares para la lógica deóntico\n\nLógica modal\nLa lógica modal alética va a dar cuenta de las siguientes nociones:\n\n“Es necesario que…”; “Es posible que…”; “Es imposible que…”; “No es posible que…”\n\nPor ejemplo:\n\n“Es necesario que \\('2+2=4'\\)”; “Es posible que hoy llueva”; “Es imposible que salga sorteado el mismo número dos veces”\n\nLa lógica modal internaliza expresiones como “necesario”, “posible”, “imposible”, etc. Aquellas que hablen acerca de la modalidad de la verdad. Es decir los modos en que la verdad puede prensetarse acerca de la proposición. Si es necesaria una proposición hace referencia a que su valor de verdad no cambia, mientras que si es posible quiere decir que la proposición puede que algunas veces sea verdadera pero otras veces no.\nPara poder formalizar este tipo de expresiones el sistema lógico incorpora dos denominados operadores. Los lógicos han añadido al sistema lógico dos operadores para dar cuenta de la posibilidad y la necesidad:\n\n\\(N\\): Necesario\n\\(M\\): Posible\n\nAhora bien, estos operadores se pueden definir entre si como se muestra en la siguiente figura:\n\n\n\nInterdefinibilidad de los operadores modales. Extraida de Zeballos y Cardozo (2019, 240)\n\n\nDada la interdefinibildad de los operadores modales, podemos analizar como se relacionan las proposiciones modales entre si.\nBasandonos en el cuadro de oposiciones modales:\n\n\n\nCuadro de oposiciones modales. (Zeballos y Cardozo 2019, 242)\n\n\nEsta incorporación de los operadores modales permiten expandir la expresividad del sistema lógico, algunas de las características relevantes para la lógica deóntica son los siguientes:\n\nLa interdefinibilidad de operadores.\nLa conectiva lógica de la impliación necesaria: \\(p \\Rightarrow q\\) (\\(p\\) implica necesariamente \\(q\\))\nLos operadores modales no son veritativos-funcionales.\nNuevas expresiones válidas:\n\n\\(Np \\supset p\\) (Si es necesario \\(p\\) entonces \\(p\\))\n\\(p \\supset Mp\\) (Si \\(p\\) entonces es posible que \\(p\\))\n\nSi \\(\\alpha\\) es una fórmula válida, entonces \\(N \\alpha\\) también lo es\nTodo lo que se sigue de una verdad necesaria es también necesariamente verdadero\n\nCon esto ya es posible entender de mejor manera el sistema de lógica deóntica",
+    "crumbs": [
+      "Clases",
+      "Introducción a la Lógica deóntica"
+    ]
+  },
+  {
+    "objectID": "06-logica-deontica.html#el-sistema-de-lógica-deóntica-de-von-wright",
+    "href": "06-logica-deontica.html#el-sistema-de-lógica-deóntica-de-von-wright",
+    "title": "Introducción a la Lógica deóntica",
+    "section": "El sistema de lógica deóntica de Von Wright",
+    "text": "El sistema de lógica deóntica de Von Wright\nLógica Deóntica El sistema clásico de Von Wright 13\n\nUn poco de historia de la lógica deóntica\nA continuación haremos un pequeño desvio para comentar algo de la historia de la lógica deóntica. Varios filósofos y lógicos han contribuido a su desarrollo. Algunos no lograron verla sistematizada como ser los casos de Alois Höffer (1853 – 1922) y Ernst Mally (1879-1944). El mayor exponente que logró sistematizar la lógica deóntica fue Georg Henrik von Wright (1916 - 2003). En la Argentina tuvimos dos grandes lógicos deónticos que hicieron sus propios aportes y desarrollos a la lógica deóntica y ellos fueron Carlos Eduardo Alchourrón (1931- 1996) y Eugenio Buligyn (1931 - 2021).\nAquí nos enfocaremos en el sitema de lógica ideado por Von Wright y algunos desarrollos posteriores por parte de Buligyn para responder a algunos problemas abiertos dejados por el sistema de Von Wright.",
+    "crumbs": [
+      "Clases",
+      "Introducción a la Lógica deóntica"
+    ]
+  },
+  {
+    "objectID": "06-logica-deontica.html#operadores-modales-deónticos",
+    "href": "06-logica-deontica.html#operadores-modales-deónticos",
+    "title": "Introducción a la Lógica deóntica",
+    "section": "Operadores modales deónticos",
+    "text": "Operadores modales deónticos\nComo hemos visto más arriba, la lógica modal introduce los operadores modales para poder formalizar las proposiciones aléticas. El sistema de lógica deóntica va a realizar una analógica con los operadores modales y las nociones deónticas que hemos visto al inicio (permitido, no permitido, obligatorio, prohibido).\nPara ello va a analogar cada uno de los operadores modales, con los operadores deónticos:\n\n\n\nAnalogía entre operadores modales y deónticos. Extraido de Zeballos y Cardozo (2019, 248)\n\n\nPor consiguiente también podemos realizar una interdefinibildad de operadores deónticos:\n\n\n\nInterdefinibilidad de operadores deónticos. Extraido de Zeballos y Cardozo (2019, 248)\n\n\n\nComo queda conformado el sistema clásico deóntico\nCon los operadores deónticos añadidos a la lógica proposicional genera el sistema clásico (SC) Von Wright. Dado de esta manera el sistema tiene algunas características importantes:\n\nToda tautología de lógica proposicional es válida en SC si las variables proposicionales son reemplazadas por fórmulas deónticas.\nSe aceptan las siguientes definiciones:\n\n\\(Ph =_{def} \\sim P\\)\n\\(O =_{def} \\sim P \\sim\\)\n\nSe aceptan como axiomas las leyes de distribución\nSe acepta el principio de permutación:\n\n\\(Pp \\lor P\\sim p . \\equiv . Op \\supset Pp\\)\n\n\nEste sistema lógico es un gran avance para la lógica deóntica ya que permite formalizar las proposiciones deónticas (como las que hemos visto en un principio) pero en su analogía con la lógica modal, trae aparejado algunos problemas que no pueden ser resueltos con los recursos propios del sistema.",
+    "crumbs": [
+      "Clases",
+      "Introducción a la Lógica deóntica"
+    ]
+  },
+  {
+    "objectID": "06-logica-deontica.html#dilema-de-jørgensen",
+    "href": "06-logica-deontica.html#dilema-de-jørgensen",
+    "title": "Introducción a la Lógica deóntica",
+    "section": "Dilema de Jørgensen",
+    "text": "Dilema de Jørgensen\nEl denominado dilema de Jörgiensen fue presentado en Jörgensen (1937).1 Consta de un dilema entre las relaciones que hay entre las normas y la disciplina lógica.\nEl dilema puede presentarse de la siguiente manera:\n\nEn contextos normativos también se usan los términos “y”, “o”, “si…entonces…”, “no” de manera similar al lenguaje descriptivo. Y al hacer inferencias se usan normas como premisas y conclusiones y parecen ser lógicamente válidas. Por tanto, hay una lógica de normas.\nLa relación de implicación (consecuencia lógica) y contradicción se definen en términos de verdad (como las conectivas lógicas). Por tanto, solo expresiones V o F pueden ser estudiadas por la lógica.\nLas normas carecen de valor de verdad.\nNo hay relación lógica entre normas y, por tanto, no hay lógica de normas.\n\nPara poder evitar la conclusión se puede tomar varias posturas:\nSi se quiere evitar la Tesis 4:\n\nSe abandona la Tesis 2 o\nSe abandona la Tesis 3.\n\nSi se acepta la Tesis 4:\n\nSe tiene que desarrollar una teoría alternativa para dar cuenta lo expresado en la Tesis 1.",
+    "crumbs": [
+      "Clases",
+      "Introducción a la Lógica deóntica"
+    ]
+  },
+  {
+    "objectID": "06-logica-deontica.html#algunas-posibles-soluciones-al-dilema",
+    "href": "06-logica-deontica.html#algunas-posibles-soluciones-al-dilema",
+    "title": "Introducción a la Lógica deóntica",
+    "section": "Algunas posibles soluciones al dilema",
+    "text": "Algunas posibles soluciones al dilema\n\nInterpretaciones descriptivas o prescriptivas\nPara poder encontrar algunas de las soluciones del dilema de Jörgensen pueden hacer ciertas distinciones conceptuales. Los términos deónticos permitido, prohibido, obligatorio son ambiguos. No tienen una sola definición, sino múltiples. Por lo que pueden ser interpretados de dos maneras, al menos:\n\nInterpretaciones prescriptivas (expresión de normas)\n\nLo que expresan son lo que la norma ordena.\n\nInterpretaciones descriptivas (expresión de proposiciones acerca de normas)\n\nLo que expresan son proposiciones que hablan acerca de las normas. No son normas en sí misma.\n\n\nPor ejemplo Bulygin (1995) utiliza los operadores O y P como prescriptivos:\n\n\\(Op\\) expresa una norma que ordena \\(p\\)\n\\(O\\sim p\\) expresa una norma que prohíbe \\(p\\)\n\\(Pp\\) expresa una norma que permite \\(p\\)\n\nConsiderar a los operadores descriptivos enuncian el estatus deóntico de un estado de cosas o acciones. Dicho estatus está conferido por la norma. Las acciones suponen que un agente ejecute o no la norma. Por lo que hay una referencia a la norma la cual antes no estaba.",
+    "crumbs": [
+      "Clases",
+      "Introducción a la Lógica deóntica"
+    ]
+  },
+  {
+    "objectID": "06-logica-deontica.html#sistema-de-normas",
+    "href": "06-logica-deontica.html#sistema-de-normas",
+    "title": "Introducción a la Lógica deóntica",
+    "section": "Sistema de normas",
+    "text": "Sistema de normas\nOtra posible solución es entender al derecho como un sistema de normas. Cada una de las proposiciones deónticas se encuentran dentro de un sistema de normas \\((\\alpha)\\)\nLas considiciones en que los operadores deónticos aparecen dentro de un conjunto de normas se complejiza:\n\n\n\nEjemplo de complejización. Extraido de Zeballos y Cardozo (2019, 251)\n\n\nPara el caso de la permisión hay que considerar:\n\nPermisión positiva: Está permitido en \\(\\alpha\\)\nPermisión negativa: No está prohibido en \\(\\alpha\\)\n\n\nAñadido del sistema normativo \\(\\alpha\\)\nDado un sistema normativo \\(\\alpha\\):\n\n\\(Op\\alpha\\) (\\(p\\) es obligatorio en \\(\\alpha\\))\n\\(P^{+}p\\alpha\\) (\\(p\\) está positivamente permitido en \\(\\alpha\\))\n\\(P^{-}p\\alpha\\) (\\(p\\) está negativamente permitido en \\(\\alpha\\))\n\nDefinidas formalmente como:\n\n\\(Op\\alpha =_{def} Op \\in Cn(\\alpha)\\)\n\\(P^{+}p\\alpha =_{def} Pp \\in Cn(\\alpha)\\)\n\\(P^{-}p\\alpha =_{def} O\\sim p \\notin Cn(\\alpha)\\)\n\n\n\nDiferencias con el Sistema Clásico\nLas expresiones de la lógica de proposiciones normativas son relativas a un sistema de normas. Al incorporar la noción de sistema de normas, esto permite que el concepto de permisión se complejise: hay dos conceptos de permisión. También lleva a que los operadores prescriptivos sean interdefinibles.\nClaramente la idea de sistema de normas, presupone que existe una relación lógica entre normas. Por lo que las s consecuencias de \\(\\alpha\\), es el conjunto de normas que se siguen lógicamente de \\(\\alpha\\).\nAsí como hay dos tipos de permisión, también este sistema da lugar a dos tipos de negaciones:\nHay una negación interna y otra externa. Negar algo dentro de las proposiciones normativas: * \\(\\alpha\\) contiene una norma que prohibe \\(p\\) * \\(\\alpha\\) no contiene una norma que permite \\(p\\)\nEsto lleva a considerar estas dos negaciones de la siguiente manera:\n\nExterna (\\(-\\)): Significa que la norma que ordena \\(p\\) no pertenece a \\(\\alpha\\).\nInterna (\\(\\neg\\)): Significa que la norma que permite no \\(p\\) pertenece a \\(\\alpha\\).\n\n\n\n\n\n\n\nDato Importante\n\n\n\nLa negación interna puede mostrar un sistema de normas inconsistente o incompleto.",
+    "crumbs": [
+      "Clases",
+      "Introducción a la Lógica deóntica"
+    ]
+  },
+  {
+    "objectID": "06-logica-deontica.html#operador-facultativo-f",
+    "href": "06-logica-deontica.html#operador-facultativo-f",
+    "title": "Introducción a la Lógica deóntica",
+    "section": "Operador facultativo \\((F)\\)",
+    "text": "Operador facultativo \\((F)\\)\nAnte la fórmula \\(Pp \\lor P\\sim p\\) puede interpretarse como “uno puede hacer \\(p\\) y/o dejar de hacerlo” es decir, queda en la decisión del agente el hacerlo o no. Esto lleva a presentar otro tipo de operador que refleje este hecho normativo, el operador facultativo. Denominado de esta manera ya que es el agente quien tiene la facultad de llevar a cabo (o no llevar a cabo) la acción.\nEsto quiere decir que seguir la acción \\(p\\) es facultativo, formalmente de la siguiente manera:\n\n\\(Fp . \\equiv . Pp \\land P\\sim p\\)\n\\(Fp . \\equiv . \\sim Op \\land \\sim O\\sim p\\)\n\\(Fp . \\equiv . \\sim Php \\land \\sim Ph\\sim p\\)",
+    "crumbs": [
+      "Clases",
+      "Introducción a la Lógica deóntica"
+    ]
+  },
+  {
+    "objectID": "06-logica-deontica.html#cuadro-de-oposiciones-deónticas.",
+    "href": "06-logica-deontica.html#cuadro-de-oposiciones-deónticas.",
+    "title": "Introducción a la Lógica deóntica",
+    "section": "Cuadro de oposiciones deónticas.",
+    "text": "Cuadro de oposiciones deónticas.\nPor último, las relaciones de oposición deónticos queda de esta determinada manera respecto del cuadro de oposición de los operadores modales:\n\n\n\nCuadro de oposición deóntico. Extraido de (Zeballos y Cardozo 2019, 256)",
+    "crumbs": [
+      "Clases",
+      "Introducción a la Lógica deóntica"
+    ]
+  },
+  {
+    "objectID": "06-logica-deontica.html#footnotes",
+    "href": "06-logica-deontica.html#footnotes",
+    "title": "Introducción a la Lógica deóntica",
+    "section": "Notas",
+    "text": "Notas\n\n\nUn dilema es una presentación de dos opciones o situaciones las cuales ambas presentan el mismo resultado trágico o no deseado.↩︎",
+    "crumbs": [
+      "Clases",
+      "Introducción a la Lógica deóntica"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bienvenidos/as",
+    "section": "",
+    "text": "Bienvenidos/as al sitio web de la cátedra de Lógica de la Facultad de Derecho y Ciencias Sociales de la UNT.\nEn el sitio se encuentran disponibles los recursos utilizados por el Lic. Ivan Vladimir Gavriloff en las clases y ejercitación complementaria para el estudio del curso."
+  },
+  {
+    "objectID": "index.html#agradecimientos",
+    "href": "index.html#agradecimientos",
+    "title": "Bienvenidos/as",
+    "section": "Agradecimientos",
+    "text": "Agradecimientos\nAgradecemos todo el trabajo de la cátedra, al jefe de cátedra Lic. Sergio Cardozo y un homenaje al Dr. Alberto Zeballos que enseño tanto durante varias décadas y que se refleja en el libro usado por esta cátedra para dictar las clases.\nAdemás a toda la cátedra de lógica ya que en este sitio se ve reflejado el esfuerzo en conjunto por la tarea docente y la investigación en lógica.\nEste sitio web se encuentra desarrollado en base a Quarto."
+  },
+  {
+    "objectID": "ejercicios.html",
+    "href": "ejercicios.html",
+    "title": "Ejercicios de las clases",
+    "section": "",
+    "text": "Aquí se encuentran los ejercicios de cada una de las unidades:\n\nUnidad 1\nUnidad 2\nUnidad 3\nUnidad 4\nUnidad 5\nUnidad 6\nUnidad 7"
+  },
+  {
+    "objectID": "03-razonamiento.html",
+    "href": "03-razonamiento.html",
+    "title": "Razonamientos",
+    "section": "",
+    "text": "Ya hemos visto la definición de razonamiento desde la primera unidad. Ahora que tenemos todo los fundamentos y prerequisitos para trabajar con ellos, es necesario volver sobre ella para tenerla con mayor claridad.\n\nUn razonamiento es una secuencia finita de enunciados o proposiciones las cuales un grupo de ellas llamamos premisas y otro grupo (unitario) es la conclusión.\n\nFormalmente: \\[ P_{1}, P_{2}, ... , P_{n} \\Rightarrow C \\] 1\nAhora que sabemos formalizar, podemos comenzar a formalizar razonamientos. Por ejemplo:\n\nSi tiene cuatro patas, es un perro. Tiene cuatro patas. Por tanto, es un perro.\n\nEste razonamiento se formaliza de la siguiente manera:\n\\[ p \\supset q; p / \\therefore q \\]\nComo podemos ver hay algunos elementos nuevos para la formalización de razonamientos. Primero que nada se encuentran los puntos y coma, los cuales sirven para delimitar las premisas. Luego también aparece este signo \\(\\therefore\\) que simboliza el “Por tanto” o “Por lo tanto” de la oración. El “por tanto” o “por lo tanto” hace referencia a la noción de consecuencia lógica que en la definición se encuentra simbolizada por \\(\\Rightarrow\\). A su vez este signo permite delimitar el grupo de las premisas y la conclusión. Por ello la barra diagonal (\\(/\\)).\nLo más interesante del razonamiento es que podemos ver que no es una sola fórmula proposicional, sino que es un conjunto de proposiciones (las premisas por un lado y luego la conclusión). Como pueden ver en las oraciones que hemos simbolizado, cada una de ellas se encuentra separada por un punto. Esto indica que va a venir otro enunciado y por ello en la simbolización usamos los puntos y comas.\nTeniendo estos elementos en cuenta, ya podemos realizar el trabajo de simbolizar razonamientos. Para ello hacer click aquí para ir a los ejercicios.",
+    "crumbs": [
+      "Clases",
+      "Razonamientos"
+    ]
+  },
+  {
+    "objectID": "03-razonamiento.html#qué-es-un-razonamiento",
+    "href": "03-razonamiento.html#qué-es-un-razonamiento",
+    "title": "Razonamientos",
+    "section": "",
+    "text": "Ya hemos visto la definición de razonamiento desde la primera unidad. Ahora que tenemos todo los fundamentos y prerequisitos para trabajar con ellos, es necesario volver sobre ella para tenerla con mayor claridad.\n\nUn razonamiento es una secuencia finita de enunciados o proposiciones las cuales un grupo de ellas llamamos premisas y otro grupo (unitario) es la conclusión.\n\nFormalmente: \\[ P_{1}, P_{2}, ... , P_{n} \\Rightarrow C \\] 1\nAhora que sabemos formalizar, podemos comenzar a formalizar razonamientos. Por ejemplo:\n\nSi tiene cuatro patas, es un perro. Tiene cuatro patas. Por tanto, es un perro.\n\nEste razonamiento se formaliza de la siguiente manera:\n\\[ p \\supset q; p / \\therefore q \\]\nComo podemos ver hay algunos elementos nuevos para la formalización de razonamientos. Primero que nada se encuentran los puntos y coma, los cuales sirven para delimitar las premisas. Luego también aparece este signo \\(\\therefore\\) que simboliza el “Por tanto” o “Por lo tanto” de la oración. El “por tanto” o “por lo tanto” hace referencia a la noción de consecuencia lógica que en la definición se encuentra simbolizada por \\(\\Rightarrow\\). A su vez este signo permite delimitar el grupo de las premisas y la conclusión. Por ello la barra diagonal (\\(/\\)).\nLo más interesante del razonamiento es que podemos ver que no es una sola fórmula proposicional, sino que es un conjunto de proposiciones (las premisas por un lado y luego la conclusión). Como pueden ver en las oraciones que hemos simbolizado, cada una de ellas se encuentra separada por un punto. Esto indica que va a venir otro enunciado y por ello en la simbolización usamos los puntos y comas.\nTeniendo estos elementos en cuenta, ya podemos realizar el trabajo de simbolizar razonamientos. Para ello hacer click aquí para ir a los ejercicios.",
+    "crumbs": [
+      "Clases",
+      "Razonamientos"
+    ]
+  },
+  {
+    "objectID": "03-razonamiento.html#mecanismos-de-decisión",
+    "href": "03-razonamiento.html#mecanismos-de-decisión",
+    "title": "Razonamientos",
+    "section": "Mecanismos de decisión",
+    "text": "Mecanismos de decisión\n\nTablas de verdad\n\n\nReducción al absurdo",
+    "crumbs": [
+      "Clases",
+      "Razonamientos"
+    ]
+  },
+  {
+    "objectID": "03-razonamiento.html#footnotes",
+    "href": "03-razonamiento.html#footnotes",
+    "title": "Razonamientos",
+    "section": "Notas",
+    "text": "Notas\n\n\nDonde \\(n\\) es mayor o igual a 1.↩︎",
+    "crumbs": [
+      "Clases",
+      "Razonamientos"
+    ]
   }
 ]

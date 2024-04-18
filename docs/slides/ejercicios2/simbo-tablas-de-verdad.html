@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Gavriloff, Ivan Vladimir">
+
+<title>Lógica - FDyCS UNT - Ejercicios de Simbolización y Tablas de verdad</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+
+
+<header id="title-block-header">
+<h1 class="title">Ejercicios de Simbolización y Tablas de verdad</h1>
+<p class="subtitle">Facultad de derecho y cs. sociales - UNT - 2024</p>
+<p class="author">Gavriloff, Ivan Vladimir</p>
+
+</header>
+
+<nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#recordemos-la-sintaxis-de-la-lógica-proposicional" id="toc-recordemos-la-sintaxis-de-la-lógica-proposicional">Recordemos la sintaxis de la lógica proposicional</a></li>
+  <li><a href="#ejercicios-de-simbolización" id="toc-ejercicios-de-simbolización">Ejercicios de simbolización</a></li>
+  <li><a href="#tablas-de-verdad" id="toc-tablas-de-verdad">Tablas de verdad</a></li>
+  <li><a href="#ejercicios-de-tablas-de-verdad" id="toc-ejercicios-de-tablas-de-verdad">Ejercicios de Tablas de verdad</a></li>
+  <li><a href="#cosas-a-tener-en-cuenta-para-las-tablas" id="toc-cosas-a-tener-en-cuenta-para-las-tablas">Cosas a tener en cuenta para las tablas</a></li>
+  <li><a href="#seguimos-adelante" id="toc-seguimos-adelante"><strong>¿Seguimos adelante?</strong></a></li>
+  <li><a href="#razonamientos" id="toc-razonamientos">Razonamientos</a></li>
+  <li><a href="#simbolización-de-razonamientos" id="toc-simbolización-de-razonamientos">Simbolización de razonamientos</a></li>
+  <li><a href="#ejemplo" id="toc-ejemplo">Ejemplo</a></li>
+  <li><a href="#validez-y-verdad" id="toc-validez-y-verdad">Validez y verdad</a></li>
+  <li><a href="#definiciones-de-validez" id="toc-definiciones-de-validez">Definiciones de validez</a></li>
+  <li><a href="#validez-semántica" id="toc-validez-semántica">Validez semántica</a></li>
+  <li><a href="#validez-sintáctica" id="toc-validez-sintáctica">Validez sintáctica</a></li>
+  <li><a href="#cómo-analizamos-si-un-razonamiento-es-válido-o-no" id="toc-cómo-analizamos-si-un-razonamiento-es-válido-o-no">¿Cómo analizamos si un razonamiento es válido o no?</a></li>
+  <li><a href="#tablas-de-verdad-para-razonamientos" id="toc-tablas-de-verdad-para-razonamientos">Tablas de verdad para razonamientos</a></li>
+  <li><a href="#a-la-pizarra" id="toc-a-la-pizarra">A la pizarra</a></li>
+  <li><a href="#reducción-al-absurdo" id="toc-reducción-al-absurdo">Reducción al absurdo</a></li>
+  <li><a href="#a-la-pizarra-1" id="toc-a-la-pizarra-1">A la pizarra</a></li>
+  <li><a href="#dudas-consultas" id="toc-dudas-consultas">¿Dudas, consultas?</a></li>
+  </ul>
+</nav>
+<h2 id="recordemos-la-sintaxis-de-la-lógica-proposicional">Recordemos la sintaxis de la lógica proposicional</h2>
+<p><strong>Variables proposicionales</strong>: <span class="math inline"><em>p</em>, <em>q</em>, <em>r</em>, <em>s</em>, <em>t</em>, ...</span></p>
+<p><strong>Constantes proposicionales o constantes lógicas</strong>:</p>
+<p><em>Conjunción</em>: “y”, “pero”, “aunque” <span class="math inline"><em>p</em> • <em>q</em></span></p>
+<p><em>Disyunción</em>: “o”, “o bien…, o bien” <span class="math inline"><em>p</em> ∨ <em>q</em></span></p>
+<p><em>Condicional</em>: “Si… entonces…” <span class="math inline"><em>p</em> → <em>q</em></span></p>
+<p><em>Bicondicional</em>: “si y solo si” <span class="math inline"><em>p</em> ↔︎ <em>q</em></span></p>
+<p><strong>Símbolos auxiliares</strong>: <span class="math inline">(,), [,], {,}</span></p>
+<h2 id="ejercicios-de-simbolización">Ejercicios de simbolización</h2>
+<!--# contenteditable -->
+<p>Democracia significa un modo de vida en el que la libertad y la justicia están presente</p>
+<p>Si mi idea no es convincente, tampoco lo es la tuya</p>
+<p>Si hablas inglés, entonces, si viajas a Estados Unidos no tendrás problemas para relacionarte</p>
+<p>Llama o escribe si y solo si no puedes ir</p>
+<h2 id="tablas-de-verdad">Tablas de verdad</h2>
+<table>
+<colgroup>
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 18%">
+<col style="width: 15%">
+<col style="width: 24%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline"><em>p</em></span></th>
+<th style="text-align: center;"><span class="math inline"><em>q</em></span></th>
+<th style="text-align: center;"><span class="math inline"><em>p</em> • <em>q</em></span></th>
+<th style="text-align: center;"><span class="math inline"><em>p</em> ∨ <em>q</em></span></th>
+<th style="text-align: center;"><span class="math inline"><em>p</em> → <em>q</em></span></th>
+<th style="text-align: center;"><span class="math inline"><em>p</em> ↔︎ <em>q</em></span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline"><em>V</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>V</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>V</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>V</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>V</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>V</em></span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline"><em>V</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>F</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>F</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>V</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>F</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>F</em></span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline"><em>F</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>V</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>F</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>V</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>V</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>F</em></span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline"><em>F</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>F</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>F</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>F</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>V</em></span></td>
+<td style="text-align: center;"><span class="math inline"><em>V</em></span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="ejercicios-de-tablas-de-verdad">Ejercicios de Tablas de verdad</h2>
+<!--# class="middle center" -->
+<!-- $p \land q$ -->
+<!---->
+<!-- $\neg p \rightarrow \neg q$ -->
+<!---->
+<!-- $p \rightarrow (q \rightarrow \neg r)$ -->
+<!---->
+<!-- $p \lor q \leftrightarrow \neg r$ -->
+<p>Vamos a la pizarra</p>
+<h2 id="cosas-a-tener-en-cuenta-para-las-tablas">Cosas a tener en cuenta para las tablas</h2>
+<!--# class="middle center" -->
+<p>El exponente <span class="math inline">2<sup><em>n</em></sup></span> (donde <span class="math inline"><em>n</em></span> es la cantidad de proposiciones) para ver cuantas filas tiene la tabla</p>
+<p>Dividir el resultado de la fórmula de arriba en dos hasta llegar a 1 para saber como intercalar valores</p>
+<h2 id="seguimos-adelante"><strong>¿Seguimos adelante?</strong></h2>
+<!--# class="middle center" -->
+<h2 id="razonamientos">Razonamientos</h2>
+<!--# class="middle center" -->
+<p>Secuencia de proposiciones de las cuales un conjunto (las premisas) se deriva una conclusión</p>
+<p><span class="math display"><em>P</em><sub>1</sub>, <em>P</em><sub>2</sub>, <em>P</em><sub><em>n</em></sub> ⇒ <em>C</em></span></p>
+<h2 id="simbolización-de-razonamientos">Simbolización de razonamientos</h2>
+<!--# class="middle center" -->
+<p>Se añaden dos elementos:</p>
+<p>El punto y coma (;): permite separar las premisas</p>
+<p>El siguiente conjunto de símbolos para formalizar la noción de consecuencia: <span class="math inline">/∴</span></p>
+<h2 id="ejemplo">Ejemplo</h2>
+<!--# class="middle center" -->
+<p><strong>Si es un perro, tiene cuatro patas. Es un perro. Por lo tanto, tiene cuatro patas</strong></p>
+<p><span class="math inline"><em>p</em> → <em>q</em>; <em>p</em>/∴ <em>q</em></span></p>
+<h2 id="validez-y-verdad">Validez y verdad</h2>
+<!--# class="middle center" -->
+<p>Recordemos que la lógica se encarga de analizar la validez de los razonamientos</p>
+<p><strong>Aclaración</strong>: La noción de validez es distinta de la de verdad</p>
+<h2 id="definiciones-de-validez">Definiciones de validez</h2>
+<!--# class="middle center" -->
+<p>Semántica</p>
+<p>Sintáctica</p>
+<h2 id="validez-semántica">Validez semántica</h2>
+<!--# class="middle center" -->
+<blockquote>
+<p>Un razonamiento es válido si y solo si todas las premisas son verdaderas, entonces la conclusión debe ser necesariamente verdadera</p>
+</blockquote>
+<p>La definición realiza una <em>restricción semántica</em></p>
+<p>El único caso que no puede darse en un razonamiento válido es el siguiente: <strong>todas</strong> las premisas <em>verdaderas</em> y la conclusión <em>falsa</em></p>
+<p>Si todas las premisas son verdaderas, se debe <em>necesariamente</em> concluir algo verdadero</p>
+<p>Hay una <em>conservación de la verdad</em> entre las premisas y la conclusión</p>
+<h2 id="validez-sintáctica">Validez sintáctica</h2>
+<!--# class="middle center" -->
+<p>Un razonamiento es válido sintácticamente si y solo si la conclusión se encuentra de algún modo en las premisas</p>
+<p>Los razonamientos que analizamos son deductivos</p>
+<p>Los razonamientos deductivos no agregar ninguna información adicional en la conclusión</p>
+<h2 id="cómo-analizamos-si-un-razonamiento-es-válido-o-no">¿Cómo analizamos si un razonamiento es válido o no?</h2>
+<!--# class="middle center" -->
+<p>Tablas de verdad</p>
+<p>Reducción al absurdo</p>
+<h2 id="tablas-de-verdad-para-razonamientos">Tablas de verdad para razonamientos</h2>
+<!--# class="middle center" -->
+<p>Aplicamos lo mismo que hemos visto para las fórmulas proposicionales</p>
+<p>Buscamos algo distinto a los ejercicios anteriores</p>
+<hr>
+<!--# class="middle center" -->
+<p>Buscamos si el razonamiento permite que todas las premisas sean <span class="math inline"><em>V</em></span> y la conclusión <span class="math inline"><em>F</em></span></p>
+<p>Si lo permite, entonces el razonamiento es inválido</p>
+<p>Si no lo permite, entonces el razonamiento es válido</p>
+<h2 id="a-la-pizarra">A la pizarra</h2>
+<!--# class="middle center" -->
+<h2 id="reducción-al-absurdo">Reducción al absurdo</h2>
+<!--# class="middle center" -->
+<p>Vamos a suponer que el razonamiento es inválido</p>
+<p>El razonamiento es <em>válido</em> si en nuestro análisis <strong>hay</strong> una contradicción</p>
+<p>Si <em>no hay contradicción</em> entonces el razonamiento es inválido</p>
+<h2 id="a-la-pizarra-1">A la pizarra</h2>
+<!--# class="middle center" -->
+<h2 id="dudas-consultas">¿Dudas, consultas?</h2>
+<!--# class="middle center" -->
+
+
+<script src="https://cdn.jsdelivr.net/gh/rstudio/markdown@1.8/inst/resources/snap.min.js" defer=""></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/rstudio/markdown@1.8/inst/resources/default.min.css,gh/rstudio/markdown@1.8/inst/resources/snap.min.css">
+<style type="text/css">header{text-align: center;}</style>
+
+
+
+
+</body></html>

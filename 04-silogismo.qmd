@@ -1,0 +1,7 @@
+---
+title: "Silogismo aristotélico"
+---
+
+## Presentación
+
+[Diapositivas de la clase](./slides/unidad4/SILOGISMO-CATEGORICO.pdf)

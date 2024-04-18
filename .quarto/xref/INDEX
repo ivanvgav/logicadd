@@ -34,5 +34,17 @@
   },
   "slides/unidad2/tabla-de-verdad.md": {
     "tabla-de-verdad.html": "da1f560a"
+  },
+  "slides/ejercicios2/simbo-tablas-de-verdad.md": {
+    "simbo-tablas-de-verdad.html": "e697ea0d"
+  },
+  "ejercicios.qmd": {
+    "ejercicios.html": "5d0c5bb6"
+  },
+  "03-razonamiento.qmd": {
+    "03-razonamiento.html": "cd1958c8"
+  },
+  "04-silogismo.qmd": {
+    "04-silogismo.html": "8d4b4481"
   }
 }
