@@ -77,8 +77,7 @@ y poder saber cuáles son válidos y cuáles son inválidos necesitamos saber su
 La *figura* es la forma que tiene el silogismo y que se encuentra determinada por la posición del término medio en las premisas.
 Como son tres elementos de dos juicios categóricos hay 4 figuras posibles:
 
-![Diagrama de las figuras. Extraido de ]()
-<!-- TODO: agregar imagen de las figuras. Buscar en el libro -->
+![Diagrama de las figuras. Extraido de Zeballos y Cardozo (2019, 141)](./imgs/figuras-silogismo.png)
 
 ### Ejemplos de las figuras
 
