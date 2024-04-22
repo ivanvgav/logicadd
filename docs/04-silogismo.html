@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -190,7 +219,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#presentación" id="toc-presentación" class="nav-link active" data-scroll-target="#presentación">Presentación</a></li>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción">Introducción</a></li>
+  <li><a href="#silogismo-categórico" id="toc-silogismo-categórico" class="nav-link" data-scroll-target="#silogismo-categórico">Silogismo categórico</a></li>
+  <li><a href="#figura-y-modo" id="toc-figura-y-modo" class="nav-link" data-scroll-target="#figura-y-modo">Figura y modo</a>
+  <ul class="collapse">
+  <li><a href="#figura-del-silogismo" id="toc-figura-del-silogismo" class="nav-link" data-scroll-target="#figura-del-silogismo">Figura del silogismo</a></li>
+  <li><a href="#ejemplos-de-las-figuras" id="toc-ejemplos-de-las-figuras" class="nav-link" data-scroll-target="#ejemplos-de-las-figuras">Ejemplos de las figuras</a></li>
+  <li><a href="#modo-del-silogismo" id="toc-modo-del-silogismo" class="nav-link" data-scroll-target="#modo-del-silogismo">Modo del silogismo</a></li>
+  </ul></li>
+  <li><a href="#reglas-de-los-silogismos" id="toc-reglas-de-los-silogismos" class="nav-link" data-scroll-target="#reglas-de-los-silogismos">Reglas de los silogismos</a>
+  <ul class="collapse">
+  <li><a href="#reglas-de-los-términos" id="toc-reglas-de-los-términos" class="nav-link" data-scroll-target="#reglas-de-los-términos">Reglas de los términos</a></li>
+  <li><a href="#reglas-de-las-proposiciones" id="toc-reglas-de-las-proposiciones" class="nav-link" data-scroll-target="#reglas-de-las-proposiciones">Reglas de las proposiciones</a></li>
+  </ul></li>
+  <li><a href="#diapositivas" id="toc-diapositivas" class="nav-link" data-scroll-target="#diapositivas">Diapositivas</a></li>
   </ul>
 </nav>
     </div>
@@ -216,8 +258,200 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="presentación" class="level2">
-<h2 class="anchored" data-anchor-id="presentación">Presentación</h2>
+<section id="introducción" class="level2">
+<h2 class="anchored" data-anchor-id="introducción">Introducción</h2>
+<p>En un sentido amplio el Silogismo es definido por Aristóteles:</p>
+<blockquote class="blockquote">
+<p>“Un Silogismo es un argumento en el cual, establecidas ciertas cosas, resulta necesariamente de ellas, por ser lo que son, otra cosa distinta de las antes establecidas”</p>
+</blockquote>
+<p>En sentido estricto el silogismo es un razonamiento deductivo que consta de dos premisas y una conclusión. A las premisas se las denomina como premisas mayor y premisa menor.</p>
+<p>Las premisas y la conclusión de los silogismos tienen determinadas características. Las premisas son los denominados juicios categóricos aristotélicos que tienen una forma muy particular. Por otro lado, además de los silogismos de juicios categóricos hay otros dos tipos de silogismos: el silogismo hipotético y el silogismo disyuntivo. El primero se caracteriza por tener una disyunción entre sus premisas. El segundo por tener un condicional entre ellas.</p>
+</section>
+<section id="silogismo-categórico" class="level2">
+<h2 class="anchored" data-anchor-id="silogismo-categórico">Silogismo categórico</h2>
+<p>En esta unidad nos vamos a enfocar en el silogismo categórico. Este silogismo puede definirme como aquel silogismo que tiene tres proposiciones categóricas y se compone de tres términos, de modo tal que, dos de esos términos se relacionan entre sí gracias a un tercer término. De esta relación es que surge la conclusión del silogismo</p>
+<p><strong>Ejemplo</strong>:</p>
+<blockquote class="blockquote">
+<p>Ningún heroe es cobarde</p>
+Algunos soldados son cobardes
+<hr>
+<p>Algunos soldados no son heroes</p>
+</blockquote>
+<p>Como puede observarse hay tres términos:</p>
+<ul>
+<li>Término mayor: Heroe</li>
+<li>Termino menor: Soldado</li>
+<li>Término medio: Cobarde</li>
+</ul>
+<p>Como pueden observar el término mayor es el predicado de la conclusión (<span class="math inline">\(P\)</span> de predicado), el término menor es el sujeto de la conclusión (<span class="math inline">\(S\)</span> de sujeto) y el término medio (<span class="math inline">\(M\)</span> de medio) no aparece en la conclusión es quien relaciona al termino mayor con el término menor.</p>
+<p>Entonces si formalizamos el silogismo que tomamos como ejemplo nos queda:</p>
+<blockquote class="blockquote">
+<p>Ningún <span class="math inline">\(P\)</span> es <span class="math inline">\(M\)</span></p>
+Algún <span class="math inline">\(S\)</span> es <span class="math inline">\(M\)</span>
+<hr>
+<p>Algún <span class="math inline">\(S\)</span> es <span class="math inline">\(P\)</span></p>
+</blockquote>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nota
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Si observan bien el término mayor se encuentra en la premisa mayor, el término menor en la premisa menor. Solo se repite el término medio.</p>
+<p>A su vez, el silogismo tiene un orden: premisa mayor, premisa menor y conclusión</p>
+</div>
+</div>
+<p>Ahora bien, para poder realizar un mejor análisis de los silogismos y poder saber cuáles son válidos y cuáles son inválidos necesitamos saber su figura y su modo</p>
+</section>
+<section id="figura-y-modo" class="level2">
+<h2 class="anchored" data-anchor-id="figura-y-modo">Figura y modo</h2>
+<section id="figura-del-silogismo" class="level3">
+<h3 class="anchored" data-anchor-id="figura-del-silogismo">Figura del silogismo</h3>
+<p>La <em>figura</em> es la forma que tiene el silogismo y que se encuentra determinada por la posición del término medio en las premisas. Como son tres elementos de dos juicios categóricos hay 4 figuras posibles:</p>
+<p><img src=".png" class="img-fluid" alt="Diagrama de las figuras. Extraido de"> <!-- TODO: agregar imagen de las figuras. Buscar en el libro --></p>
+</section>
+<section id="ejemplos-de-las-figuras" class="level3">
+<h3 class="anchored" data-anchor-id="ejemplos-de-las-figuras">Ejemplos de las figuras</h3>
+<p><strong>1° Figura</strong>:</p>
+<blockquote class="blockquote">
+<p>Todas las sales de sodio son sustancias solubles en agua</p>
+Todos los jabones son sales de sodio
+<hr>
+<p>Todos los jabones son sustancias solubles en agua</p>
+</blockquote>
+<p><strong>2° Figura</strong>:</p>
+<blockquote class="blockquote">
+<p>Todos los amigos de Paula son estudiosos</p>
+Ningún hermano de Daniel es estudioso
+<hr>
+<p>Ningún hermano de Daniel es amigo de Paula</p>
+</blockquote>
+<p><strong>3° Figura</strong>:</p>
+<blockquote class="blockquote">
+<p>Todas las computadoras son importadas</p>
+Algunas computadoras son de mala calidad
+<hr>
+<p>Algunos objetos de mala calidad son importados</p>
+</blockquote>
+<p><strong>4° Figura</strong>:</p>
+<blockquote class="blockquote">
+<p>Ningún Ministro es holgazán</p>
+Todo Holgazán es divertido
+<hr>
+<p>Algunas personas divertidas no son ministros</p>
+</blockquote>
+</section>
+<section id="modo-del-silogismo" class="level3">
+<h3 class="anchored" data-anchor-id="modo-del-silogismo">Modo del silogismo</h3>
+<p>El modo del silogismo hace referencia a la <em>cantidad</em> (si es una proposición universal o particular) y a la <em>cualidad</em> (si es afirmativa o negativa). De esta manera teniendo en consideración ambos aspectos los juicios categóricos son 4: Afirmativo universal (<span class="math inline">\(A\)</span>: Todo <span class="math inline">\(S\)</span> es <span class="math inline">\(P\)</span>); Negativo universal (<span class="math inline">\(E\)</span>: Ningún <span class="math inline">\(S\)</span> es <span class="math inline">\(P\)</span>); Afirmativo particular (<span class="math inline">\(I\)</span>: Algún <span class="math inline">\(S\)</span> es <span class="math inline">\(P\)</span>); Negativo particular (<span class="math inline">\(O\)</span>: Algún <span class="math inline">\(S\)</span> no es <span class="math inline">\(P\)</span>).</p>
+<p>Si vamos a nuestro primer ejemplo, el de los heroes y soldados, su modo es <span class="math inline">\(EIO\)</span>.</p>
+<p>Las distintas combinaciones de juicios categóricos nos dan 64, puesto que van desde <span class="math inline">\(AAA\)</span> hasta <span class="math inline">\(OOO\)</span>. A su vez, esto hay que multiplicar por 4 ya que el orden de los términos varía según las figuras.</p>
+<p>De esta manera llegamos a <span class="math inline">\(64 * 4 = 256\)</span>. Existen 256 posibles silogismos. No todos ellos son válidos. Para poder determinarlos los silogismos necesitan cumplir <em>todas</em> las reglas de la silogística para que sea válido.</p>
+<p>Concluyendo esta sección, podemos decir que el silogismo está determinado por su figura y su modo.</p>
+</section>
+</section>
+<section id="reglas-de-los-silogismos" class="level2">
+<h2 class="anchored" data-anchor-id="reglas-de-los-silogismos">Reglas de los silogismos</h2>
+<p>Estas reglas se dividen en dos grupos:</p>
+<ol type="1">
+<li>Reglas de los términos</li>
+<li>Reglas de las proposiciones que lo componen</li>
+</ol>
+<section id="reglas-de-los-términos" class="level3">
+<h3 class="anchored" data-anchor-id="reglas-de-los-términos">Reglas de los términos</h3>
+<section id="primera-regla" class="level4">
+<h4 class="anchored" data-anchor-id="primera-regla">Primera regla</h4>
+<p><strong><em>TODO SILOGISMO DEBE TENER TRES TÉRMINOS</em></strong>: es decir Término Mayor (P) Término Menor (S) y Término Medio (M)</p>
+<p>Un ejemplo que viola esta regla es el siguiente silogismo:</p>
+<blockquote class="blockquote">
+<p>Toda llama quema</p>
+Algún animal es una llama
+<hr>
+<p>Algún animal quema</p>
+</blockquote>
+</section>
+<section id="segunda-regla" class="level4">
+<h4 class="anchored" data-anchor-id="segunda-regla">Segunda regla</h4>
+<p><strong><em>NINGÚN TÉRMINO DEBE APARECER EN LA CONCLUSIÓN CON MAYOR EXTENSIÓN QUE EN LAS PREMISAS</em></strong>: para entender esta regla debemos recordar que un término está tomado en toda su extensión cuando es sujeto de una proposición universal o predicado de una proposición negativa.</p>
+<p>Un ejemplo que viola esta regla es el siguiente silogismo:</p>
+<blockquote class="blockquote">
+<p>Todo pez es vertebrado</p>
+Todo pez es un animal acuático
+<hr>
+<p>Todo animal acuático es vertebrado</p>
+</blockquote>
+</section>
+<section id="tercera-regla" class="level4">
+<h4 class="anchored" data-anchor-id="tercera-regla">Tercera regla</h4>
+<p>EL TÉRMINO MEDIO NO DEBE FIGURAR EN LA CONCLUSIÓN: Ésta regla se limita a poner en forma imperativa una condición necesaria para que pueda hablarse de silogismo</p>
+</section>
+<section id="cuarta-regla" class="level4">
+<h4 class="anchored" data-anchor-id="cuarta-regla">Cuarta regla</h4>
+<p><strong><em>EL TÉRMINO MEDIO DEBE ESTAR TOMADO, AL MENOS UNA VEZ, EN TODA SU EXTENSIÓN</em></strong>: para entender esta regla también debemos recordar la extensión de los términos como lo hicimos en la regla número tres.</p>
+<p>Un ejemplo que viola esta regla es el siguiente silogismo:</p>
+<blockquote class="blockquote">
+<p>Todo loro es un animal</p>
+Todo perro es un animal
+<hr>
+<p>Todo perro es un loro</p>
+</blockquote>
+</section>
+</section>
+<section id="reglas-de-las-proposiciones" class="level3">
+<h3 class="anchored" data-anchor-id="reglas-de-las-proposiciones">Reglas de las proposiciones</h3>
+<section id="quinta-regla" class="level4">
+<h4 class="anchored" data-anchor-id="quinta-regla">Quinta regla</h4>
+<p><strong><em>DE DOS PREMISAS NEGATIVAS NO SE SIGUE CONCLUSIÓN</em></strong></p>
+<p>Un ejemplo que viola esta regla es el siguiente silogismo:</p>
+<blockquote class="blockquote">
+<p>Ningún uruguayo es africano</p>
+Ningún africano es montevideano
+<hr>
+<p>Ningún montevideano es uruguayo</p>
+</blockquote>
+</section>
+<section id="sexta-regla" class="level4">
+<h4 class="anchored" data-anchor-id="sexta-regla">Sexta Regla</h4>
+<p><strong><em>DE DOS PREMISAS AFIRMATIVAS NO SE SIGUE CONCLUSIÓN NEGATIVA</em></strong>: De dos afirmaciones no puede derivarse una negación.</p>
+<p>Un ejemplo que viola esta regla es el siguiente silogismo:</p>
+<blockquote class="blockquote">
+<p>Todo argentino es americano</p>
+Todo salteño es argentino
+<hr>
+<p>Algún salteño no es americano</p>
+</blockquote>
+</section>
+<section id="septima-regla" class="level4">
+<h4 class="anchored" data-anchor-id="septima-regla">Septima Regla</h4>
+<p><strong><em>LA CONCLUSIÓN SIEMPRE SIGUE LA PARTE MÁS DEBIL</em></strong>: la particular respecto de la universal y la negativa respecto de la afirmativa. Si hay una premisa particular, la conclusión debe ser particular; si hay una premisa negativa, la conclusión debe ser negativa; si hay una premisa particular y negativa, o una premisa particular y otra negativa, en ambos casos, la conclusión debe ser particular y negativa.</p>
+<p>Un ejemplo que viola esta regla es el siguiente silogismo:</p>
+<blockquote class="blockquote">
+<p>Ningún amigo de Graciela es japonés</p>
+Todo filósofo es amigo de Graciela
+<hr>
+<p>Todo filósofo es japonés</p>
+</blockquote>
+</section>
+<section id="octava-regla" class="level4">
+<h4 class="anchored" data-anchor-id="octava-regla">Octava Regla</h4>
+<p><strong><em>DE DOS PREMISAS PARTICULARES NO SE SIGUE CONCLUSIÓN</em></strong></p>
+<p>Un ejemplo que viola esta regla es el siguiente silogismo:</p>
+<blockquote class="blockquote">
+<p>Algunos hombres son europeos</p>
+Algunos hombres son americanos
+<hr>
+<p>Algunos americanos son europeos</p>
+</blockquote>
+<p>Con todo esto ya es posible determinar la validez de los silogismos. Por supuesto recordamos que es menester leer el capítulo del libro y realizar los ejercicios.</p>
+</section>
+</section>
+</section>
+<section id="diapositivas" class="level2">
+<h2 class="anchored" data-anchor-id="diapositivas">Diapositivas</h2>
 <p><a href="./slides/unidad4/SILOGISMO-CATEGORICO.pdf">Diapositivas de la clase</a></p>
 
 
