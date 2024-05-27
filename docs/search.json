@@ -720,5 +720,47 @@
       "Clases",
       "Silogismo aristotélico"
     ]
+  },
+  {
+    "objectID": "slides/recuperacion-1er/recuperacion-1er.html",
+    "href": "slides/recuperacion-1er/recuperacion-1er.html",
+    "title": "Recuperación 1er Parcial Lógica",
+    "section": "",
+    "text": "Dado la siguiente proposición, simbolizarla y determinar si es una tautología, una contradicción o una contingencia a partir de una tabla de verdad.\n\n\n\n\n\nEsto no es gratuito, pero si es opcional pagar.\n\n\n\n\n\n\nAprobarás la materia si y sólo si apruebas los parciales y cumples con la asistencia"
+  },
+  {
+    "objectID": "slides/recuperacion-1er/recuperacion-1er.html#punto-1",
+    "href": "slides/recuperacion-1er/recuperacion-1er.html#punto-1",
+    "title": "Recuperación 1er Parcial Lógica",
+    "section": "Punto 1",
+    "text": "Punto 1\nDado la siguiente proposición, simbolizarla y determinar si es una tautología, una contradicción o una contingencia a partir de una tabla de verdad.\n\n\nTema 1\n\nEsto no es gratuito, pero si es opcional pagar.\n\n\nTema 2\n\nAprobarás la materia si y sólo si apruebas los parciales y cumples con la asistencia"
+  },
+  {
+    "objectID": "slides/recuperacion-1er/recuperacion-1er.html#punto-2",
+    "href": "slides/recuperacion-1er/recuperacion-1er.html#punto-2",
+    "title": "Recuperación 1er Parcial Lógica",
+    "section": "Punto 2",
+    "text": "Punto 2\nDado el siguiente juicio y su valor de verdad, determine las relaciones del cuadro de oposición y sus respectivos valores de verdad\n\n\nTema 1\n\nAlgunos animales no son felinos (\\(V\\))\n\nDeterminar su subalternante, su contradictoria y su subcontraria\n\nTema 2\n\nNingún tópico es simple (F)\n\nDeterminar su subalterno, su contradictoria, su contraria"
+  },
+  {
+    "objectID": "slides/recuperacion-1er/recuperacion-1er.html#punto-3",
+    "href": "slides/recuperacion-1er/recuperacion-1er.html#punto-3",
+    "title": "Recuperación 1er Parcial Lógica",
+    "section": "Punto 3",
+    "text": "Punto 3\nDada la siguiente oración determine que parte forma parte del lenguaje objeto y cual meta-lenguaje.\n\n\nTema 1\n\n“Seamos libres, que lo demás no importa nada” dijo San Martín.\n\n\nTema 2\n\nEn la radio dijeron: “No olvidarse de ventilar los ambientes en invierno”."
+  },
+  {
+    "objectID": "slides/recuperacion-1er/recuperacion-1er.html#punto-4",
+    "href": "slides/recuperacion-1er/recuperacion-1er.html#punto-4",
+    "title": "Recuperación 1er Parcial Lógica",
+    "section": "Punto 4",
+    "text": "Punto 4\nDada el siguiente silogismo determine la figura, modo y su validez. Si el silogismo es inválido, escriba que regla/as violan. (Recuerden de escribir la/s regla/as completa/s)\n\n\nTema 1\n\nAlgunos colectivos no son diesel\nAlgunos colectivos son operados por la municipalidad\n\nPor lo tanto, algunos vehículos operados por la municipalidad no son diesel\n\n\nTema 2\n\nTodos los jazmines son aromáticos\nNinguna cosa aromática carece de fragancia\n\nPor lo tanto, algunas cosas que carecen de fragancia no son jazmines"
+  },
+  {
+    "objectID": "slides/recuperacion-1er/recuperacion-1er.html#punto-5",
+    "href": "slides/recuperacion-1er/recuperacion-1er.html#punto-5",
+    "title": "Recuperación 1er Parcial Lógica",
+    "section": "Punto 5",
+    "text": "Punto 5\n¿La noción de validez depende de la noción de verdad? Justifique su respuesta"
   }
 ]
