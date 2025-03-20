@@ -33,13 +33,13 @@ Recordar que hay solo 2 valores de verdad
 ## Tablas de verdad de las conectivas
 <!--# class="middle center" -->
 
-| -   | -   | Negación | Conjunción  | Disyunción |            Condicional            |            Bicondicional             |
-| --- | --- | -------- |:-----------:|:----------:|:---------------------------------:|:------------------------------------:|
+| -   | -   | Negación | Conjunción  | Disyunción |    Condicional    | Bicondicional |
+| --- | --- | -------- | :---------: | :--------: | :---------------: | :-----------: |
 | $p$ | $q$ | $\neg p$ | $p \land q$ | $p \lor q$ | $p \rightarrow q$ | $p \equiv q$  |
-| $V$ | $V$ | $F$      |     $V$     |    $V$     |                $V$                |                 $V$                  |
-| $V$ | $F$ | $F$      |     $F$     |    $V$     |                $F$                |                 $F$                  |
-| $F$ | $V$ | $V$      |     $F$     |    $V$     |                $V$                |                 $F$                  |
-| $F$ | $F$ | $V$      |     $F$     |    $F$     |                $V$                |                 $V$                  |
+| $V$ | $V$ | $F$      |     $V$     |    $V$     |        $V$        |      $V$      |
+| $V$ | $F$ | $F$      |     $F$     |    $V$     |        $F$        |      $F$      |
+| $F$ | $V$ | $V$      |     $F$     |    $V$     |        $V$        |      $F$      |
+| $F$ | $F$ | $V$      |     $F$     |    $F$     |        $V$        |      $V$      |
 
 ## Pro tips
 <!--# class="middle center" -->
