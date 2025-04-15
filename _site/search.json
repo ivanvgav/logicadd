@@ -1,0 +1,476 @@
+[
+  {
+    "objectID": "01-logica.html",
+    "href": "01-logica.html",
+    "title": "La lógica como disciplina",
+    "section": "",
+    "text": "Cuando entran en la carrera de abogacía lo que la mayoría piensa es que no van a ver nada relacionado con las matemáticas. Sin embargo, como veremos dentro de poco, para poder razonar correctamente se necesita algo de estructura. Se necesita poder ordenar los “pensamientos” de uno para expresarlos de la mejor manera posible. Para que los otros puedan escuchar y entenderlos lo más claro posible.\nRealizamos razonamientos todo el tiempo. Muchos de ellos sin darnos cuenta. [TODO: Pensar ideas de razonamientos cotidianos] Discutimos y debatimos con varias personas que nos encontramos todos los días, queramos o no. Tomamos decisiones basándonos en razones, incluso incluyendo a las emociones como razones mismas para sostener nuestra tesis.\nPor todo esto es necesario tener algunos conocimientos de lógica. Les aseguramos que, si estudian a conciencia, la lógica les va a permitir estructurar mejor sus razonamientos, encontrar sus propios errores y en los demás, contribuir de mejor manera a la discusión y sobre todo, pensar de mejor manera.\nLa lógica, como fue pensada desde sus inicios 1, fue considerada como un organon, como una herramienta.\nEsa herramienta la usamos para hacer mejores razonamientos. Ahora bien, ¿qué es un razonamiento? Antes de poder responder la pregunta hay que aclarar la perspectiva, la postura desde la cual la lógica va a considerar a la lógica. La lógica es una disciplina formal. Esto quiere decir que el punto central para la lógica son las formas de los razonamientos, es decir la estructura última de los razonamientos. A diferencia de otras ciencias a la lógica no le interesa un objeto particular de estudio (como ser la vida para la biología, la tierra para la geología o la interacción de entidades materiales para la física) solo le interesa las relaciones formales que usamos, hacemos al momento de realizar razonamientos.\nLógicamente hablando un razonamiento es lo siguiente:\nExplicitado formalmente:\nDonde las \\(P\\) serán las premisas, la \\(C\\) es la conclusión y el signo “\\(\\Rightarrow\\)” es la denominada relación de consecuencia lógica 2 que da cuenta de la relación entre las premisas y la conclusión.\nLa lógica va a indagar como de un conjunto de premisas cualquiera se llega a un conclusión. En particular se va a interesar por los razonamientos denominado válidos. 3\nComo se puede observar, el razonamiento al ser una cadena de enunciados, esta se tiene que expresar gracias al lenguaje. Sea escrito u oral. Nuestras ideas y pensamientos siempre se tienen que expresar en base al lenguaje para poder ser comunicadas a resto.",
+    "crumbs": [
+      "Clases",
+      "La lógica como disciplina"
+    ]
+  },
+  {
+    "objectID": "01-logica.html#sistema-de-lógica-proposicional",
+    "href": "01-logica.html#sistema-de-lógica-proposicional",
+    "title": "La lógica como disciplina",
+    "section": "Sistema de lógica proposicional",
+    "text": "Sistema de lógica proposicional\nCon los conocmientos preliminares ya cubiertos, es necesario pasar a presentar al sistema lógico que vamos a usar durante la materia.\nEl nombre del sistema es el de Lógica proposicional o cálculo de lógica proposicional.\nEl sistema consta de varios elementos que vamos a explicar uno por uno.\nEl sistema consta de dos grandes grupos: las variables lógicas y las constantes o conectivas lógicas.\n\nVariables lógicas\nLas variables lógicas son las denominadas variables proposicionales. Son aquellos signos que nos permiten poder formalizar cualquier enunciado. Comúnmente los lógicos utilizan letras minúsculas que van desde la p en adelante (en orden alfabético): \\(p, q, r, s, t, ...\\).\n\n\nConstantes o conectivas lógicas\nEl segundo grupo a considerar son las constantes o conectivas lógicas. Denominadas así porque su significado no cambian (en contraposición a las variables, que varían su contenido). También son llamadas conectivas porque la mayoría de ellas conectan dos o más proposiciones.\nLas conectivas pueden clasificarse en dos grupos:\n\nMonádicas: Son aquellas que solo afectan a una proposición.\n\nEste es el caso de la negación. La negación es la partícula del lenguaje que nosotros usamos como: “No”; “no es cierto que…”: “No es verdad que…”.\nSus símbolos pueden ser \\(\\neg\\) o \\(\\sim\\)\nEjemplo: \\(\\neg p\\) o \\(\\sim p\\)\n\nDiádicas: Son aquellas que afectan al menos dos proposiciones.\n\nConjunción: Corresponde a la partícula “y”; “pero”; “aunque”. Sus símbolos son: \\(\\land\\) o \\(\\bullet\\). Ejemplo: \\(p \\land q\\)\nDisyunción: Corresponde a la partícula “o”; “o bien… o bien…”. Su símbolo es: \\(\\lor\\). Ejemplo: \\(p \\lor q\\)\nCondicional: Corresponde a las partículas “Si…, entonces…” Sus símbolos son: \\(\\rightarrow\\); \\(\\supset\\). Ejemplo: \\(p \\supset q\\)\nBicondicional: Corresponde a las partículas “si y solo si…” sus símbolos son: \\(\\rightleftarrows\\) o \\(\\equiv\\). Ejemplo: \\(p \\equiv q\\)\n\n\n\n\nSímbolos auxiliares\nPor último tenemos los símbolos auxiliares que nos servirán para poder delimitar alcances de las proposiciones. Estos son las llaves, los corchetes y los paréntesis: \\((\\ ); [\\ ]; \\{\\ \\}\\). Estos nos permiten realizar ciertas delimitaciones importantes a la hora de entender lo que cada fórmula o proposición afirma. Por ejemplo no es lo mismo \\((p \\supset q) \\land p\\) que \\(p \\supset q \\land p\\). En el segundo caso no podemos saber a ciencia cierta si el condicional afecta solo a \\(q\\) o también a la conjunción con \\(p\\). La importancia de estos signos se va a ver mejor cuando se realicen los ejercicios de simbolización.",
+    "crumbs": [
+      "Clases",
+      "La lógica como disciplina"
+    ]
+  },
+  {
+    "objectID": "01-logica.html#conclusión",
+    "href": "01-logica.html#conclusión",
+    "title": "La lógica como disciplina",
+    "section": "Conclusión",
+    "text": "Conclusión\nDe esta manera hemos introducido los conceptos básicos de lo que es la lógica, su objeto de estudio, las nociones necesarias para poder comprender cuál es la finalidad e la lógica, y hemos presentado brevemente el sistema de lógica proposicional. En la siguiente unidad vamos a introducirnos más en el cáculo proposicional y en su utilidad.",
+    "crumbs": [
+      "Clases",
+      "La lógica como disciplina"
+    ]
+  },
+  {
+    "objectID": "01-logica.html#footnotes",
+    "href": "01-logica.html#footnotes",
+    "title": "La lógica como disciplina",
+    "section": "Notas",
+    "text": "Notas\n\n\nQuien fundó la lógica como una disciplina sistematizada fue Aristóteles. Esto no quiere decir que antes de él no se usaba lógica o los seres humanos no hacían cosas lógicas. Por supuesto que si, pero fue él quien pudo sistematizar en varios obras parte de lo que veremos en la materia.↩︎\nEl signo de la flecha en otros libros aparece como \\(\\vdash, \\models, \\rightarrow\\). Si bien cada uno de los signos tiene sus diferencias conceptuales, la idea general se sostiene. Todos indican una relación de consecuencia lógica.↩︎\nA qué llamamos razonamiento válido lo veremos más adelante.↩︎",
+    "crumbs": [
+      "Clases",
+      "La lógica como disciplina"
+    ]
+  },
+  {
+    "objectID": "06-logica-deontica.html",
+    "href": "06-logica-deontica.html",
+    "title": "Introducción a la Lógica deóntica",
+    "section": "",
+    "text": "“Es obligatorio el uso de barbijo”\n\n\n“Está permitido caminar sobre el pasto”\n\n\n“Está prohibido estacionar las 24 horas”\n\nLas proposiciones deónticas tienen una característica ausente en las proposciones con las que venimos trabajando. Las proposiciones deónticas no describen hechos del mundo, no dan cuenta de la realidad, sino que dicen ordenan al agente a hacer (o no hacer) algo o posibilitan o imposibilitan alguna acción.\nDadas las siguientes proposiciones:\n\n“Está prohibido estacionar las 24 horas”\n\n\n“Estamos en la secretaría de investigaciones de la Facultad de Derecho y Cs. Sociales de la UNT”\n\nLa primera no podemos decir si es una proposición verdadera o falsa, mientras que la segunda si. La primera tiene un contenido deóntico que la segunda no.\nHay que tener en cuenta esta diferencia entre las proposiciones porque va a ser determinante más adelante.",
+    "crumbs": [
+      "Clases",
+      "Introducción a la Lógica deóntica"
+    ]
+  },
+  {
+    "objectID": "06-logica-deontica.html#ejemplo-de-proposiciones-deónticas",
+    "href": "06-logica-deontica.html#ejemplo-de-proposiciones-deónticas",
+    "title": "Introducción a la Lógica deóntica",
+    "section": "",
+    "text": "“Es obligatorio el uso de barbijo”\n\n\n“Está permitido caminar sobre el pasto”\n\n\n“Está prohibido estacionar las 24 horas”\n\nLas proposiciones deónticas tienen una característica ausente en las proposciones con las que venimos trabajando. Las proposiciones deónticas no describen hechos del mundo, no dan cuenta de la realidad, sino que dicen ordenan al agente a hacer (o no hacer) algo o posibilitan o imposibilitan alguna acción.\nDadas las siguientes proposiciones:\n\n“Está prohibido estacionar las 24 horas”\n\n\n“Estamos en la secretaría de investigaciones de la Facultad de Derecho y Cs. Sociales de la UNT”\n\nLa primera no podemos decir si es una proposición verdadera o falsa, mientras que la segunda si. La primera tiene un contenido deóntico que la segunda no.\nHay que tener en cuenta esta diferencia entre las proposiciones porque va a ser determinante más adelante.",
+    "crumbs": [
+      "Clases",
+      "Introducción a la Lógica deóntica"
+    ]
+  },
+  {
+    "objectID": "06-logica-deontica.html#nociones-preliminares-para-la-lógica-deóntico",
+    "href": "06-logica-deontica.html#nociones-preliminares-para-la-lógica-deóntico",
+    "title": "Introducción a la Lógica deóntica",
+    "section": "Nociones preliminares para la lógica deóntico",
+    "text": "Nociones preliminares para la lógica deóntico\n\nLógica modal\nLa lógica modal alética va a dar cuenta de las siguientes nociones:\n\n“Es necesario que…”; “Es posible que…”; “Es imposible que…”; “No es posible que…”\n\nPor ejemplo:\n\n“Es necesario que \\('2+2=4'\\)”; “Es posible que hoy llueva”; “Es imposible que salga sorteado el mismo número dos veces”\n\nLa lógica modal internaliza expresiones como “necesario”, “posible”, “imposible”, etc. Aquellas que hablen acerca de la modalidad de la verdad. Es decir los modos en que la verdad puede prensetarse acerca de la proposición. Si es necesaria una proposición hace referencia a que su valor de verdad no cambia, mientras que si es posible quiere decir que la proposición puede que algunas veces sea verdadera pero otras veces no.\nPara poder formalizar este tipo de expresiones el sistema lógico incorpora dos denominados operadores. Los lógicos han añadido al sistema lógico dos operadores para dar cuenta de la posibilidad y la necesidad:\n\n\\(N\\): Necesario\n\\(M\\): Posible\n\nAhora bien, estos operadores se pueden definir entre si como se muestra en la siguiente figura:\n\n\n\nInterdefinibilidad de los operadores modales. Extraida de Zeballos y Cardozo (2019, 240)\n\n\nDada la interdefinibildad de los operadores modales, podemos analizar como se relacionan las proposiciones modales entre si.\nBasandonos en el cuadro de oposiciones modales:\n\n\n\nCuadro de oposiciones modales. (Zeballos y Cardozo 2019, 242)\n\n\nEsta incorporación de los operadores modales permiten expandir la expresividad del sistema lógico, algunas de las características relevantes para la lógica deóntica son los siguientes:\n\nLa interdefinibilidad de operadores.\nLa conectiva lógica de la impliación necesaria: \\(p \\Rightarrow q\\) (\\(p\\) implica necesariamente \\(q\\))\nLos operadores modales no son veritativos-funcionales.\nNuevas expresiones válidas:\n\n\\(Np \\supset p\\) (Si es necesario \\(p\\) entonces \\(p\\))\n\\(p \\supset Mp\\) (Si \\(p\\) entonces es posible que \\(p\\))\n\nSi \\(\\alpha\\) es una fórmula válida, entonces \\(N \\alpha\\) también lo es\nTodo lo que se sigue de una verdad necesaria es también necesariamente verdadero\n\nCon esto ya es posible entender de mejor manera el sistema de lógica deóntica",
+    "crumbs": [
+      "Clases",
+      "Introducción a la Lógica deóntica"
+    ]
+  },
+  {
+    "objectID": "06-logica-deontica.html#el-sistema-de-lógica-deóntica-de-von-wright",
+    "href": "06-logica-deontica.html#el-sistema-de-lógica-deóntica-de-von-wright",
+    "title": "Introducción a la Lógica deóntica",
+    "section": "El sistema de lógica deóntica de Von Wright",
+    "text": "El sistema de lógica deóntica de Von Wright\nLógica Deóntica El sistema clásico de Von Wright 13\n\nUn poco de historia de la lógica deóntica\nA continuación haremos un pequeño desvio para comentar algo de la historia de la lógica deóntica. Varios filósofos y lógicos han contribuido a su desarrollo. Algunos no lograron verla sistematizada como ser los casos de Alois Höffer (1853 – 1922) y Ernst Mally (1879-1944). El mayor exponente que logró sistematizar la lógica deóntica fue Georg Henrik von Wright (1916 - 2003). En la Argentina tuvimos dos grandes lógicos deónticos que hicieron sus propios aportes y desarrollos a la lógica deóntica y ellos fueron Carlos Eduardo Alchourrón (1931- 1996) y Eugenio Buligyn (1931 - 2021).\nAquí nos enfocaremos en el sitema de lógica ideado por Von Wright y algunos desarrollos posteriores por parte de Buligyn para responder a algunos problemas abiertos dejados por el sistema de Von Wright.",
+    "crumbs": [
+      "Clases",
+      "Introducción a la Lógica deóntica"
+    ]
+  },
+  {
+    "objectID": "06-logica-deontica.html#operadores-modales-deónticos",
+    "href": "06-logica-deontica.html#operadores-modales-deónticos",
+    "title": "Introducción a la Lógica deóntica",
+    "section": "Operadores modales deónticos",
+    "text": "Operadores modales deónticos\nComo hemos visto más arriba, la lógica modal introduce los operadores modales para poder formalizar las proposiciones aléticas. El sistema de lógica deóntica va a realizar una analógica con los operadores modales y las nociones deónticas que hemos visto al inicio (permitido, no permitido, obligatorio, prohibido).\nPara ello va a analogar cada uno de los operadores modales, con los operadores deónticos:\n\n\n\nAnalogía entre operadores modales y deónticos. Extraido de Zeballos y Cardozo (2019, 248)\n\n\nPor consiguiente también podemos realizar una interdefinibildad de operadores deónticos:\n\n\n\nInterdefinibilidad de operadores deónticos. Extraido de Zeballos y Cardozo (2019, 248)\n\n\n\nComo queda conformado el sistema clásico deóntico\nCon los operadores deónticos añadidos a la lógica proposicional genera el sistema clásico (SC) Von Wright. Dado de esta manera el sistema tiene algunas características importantes:\n\nToda tautología de lógica proposicional es válida en SC si las variables proposicionales son reemplazadas por fórmulas deónticas.\nSe aceptan las siguientes definiciones:\n\n\\(Ph =_{def} \\sim P\\)\n\\(O =_{def} \\sim P \\sim\\)\n\nSe aceptan como axiomas las leyes de distribución\nSe acepta el principio de permutación:\n\n\\(Pp \\lor P\\sim p . \\equiv . Op \\supset Pp\\)\n\n\nEste sistema lógico es un gran avance para la lógica deóntica ya que permite formalizar las proposiciones deónticas (como las que hemos visto en un principio) pero en su analogía con la lógica modal, trae aparejado algunos problemas que no pueden ser resueltos con los recursos propios del sistema.",
+    "crumbs": [
+      "Clases",
+      "Introducción a la Lógica deóntica"
+    ]
+  },
+  {
+    "objectID": "06-logica-deontica.html#dilema-de-jørgensen",
+    "href": "06-logica-deontica.html#dilema-de-jørgensen",
+    "title": "Introducción a la Lógica deóntica",
+    "section": "Dilema de Jørgensen",
+    "text": "Dilema de Jørgensen\nEl denominado dilema de Jörgiensen fue presentado en Jörgensen (1937).1 Consta de un dilema entre las relaciones que hay entre las normas y la disciplina lógica.\nEl dilema puede presentarse de la siguiente manera:\n\nEn contextos normativos también se usan los términos “y”, “o”, “si…entonces…”, “no” de manera similar al lenguaje descriptivo. Y al hacer inferencias se usan normas como premisas y conclusiones y parecen ser lógicamente válidas. Por tanto, hay una lógica de normas.\nLa relación de implicación (consecuencia lógica) y contradicción se definen en términos de verdad (como las conectivas lógicas). Por tanto, solo expresiones V o F pueden ser estudiadas por la lógica.\nLas normas carecen de valor de verdad.\nNo hay relación lógica entre normas y, por tanto, no hay lógica de normas.\n\nPara poder evitar la conclusión se puede tomar varias posturas:\nSi se quiere evitar la Tesis 4:\n\nSe abandona la Tesis 2 o\nSe abandona la Tesis 3.\n\nSi se acepta la Tesis 4:\n\nSe tiene que desarrollar una teoría alternativa para dar cuenta lo expresado en la Tesis 1.",
+    "crumbs": [
+      "Clases",
+      "Introducción a la Lógica deóntica"
+    ]
+  },
+  {
+    "objectID": "06-logica-deontica.html#algunas-posibles-soluciones-al-dilema",
+    "href": "06-logica-deontica.html#algunas-posibles-soluciones-al-dilema",
+    "title": "Introducción a la Lógica deóntica",
+    "section": "Algunas posibles soluciones al dilema",
+    "text": "Algunas posibles soluciones al dilema\n\nInterpretaciones descriptivas o prescriptivas\nPara poder encontrar algunas de las soluciones del dilema de Jörgensen pueden hacer ciertas distinciones conceptuales. Los términos deónticos permitido, prohibido, obligatorio son ambiguos. No tienen una sola definición, sino múltiples. Por lo que pueden ser interpretados de dos maneras, al menos:\n\nInterpretaciones prescriptivas (expresión de normas)\n\nLo que expresan son lo que la norma ordena.\n\nInterpretaciones descriptivas (expresión de proposiciones acerca de normas)\n\nLo que expresan son proposiciones que hablan acerca de las normas. No son normas en sí misma.\n\n\nPor ejemplo Bulygin (1995) utiliza los operadores O y P como prescriptivos:\n\n\\(Op\\) expresa una norma que ordena \\(p\\)\n\\(O\\sim p\\) expresa una norma que prohíbe \\(p\\)\n\\(Pp\\) expresa una norma que permite \\(p\\)\n\nConsiderar a los operadores descriptivos enuncian el estatus deóntico de un estado de cosas o acciones. Dicho estatus está conferido por la norma. Las acciones suponen que un agente ejecute o no la norma. Por lo que hay una referencia a la norma la cual antes no estaba.",
+    "crumbs": [
+      "Clases",
+      "Introducción a la Lógica deóntica"
+    ]
+  },
+  {
+    "objectID": "06-logica-deontica.html#sistema-de-normas",
+    "href": "06-logica-deontica.html#sistema-de-normas",
+    "title": "Introducción a la Lógica deóntica",
+    "section": "Sistema de normas",
+    "text": "Sistema de normas\nOtra posible solución es entender al derecho como un sistema de normas. Cada una de las proposiciones deónticas se encuentran dentro de un sistema de normas \\((\\alpha)\\)\nLas considiciones en que los operadores deónticos aparecen dentro de un conjunto de normas se complejiza:\n\n\n\nEjemplo de complejización. Extraido de Zeballos y Cardozo (2019, 251)\n\n\nPara el caso de la permisión hay que considerar:\n\nPermisión positiva: Está permitido en \\(\\alpha\\)\nPermisión negativa: No está prohibido en \\(\\alpha\\)\n\n\nAñadido del sistema normativo \\(\\alpha\\)\nDado un sistema normativo \\(\\alpha\\):\n\n\\(Op\\alpha\\) (\\(p\\) es obligatorio en \\(\\alpha\\))\n\\(P^{+}p\\alpha\\) (\\(p\\) está positivamente permitido en \\(\\alpha\\))\n\\(P^{-}p\\alpha\\) (\\(p\\) está negativamente permitido en \\(\\alpha\\))\n\nDefinidas formalmente como:\n\n\\(Op\\alpha =_{def} Op \\in Cn(\\alpha)\\)\n\\(P^{+}p\\alpha =_{def} Pp \\in Cn(\\alpha)\\)\n\\(P^{-}p\\alpha =_{def} O\\sim p \\notin Cn(\\alpha)\\)\n\n\n\nDiferencias con el Sistema Clásico\nLas expresiones de la lógica de proposiciones normativas son relativas a un sistema de normas. Al incorporar la noción de sistema de normas, esto permite que el concepto de permisión se complejise: hay dos conceptos de permisión. También lleva a que los operadores prescriptivos sean interdefinibles.\nClaramente la idea de sistema de normas, presupone que existe una relación lógica entre normas. Por lo que las s consecuencias de \\(\\alpha\\), es el conjunto de normas que se siguen lógicamente de \\(\\alpha\\).\nAsí como hay dos tipos de permisión, también este sistema da lugar a dos tipos de negaciones:\nHay una negación interna y otra externa. Negar algo dentro de las proposiciones normativas: * \\(\\alpha\\) contiene una norma que prohibe \\(p\\) * \\(\\alpha\\) no contiene una norma que permite \\(p\\)\nEsto lleva a considerar estas dos negaciones de la siguiente manera:\n\nExterna (\\(-\\)): Significa que la norma que ordena \\(p\\) no pertenece a \\(\\alpha\\).\nInterna (\\(\\neg\\)): Significa que la norma que permite no \\(p\\) pertenece a \\(\\alpha\\).\n\n\n\n\n\n\n\nDato Importante\n\n\n\nLa negación interna puede mostrar un sistema de normas inconsistente o incompleto.",
+    "crumbs": [
+      "Clases",
+      "Introducción a la Lógica deóntica"
+    ]
+  },
+  {
+    "objectID": "06-logica-deontica.html#operador-facultativo-f",
+    "href": "06-logica-deontica.html#operador-facultativo-f",
+    "title": "Introducción a la Lógica deóntica",
+    "section": "Operador facultativo \\((F)\\)",
+    "text": "Operador facultativo \\((F)\\)\nAnte la fórmula \\(Pp \\lor P\\sim p\\) puede interpretarse como “uno puede hacer \\(p\\) y/o dejar de hacerlo” es decir, queda en la decisión del agente el hacerlo o no. Esto lleva a presentar otro tipo de operador que refleje este hecho normativo, el operador facultativo. Denominado de esta manera ya que es el agente quien tiene la facultad de llevar a cabo (o no llevar a cabo) la acción.\nEsto quiere decir que seguir la acción \\(p\\) es facultativo, formalmente de la siguiente manera:\n\n\\(Fp . \\equiv . Pp \\land P\\sim p\\)\n\\(Fp . \\equiv . \\sim Op \\land \\sim O\\sim p\\)\n\\(Fp . \\equiv . \\sim Php \\land \\sim Ph\\sim p\\)",
+    "crumbs": [
+      "Clases",
+      "Introducción a la Lógica deóntica"
+    ]
+  },
+  {
+    "objectID": "06-logica-deontica.html#cuadro-de-oposiciones-deónticas.",
+    "href": "06-logica-deontica.html#cuadro-de-oposiciones-deónticas.",
+    "title": "Introducción a la Lógica deóntica",
+    "section": "Cuadro de oposiciones deónticas.",
+    "text": "Cuadro de oposiciones deónticas.\nPor último, las relaciones de oposición deónticos queda de esta determinada manera respecto del cuadro de oposición de los operadores modales:\n\n\n\nCuadro de oposición deóntico. Extraido de (Zeballos y Cardozo 2019, 256)",
+    "crumbs": [
+      "Clases",
+      "Introducción a la Lógica deóntica"
+    ]
+  },
+  {
+    "objectID": "06-logica-deontica.html#footnotes",
+    "href": "06-logica-deontica.html#footnotes",
+    "title": "Introducción a la Lógica deóntica",
+    "section": "Notas",
+    "text": "Notas\n\n\nUn dilema es una presentación de dos opciones o situaciones las cuales ambas presentan el mismo resultado trágico o no deseado.↩︎",
+    "crumbs": [
+      "Clases",
+      "Introducción a la Lógica deóntica"
+    ]
+  },
+  {
+    "objectID": "clases.html",
+    "href": "clases.html",
+    "title": "Clases",
+    "section": "",
+    "text": "En esta sección se encontrará el material dictado en las clases. El material se encuentra distribuido por unidades, no por clases estrictamente. Esto se debe a que el cronograma de clases se encuentra en continuo ajuste por cuestiones de cronograma académico, feriados o situaciones externas que provocan cambios en el cursado ordinario de la materia. La distribución respeta el orden dado en el programa (para leer el programa dirigirse al programa.\n\n\n\n\n\n\nA tener en cuenta\n\n\n\nSi en esta sección del sitio web no se encuentran disponibles todas las unidades es porque no se han dictado las clases correspondientes a dicha unidad.",
+    "crumbs": [
+      "Clases"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Acerca del sitio",
+    "section": "",
+    "text": "Este sitio web es destinado para las clases dictadas por el Lic. Ivan Vladimir Gavriloff, auxiliar docente, de la cátedra de Lógica de la Facultad de Derecho y Ciencias Sociales de la Universidad Nacional de Tucumán.\nEn este sitio se encontrará todo el material necesario para el cursado de la materia de Lógica de segundo año de la carrera de Abogacía de la Facultad de Derecho y Ciencias Sociales de la UNT.\nAquí se encuentra alojados el material didactico, clases y ejercicios que la cátedra otorga dentro del cursado.\nEl sitio web tiene como referencia al siguiente libro:\n\nZeballos, Alberto, y Sergio Cardozo. Elementos de Lógica. Una introducción a la lógica estándar con ejercicios y problemas resueltos. San Miguel de Tucumán, Tucumán, Argentina: Departamento de Publicaciones, FFyL UNT, 2019.\n\n\n\n\n\n\n\nA tener en cuenta\n\n\n\nEste sitio web se encuentra estructurado para las clases dictadas en las comisiones en que se encuentra el Lic. Ivan Vladimir Gavriloff. El material de las demás comisiones puede variar.\n\n\n\n\n\n\n\n\nSobre el estudio con este sitio web\n\n\n\nCabe destacar que esto es simplemente es un complemento para el cursado. Este sitio web no reemplaza el material bibliográfico ni las clases impartidas por la cátedra.\nSi solo estudian de este material no van a tener los contenidos suficientes para aprobar los examenes y, por ende, promocionar la materia.\n\n\n\n\n\n\n\n\nSobre el contenido del sitio web\n\n\n\nEl material refleja el cursado del año 2024. Es posible que los años subsiguientes el material sea modificado y el sitio web cambie. Dado el caso, se informará en esta sección del sitio de dicho cambio."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bienvenidos/as",
+    "section": "",
+    "text": "Bienvenidos/as al sitio web de la cátedra de Lógica de la Facultad de Derecho y Ciencias Sociales de la UNT.\nEn el sitio se encuentran disponibles los recursos utilizados por el Lic. Ivan Vladimir Gavriloff en las clases y ejercitación complementaria para el estudio del curso."
+  },
+  {
+    "objectID": "index.html#agradecimientos",
+    "href": "index.html#agradecimientos",
+    "title": "Bienvenidos/as",
+    "section": "Agradecimientos",
+    "text": "Agradecimientos\nAgradecemos todo el trabajo de la cátedra, al jefe de cátedra Lic. Sergio Cardozo y un homenaje al Dr. Alberto Zeballos que enseño tanto durante varias décadas y que se refleja en el libro usado por esta cátedra para dictar las clases.\nAdemás a toda la cátedra de lógica ya que en este sitio se ve reflejado el esfuerzo en conjunto por la tarea docente y la investigación en lógica.\nEste sitio web se encuentra desarrollado en base a Quarto."
+  },
+  {
+    "objectID": "programa.html",
+    "href": "programa.html",
+    "title": "Programa de la materia",
+    "section": "",
+    "text": "Aquí presentamos el programa 2024 del curso de Lógica de la cátedra de Lógica de la Facultad de Derecho y Ciencias Sociales"
+  },
+  {
+    "objectID": "programa.html#en-formato-pdf",
+    "href": "programa.html#en-formato-pdf",
+    "title": "Programa de la materia",
+    "section": "En formato PDF:",
+    "text": "En formato PDF:\nUnable to display PDF file. Download instead."
+  },
+  {
+    "objectID": "07-teoria-de-la-argumentacion.html",
+    "href": "07-teoria-de-la-argumentacion.html",
+    "title": "Teoría de la argumentación",
+    "section": "",
+    "text": "Esta es la última unidad del programa del cursado.\nEsta vez vamos a salir de la teoría de la lógica formal que hemos estado estudiando para poder ir hacia otra teoría.\nVamos a estudiar algo de teoría de la argumentanción. Esto es así, ya que como bien saben ustedes, no todos los argumentos se pueden analizar con la lógica formal. En todo caso, muchos aspectos de la argumentación en sí misma no son tomados por la lógica formal.\nPara esto vamos a hacer uso de algunos libros de teoría de la argumentación como ser El imperio retórico de Chaim Perelman y Como ganar discusiones o al menos no perderlas de Pablo Da Silveira.",
+    "crumbs": [
+      "Clases",
+      "Teoría de la argumentación"
+    ]
+  },
+  {
+    "objectID": "07-teoria-de-la-argumentacion.html#qué-es-la-argumentación",
+    "href": "07-teoria-de-la-argumentacion.html#qué-es-la-argumentación",
+    "title": "Teoría de la argumentación",
+    "section": "¿Qué es la argumentación?",
+    "text": "¿Qué es la argumentación?\nPodemos dar una primera respuesta a la pregunta siguiendo las palabras del filósofo ingles John Stuart Mill\n\nLo mejor que puede someter a una idea es someterla a una discusión en la que todos tengan una oportunidad de refutarla. Si pasa dicha prueba se va por mejor camino.\nJohn Stuart Mill\n\n\nLa argumentación es una practica que nos permite discutir una idea con el propósito de convencer al otro, y en algunos casos que nuestra idea ṕueda ser refutada. Hay una cuestión dialógica (alguien que enuncia y alguien que escucha) pero muchos veces ninguna de las partes tiene una exclusividad en la palabra. Es decir, quien escucha muchas veces también puede responder y hasta revatir lo que se está diciendo.",
+    "crumbs": [
+      "Clases",
+      "Teoría de la argumentación"
+    ]
+  },
+  {
+    "objectID": "07-teoria-de-la-argumentacion.html#la-teoría-de-la-argumentación",
+    "href": "07-teoria-de-la-argumentacion.html#la-teoría-de-la-argumentación",
+    "title": "Teoría de la argumentación",
+    "section": "La teoría de la argumentación",
+    "text": "La teoría de la argumentación\nProviene de la prolongación de dos disciplinas:\n\nLógica\n\nInteresa la validez de los argumentos\n\nRetórica\n\nInteresa la fuerza persuasiva de los argumentos\n\n\nNo solo se interesa por la validez lógica de los argumentos, también por el impacto que tienen en el auditorio.\n\nImportancia de la teoría de la argumentación\n¿Por qué es importante estudiar la teoría de la argumentación? Da Silveira nos da algunas consideraciones sobre esto:\n\nNo hay una unicidad ni totalidad del conocimiento científico.\n\nEsto quiere decir que incluso los científicos tienen que Argumentar a la hora de presentar sus teorías y avances científicos.\nEl único mecanismo que se ha encontrado hasta el momento es la argumentación.\n\nEl establecimiento de la democracia como sistema político de las sociedades occidentales.\n\nLa democracia tiene como mecanismo del poder a la argumentación. En la antigua Grecia, donde había democracia directa, la única forma de sacar adelante una ley o promulga algo para la polis era mediante la argumentación en el ágora. Por ello eran de suma importancia los sofistas: conocedores de la retórica que lo que hacían era preparar a los políticos para ganar discusiones en el ágora y en los juicios. Eran, en suma, maestros de la argumentación.\n\n\n\n\nDefinición más rigurosa de argumentación\nHabiendo partido de lo dicho por Stuart Mill, Da Silveira otorga una definición un poco más rigurosa de lo que es la argumentación:\n\nLa argumentación es el procedimiento del que nos servimos para sostener las afirmaciones que creemos defendibles y que los demás se niegan a tomar como auto-evidentes. (Da Silveira 2004, 20)\n\nPara llegar a esta definición, Da Silveira parte de otra definición de Argumentación dada por un teórico de la argumentación:\n\n“Una argumentación es un encadenamiento de proposiciones tendientes a producir o a reforzar en el auditorio la adhesión a su conclusión.” (Manin 1985, 84)\n\nEs menester, para un entendimiento profundo de la argumentación, desarmar esta última definición.",
+    "crumbs": [
+      "Clases",
+      "Teoría de la argumentación"
+    ]
+  },
+  {
+    "objectID": "07-teoria-de-la-argumentacion.html#objetivo-de-la-argumentación",
+    "href": "07-teoria-de-la-argumentacion.html#objetivo-de-la-argumentación",
+    "title": "Teoría de la argumentación",
+    "section": "Objetivo de la argumentación",
+    "text": "Objetivo de la argumentación\nTratamos de producir un efecto en el otro con cualquier argumentación. Cuando argumentamos hacia un otro (u otros) lo que pretendemos es realizar algo en ellos. En suma, se intenta tratar de modificar su comportamiento.\nComo bien lo destaca Perelman:\n\nSe usa el lenguaje no como medio de comunicación también para cambiar ideas y conductas.\n(Perelman 1970, 177)\n\nLo importante de aquí es que ese cambio tiene que ser voluntario. Es decir, en el proceso de argumentación no tiene que haber ninguna coerción hacia el otro. No tiene que apelar violencia para que el otro cambie de opinión, o realice alguna acción que nosotros deseamos o pretendemos que haga. En el momento en que pasamos a apelar a la fuerza física, dejamos de argumentar.",
+    "crumbs": [
+      "Clases",
+      "Teoría de la argumentación"
+    ]
+  },
+  {
+    "objectID": "07-teoria-de-la-argumentacion.html#con-qué-sostenemos-nuestras-conviccionesargumentaciones",
+    "href": "07-teoria-de-la-argumentacion.html#con-qué-sostenemos-nuestras-conviccionesargumentaciones",
+    "title": "Teoría de la argumentación",
+    "section": "¿Con qué sostenemos nuestras convicciones/argumentaciones?",
+    "text": "¿Con qué sostenemos nuestras convicciones/argumentaciones?\nPara sostener nuestras argumentaciones, Da Silveira habla de que hacemos uso de:\n\nEvidencia empírica\nRazones\n\nEstas siempre son presentadas a través del lenguaje. Y la unidad mínima de lenguaje con el que trabaja tanto la teoría de la argumentación como la lógica formal es la proposición.",
+    "crumbs": [
+      "Clases",
+      "Teoría de la argumentación"
+    ]
+  },
+  {
+    "objectID": "07-teoria-de-la-argumentacion.html#elemento-mínimo-de-la-argumentación-la-proposición",
+    "href": "07-teoria-de-la-argumentacion.html#elemento-mínimo-de-la-argumentación-la-proposición",
+    "title": "Teoría de la argumentación",
+    "section": "Elemento mínimo de la argumentación: La proposición",
+    "text": "Elemento mínimo de la argumentación: La proposición\nDa Silveira define a la proposición del mismo modo en que hemos venido trabajando en las clases. Es decir la define de la misma manera que la lógica formal.\nEs una noción lógica de proposición. Recuerden que lo particular de la proposición es que es susceptible de ser verdadera o falsa. Esto es así puesto que describe algo acerca del mundo.",
+    "crumbs": [
+      "Clases",
+      "Teoría de la argumentación"
+    ]
+  },
+  {
+    "objectID": "07-teoria-de-la-argumentacion.html#encadenamiento-de-proposiciones",
+    "href": "07-teoria-de-la-argumentacion.html#encadenamiento-de-proposiciones",
+    "title": "Teoría de la argumentación",
+    "section": "Encadenamiento de proposiciones",
+    "text": "Encadenamiento de proposiciones\nLas proposiciones o son:\n\nPremisas\nConclusión\n\nContinuamos con la estructura ya aprendida desde las primeras clases:\n\\(P_{1}, P_{2}, ..., P_{n} \\rightarrow C\\)",
+    "crumbs": [
+      "Clases",
+      "Teoría de la argumentación"
+    ]
+  },
+  {
+    "objectID": "07-teoria-de-la-argumentacion.html#uso-de-premisas",
+    "href": "07-teoria-de-la-argumentacion.html#uso-de-premisas",
+    "title": "Teoría de la argumentación",
+    "section": "Uso de premisas",
+    "text": "Uso de premisas\nLas premisas que se elijan tienen que ver con el acuerdo suficiente entre el argumentador y el auditorio. Puede variar según el contexto en donde uno se encuentra y de lo que se va a argumentar. Esto es de suma importancia para la teoría de la argumentación. En la lógica formal no se considera ningún tipo de contexto. De hecho el contexto no es de interes para la lógica.\nA mayor amplitud del auditorio, las premisas de mayor orden de aceptabilidad va a haber que elegir",
+    "crumbs": [
+      "Clases",
+      "Teoría de la argumentación"
+    ]
+  },
+  {
+    "objectID": "07-teoria-de-la-argumentacion.html#la-conclusión",
+    "href": "07-teoria-de-la-argumentacion.html#la-conclusión",
+    "title": "Teoría de la argumentación",
+    "section": "La conclusión",
+    "text": "La conclusión\nRecordemos que:\nLa conclusión Sostiene algo diferente a las premisas. Se debe aceptar previamente si se ha aceptado las premisas.\nLo que es una premisa puede ser la conclusión de otro argumento. Lo que es una conclusión de un argumento puede ser utilizado como premisa de un segundo argumento.\nTeniendo esto en cuenta, Las premisas y la conclusión son funciones que tienen las proposiciones en los argumentos. No hay nada de por sí mismas que las premisas hagan que sean premisas y que las conclusiones sean conclusiones, todo va a depender de cómo cada uno de nosotros armemos nuestra argumentación y de cuál sea el fin que le queremos dar a dicha argumetación.",
+    "crumbs": [
+      "Clases",
+      "Teoría de la argumentación"
+    ]
+  },
+  {
+    "objectID": "07-teoria-de-la-argumentacion.html#qué-quiere-decir-adhesión-a-la-conclusión",
+    "href": "07-teoria-de-la-argumentacion.html#qué-quiere-decir-adhesión-a-la-conclusión",
+    "title": "Teoría de la argumentación",
+    "section": "¿Qué quiere decir “adhesión a la conclusión”?",
+    "text": "¿Qué quiere decir “adhesión a la conclusión”?\nPara poder responder a esta pregunta es necesario realizar la siguiente aclaración: Argumentar es distinto de demostrar. La argumentación implica persuasión. La demostración no persuade, simplemente muestra los pasos de cómo llegar de determinadas premisas a una conclusión.\n::: {.callout-warning title=“Otra distinción a considerar} Argumentar \\(\\neq\\) Refutación\nRefutar implica que no se pueda contraargumentar a lo propuesto :::\n\n\n\n\n\n\nRecuerden\n\n\n\nArgumentar es una actividad que se entrena, con tiempo y esfuerzo",
+    "crumbs": [
+      "Clases",
+      "Teoría de la argumentación"
+    ]
+  },
+  {
+    "objectID": "07-teoria-de-la-argumentacion.html#cuándo-argumentamos",
+    "href": "07-teoria-de-la-argumentacion.html#cuándo-argumentamos",
+    "title": "Teoría de la argumentación",
+    "section": "¿Cuándo argumentamos?",
+    "text": "¿Cuándo argumentamos?\nNo es cierto que todo el tiempo que hablamos con los otros nos encontramos argumentando. La argumentación es posible cuando dentro de las partes hay una existencia de desacuerdos. Esto quiere decir que las partes no están de acuerdo respecto a algo: un hecho concreto, una visión de mundo, o cualquier otra cosa. Es muy extenso colocar por qué cosas los seres humanos estamos en desacuerdo.\nRecordemos que lo normal es el desacuerdo entre los seres humanos, ante solo el desacuerdo, también no hay posibilidad de argumentar. La argumentación necesita de un piso en común para poder dirimir las diferencias. Si hay solo diferencias entre las dos partes, entonces no hay ninguna posibilidad de entablar una postura argumentativa.\n\nAnte consensos muy duraderos, es muy posible que se esté imponiendo un punto de vista por sobre el otro (Da Silviera, 35)\n\nEsto de lo que habla Da Silveira lo hemos podido ver estos últimos años.\nPor ello es importante analizar los supuestos que se necesitan para que haya posibildad de argumentar en cualquier ámbito.",
+    "crumbs": [
+      "Clases",
+      "Teoría de la argumentación"
+    ]
+  },
+  {
+    "objectID": "07-teoria-de-la-argumentacion.html#supuestos-para-la-argumentación",
+    "href": "07-teoria-de-la-argumentacion.html#supuestos-para-la-argumentación",
+    "title": "Teoría de la argumentación",
+    "section": "Supuestos para la argumentación",
+    "text": "Supuestos para la argumentación\n\nLenguaje Común\n\nEl argumentador y el auditorio necesitan de un lenguaje común para poder entenderse.\nAlgunas dificultades de esto pueden ser las lenguas o dialectos diferentes: No es lo mismo argumentar entre nosotros, tucumanos, entre alguien del centro del país. Menos aun entre algún latinoamericano o hispanohablante. Incluso menos con alguien que no tiene al español como su lengua materna.\nLas jergas especializadas son vocabularios que usan los profesionales para referirse a cuestiones de sus propias disciplina. La filosofía tiene su propia jerga especializada así como los abogados. Muchas veces si una persona que no es un abogado quiere leer algún texto de un juez, le va a ser de suma dificultad si no tiene algún conocimiento del derecho o le es habitual leer ese tipo de textos.\n\nReglas Comunes:\n\n\nEvaluar hechos\nCriterios de valor\nReglas de procedimiento\nRacionalidad compartida\n\n\nReglas comunes\nEntre el argumentador y el auditorio debe haber reglas comunes para evaluar afirmaciones de hecho: - Debe haber un acuerdo acerca de lo que se va a considerar evidencia. - Contextos distintos pueden llevar a que haya una discrepancia de lo que se considera un hecho.\nOtros criterios comunes van a ser dado acerca de los juicios de valor: - Cuáles son los criterios normativos que se van a tener en cuenta - Que se considera aceptable, no aceptable dentro de la argumentación: Por ejemplo si los insultos personales son considerados parte de la argumentación o no. - Valores como justo e injusto juegan un papel interesante\n\n\nReglas de procedimiento\nSon necesarias para ver como se procede en una discusión. Dependiendo el contexto esas reglas se van a encontrar más o menos explícitas. Dentro de un juicio, por ejemplo, los las reglas de procedimiento son explícitas. Pero en una charla con amigos, muchas reglas de procedimientos se encuentran completamente implícitas. Incluso es posible que se conformen a lo largo de la argumentación o por las experiencias compartidas entre los amigos.\n\n\nRacionalidad compartida\nSe le llama así a las reglas que nos permitan inferir debidamente en el debate del argumento. Es decir, cómo se va a realizar la inferencia de las premisas a la conclusión. Por ejemplo encontrar un criterio de contradicción y de coherencia entre lo que se dice de las premisas a la conclusión.",
+    "crumbs": [
+      "Clases",
+      "Teoría de la argumentación"
+    ]
+  },
+  {
+    "objectID": "07-teoria-de-la-argumentacion.html#conclusión",
+    "href": "07-teoria-de-la-argumentacion.html#conclusión",
+    "title": "Teoría de la argumentación",
+    "section": "Conclusión",
+    "text": "Conclusión\nDiscutir puede considerarse una actividad confrontativa y cooperativa. La confrontación se encuentra en el énfasis en los desacuerdos y la persuación hacia el consenso. La cooperación se encuentra en las reglas y el campo común para argumentar. Si se tiene en cuenta esto, nuestras argumentaciones serán más convincentes y promoveremos una sociedad más democrática, algo por lo cual se ha luchado mucho sobre todo en nuestro territorio.",
+    "crumbs": [
+      "Clases",
+      "Teoría de la argumentación"
+    ]
+  },
+  {
+    "objectID": "07-teoria-de-la-argumentacion.html#sobre-el-auditorio",
+    "href": "07-teoria-de-la-argumentacion.html#sobre-el-auditorio",
+    "title": "Teoría de la argumentación",
+    "section": "Sobre el auditorio",
+    "text": "Sobre el auditorio\nQuien argumenta se dirige al hombre completo. No solo a su parte racional, o emocional. Por ello al argumentar se puede y tiene que apelar a las emociones y a la razón. De hecho hoy en día podemos encontrarnos con muchas personas que lo único a lo que apelan es a la emocionalidad sin que su argumento tenga tesis alguna. U otros que, teniendo mucha información, solo aportan datos pero sus argumentos no producen ningún reflejo emocional en el otro. En este sentido, hay que hacer uso de diversos métodos para poder llevar la adhesión al auditorio.\nEl orador debe adaptarse al auditorio para cumplir su objetivo y no al revés. No es lo mismo que un jurado adhiera a nuestra tesis de que nuestro defendido sea inocente, a que nuestro auditorio sea una terna de jueces. Se van a emplear razones, emociones distintas, puesto que no es lo mismo un jurado que un juez, por poner solo un ejemplo.\n\n¿Quienes son el auditorio?\nNo son necesariamente los que interpela expresamente el orador.\nSon el:\n\nConjunto de aquellos sobre los cuales el orador quiere influir con su argumentación.\n(Perelman 1997, 35)\n\nEl criterio que aplica Perelman es muy amplio. Va desde uno mismo hasta la humanidad misma (auditorio universal). El auditorio universal está compuesto por todos aquellos que estén dispuestos a entender y capaces de seguir la argumentación del orador.\n\nAuditorio de especialistas\nDentro de cualquier auditorio, siempre hay un conjunto de tesis y métodos que se encuentran admitidos. Nunca se parte de un auditorio sin algunos supuestos. Dentro de un congreso de químicos, por ejemplo, todos los presentes suponen que hay un grado alto de conocimiento de la teoría química contemporánea, de cómo es la metodología de presentación de los trabajos, entre otras cosas.\nNo hay necesidad de explicitar dichas admisiones. Debido a que esto nos llevaría mucho gasto de tiempo que no es relevante para que el orador trate de adherir a su auditorio lo más posible.",
+    "crumbs": [
+      "Clases",
+      "Teoría de la argumentación"
+    ]
+  },
+  {
+    "objectID": "07-teoria-de-la-argumentacion.html#persuadir-y-convencer",
+    "href": "07-teoria-de-la-argumentacion.html#persuadir-y-convencer",
+    "title": "Teoría de la argumentación",
+    "section": "Persuadir y convencer",
+    "text": "Persuadir y convencer\n\nPersuadir \\(\\neq\\) Convencer\n\nEs otro quien persuade. Quien convence es uno mismo. El auditorio puede persuadir al orador de que alguna de sus premsisas está errada, pero es el orador quien convence a los demás.\n\n\n\n\n\n\nA tener en cuenta\n\n\n\nDiscurso que persuade \\(\\Rightarrow\\) Auditorio particular\nDiscurso que convence \\(\\Rightarrow\\) Auditorio universal\nEsta distinción está dada en las intenciones\n\n\nUn abogado en el juicio por jurado trata de persuadir al jurado, mientras que un filósofo que escribe un libro sobre filosofía política intenta convencer a todo posible lector de las tesis que está exponiendo en el libro.\nEsto lleva a pensar en aquellas premisas que pueden ser consideradas por todos, si es que deseamos que con cualquier podamos tener mayor fuerza de adhesión. Esto, como bien marca Perelman, nos lleva a la definición de dicurso convincente.\nDiscurso convincente:\n\nAquel cuyas premisas y argumentos son unversalizables, es decir, aceptables, en principio, por todos los miembros del auditorio universal.\n(Perelman 1997, 39)\n\nEsto lleva a pensar que uno tiene que considerar ciertos criterios para la elección de las premisas. El orador debe partir de premisas que tengan el beneficio de una adhesión suficiente del auditorio. Quien no hace esto, cae en una petición de principio (falacia analizada en la unidad de falacias).",
+    "crumbs": [
+      "Clases",
+      "Teoría de la argumentación"
+    ]
+  },
+  {
+    "objectID": "07-teoria-de-la-argumentacion.html#géneros-oratorios",
+    "href": "07-teoria-de-la-argumentacion.html#géneros-oratorios",
+    "title": "Teoría de la argumentación",
+    "section": "Géneros oratorios",
+    "text": "Géneros oratorios\nDeterminados por Aristóteles en su Retórica:\n\nDeliberativo:\n\nEl género deliberativo el orador aconseja o no y su opinión concluye en lo que parece más útil\n\nJudicial:\n\nEl género judicial acusa o defiende para decidir lo justo\n\nEpidíctico:\n\nEl género epidíctico alaba o critica en relación con lo bello y lo feo",
+    "crumbs": [
+      "Clases",
+      "Teoría de la argumentación"
+    ]
+  },
+  {
+    "objectID": "07-teoria-de-la-argumentacion.html#objetos-a-poner-de-acuerdo-entre-orador-y-auditorio",
+    "href": "07-teoria-de-la-argumentacion.html#objetos-a-poner-de-acuerdo-entre-orador-y-auditorio",
+    "title": "Teoría de la argumentación",
+    "section": "Objetos a poner de acuerdo entre orador y auditorio",
+    "text": "Objetos a poner de acuerdo entre orador y auditorio\n\nAquellos que se refieren a lo real:\n\n\nHechos\nVerdades\nPresunciones\n\n\nAquello que se refieren a lo preferible:\n\n\nValores\nJerarquías\nLugares comunes\n\n\nPresunciones\nLo más dificil de entender de los objetos que se refieren a lo real sean las presunciones: Las presunciones se asocian con lo que se produce normalmente y lo que es razonable tomar como punto de partida\nAlguno ejemplos dados por Perelman de ello son:\n\n“la presunción de que la calidad de un acto manifiesta la calidad de la persona que lo realiza; la presunción de la credulidad natural, que hace que nuestro primer movimiento sea el de acoger como verdadero lo que se nos dice; la presunción de interés, según la cual concluimos que todo enunciado que se nos comunica presumiblemente nos interesa, etc”\n\nLas presunciones suponen lo normal, pero lo normal puede ser discutido dada las circunstancias. Quien la discute es quien tiene la carga de la prueba. Por eso durante los juicios no es abogado defensor de un acusado quien tiene que persuadir acerca de la inocencia de su cliente, sino el abodago acusador quien tiene que persuadir que dicha persona es culpable, puesto que rige la presunción de inocencia.\n\n\nValor\nLa definición que ortorga Perelman es la siguiente:\n\n“Una ruptura de la indiferencia o de la igualdad entre las cosas, en todas partes donde una de ellas debe ser puesta antes que otra, o por encima de otra; en todas partes donde es juzgada superior y merece que sea preferida.”\n\nUno puede considerar a ciertos Valores universales como instrumentos de persuasión. Por ejemplo: Lo verdadero, lo bueno, lo bello, lo justo. Los valores universales permiten presentar valores particulares, para establecer acuerdos de grupos particulares.\n\n\n\n\n\n\nDistinción entre valores abstractos y concretos\n\n\n\nValores abstractos \\(\\neq\\) Valores concretos\nAbstracto \\(\\Rightarrow\\) Justicia\nConcreto \\(\\Rightarrow\\) la Iglesia\n\n\n\n\n\n\n\n\nParecería que los razonamientos fundados sobre valores concretos son más característicos de sociedades conservadoras Un uso de las sociedades conservadoras es apelar a ciertos “valores” como ser la iglesia, la familia, algún grupo de personas en específico, antes de que apelar a valores que alberguen a todos y que puendan ser entendidos de diferente manera.\n\n\n\n\n\nJerarquías\nOtro “objeto” a considerar son las jerarquías que hacemos durante un argumentación. Estas pueden ser de distintos tipos y tienen distintas características: 1. Concretas o abstractas: * Jerarquía concreta: Valores relativos a las personas sobre valores relativos a las cosas * Jerarquía abstracta: Superioridad de lo justo ante lo útil 1. Homogéneas o Heterogéneas: * Jerarquía homogénea: Un dolor más débil por uno más fuerte * Jerarquía heterogénea: Respeto de la verdad por sobre la amistad\n\n\nLugares comunes\nSon afirmaciones comunes muy generales referentes a lo que presumiblemente vale más en algún dominio",
+    "crumbs": [
+      "Clases",
+      "Teoría de la argumentación"
+    ]
+  },
+  {
+    "objectID": "07-teoria-de-la-argumentacion.html#técnicas-argumentativas",
+    "href": "07-teoria-de-la-argumentacion.html#técnicas-argumentativas",
+    "title": "Teoría de la argumentación",
+    "section": "Técnicas argumentativas",
+    "text": "Técnicas argumentativas\nEl estatus de los elementos de la argumentación varia y depende de la adhesión efectiva o presunta del auditorio. Los argumentos que se sostienen para una tesis también pueden ser usados para la contraria. La adhesión estará en función de apreciación de los argumentos en pro y en contra como a las soluciones dispuestas para los problemas en discusión. Esto lleva a que tengamos que analizar los tipos de argumentos.\n\nTipos de argumentos\n\nNexo:\n\n\nArgumentos cuasilógicos: * Se entienden mejor si se aproximan a la lógica o la matemática, aunque supone adhesión a tesis no formales\nArgumentos fundados sobre la estructura de lo real: * Se basan sobre los lazos que existen entre los elementos de lo real\nArgumentos que fundan la estructura: * Parten de un caso conocido para establecer un modelo o regla general\n\n\nDisociación:\n\nLas disociaciones permiten tomar elementos de lo real y permiten llegar a una nueva organización de lo dado",
+    "crumbs": [
+      "Clases",
+      "Teoría de la argumentación"
+    ]
+  },
+  {
+    "objectID": "07-teoria-de-la-argumentacion.html#amplitud-y-fuerzas-de-los-argumentos",
+    "href": "07-teoria-de-la-argumentacion.html#amplitud-y-fuerzas-de-los-argumentos",
+    "title": "Teoría de la argumentación",
+    "section": "Amplitud y fuerzas de los argumentos",
+    "text": "Amplitud y fuerzas de los argumentos\nLa amplitud de los argumentos es fundamental para poder dar cuenta de la eficacia de los argumentos. Las instituciones predisponen hábitos, límites y tiempos sobre la amplitud de argumentos. Incluso llegan a estar reglamentados. La fuerza de los argumentos permite que, durante la argumentación, el auditorio no rebata al orador o genere objeciones a los argumentos dispuestos en dicho acto.\nLa fuerza de los argumentos nos va a permitir seleccionar los argumentos para los distintos tipos de auditorios.\nLa fuerza de un argumento va a estar influenciado por:\n\nLa eficacia\nLa validez\n\nLos problemas de la amplitud y de sus peligros deben examinarse en función de cada situación argumentativa",
+    "crumbs": [
+      "Clases",
+      "Teoría de la argumentación"
+    ]
+  },
+  {
+    "objectID": "02-logica-proposicional.html",
+    "href": "02-logica-proposicional.html",
+    "title": "Lógica Proposicional",
+    "section": "",
+    "text": "Como habíamos visto en la unidad anterior vamos a trabajar con un sistema lógico en particular. El sistema de la lógica proposicional.\nYa lo habíamos caracterizado también. El sistema consta de:\n\nVariables proposicional, las cuales servirán para formalizar cada una de las proposiciones. Ejemplo: \\(p, q, r, ...\\)\nConstantes o conectivas proposicionales: las cuales servirán para formalizar las particular que realizan uniones o modifican a las proposiciones. Estas eran:\n\nLa negación (\\(\\neg, \\sim\\)).\nLa conjunción (\\(\\land, \\bullet\\)).\nLa disyunción (\\(\\lor\\)).\nEl condicional (\\(\\supset, \\rightarrow\\)).\nEl bicondicional (\\(\\equiv, \\leftrightarrow\\)).\n\nLos símbolos auxiliares, los cuales sirven para delimitar el alcance de las conectivas. Entre ellos encontramos a los paréntesis (\\(( \\ )\\)), los corchetes (\\([ \\ ]\\)) y las llaves (\\(\\{ \\ \\}\\)).\n\nEstos son los elementos que necesitamos para la poder llevar a cabo la formalización.\nAntes de poder llevar a ver cómo analizamos los razonamientos, es primordial tener conocimiento y entrenamiento en cómo formalizar las proposiciones. Recordemos que lo que se trata es de pasar de lo que decimos en lenguaje natural -en nuestro caso el castellano- a un lenguaje formalizado -en este caso la lógica proposicional-.\nRecordemos la noción de proposición:\n\nUn enunciado completo descriptivo con la capacidad de ser verdadero o falso.\n\nEntonces cuando nos embarquemos en la tarea de formalizar proposiciones, tenemos que tener en cuenta su definición, puesto que en ella se encuentran las características que nos dirán cómo tenemos que formalizar.\nAdemás es importante tener en cuenta también las apariciones de las partículas que hacen referencia a las conectivas lógicas. Así como los signos de puntuación nos indican donde empieza y termina una oración, o como tiene que ser el énfasis y las pausas de la misma, las conectivas también nos pueden indicar donde empieza y termina una proposición y cómo es que se unen unas con otras. 1",
+    "crumbs": [
+      "Clases",
+      "Lógica Proposicional"
+    ]
+  },
+  {
+    "objectID": "02-logica-proposicional.html#introducción",
+    "href": "02-logica-proposicional.html#introducción",
+    "title": "Lógica Proposicional",
+    "section": "",
+    "text": "Como habíamos visto en la unidad anterior vamos a trabajar con un sistema lógico en particular. El sistema de la lógica proposicional.\nYa lo habíamos caracterizado también. El sistema consta de:\n\nVariables proposicional, las cuales servirán para formalizar cada una de las proposiciones. Ejemplo: \\(p, q, r, ...\\)\nConstantes o conectivas proposicionales: las cuales servirán para formalizar las particular que realizan uniones o modifican a las proposiciones. Estas eran:\n\nLa negación (\\(\\neg, \\sim\\)).\nLa conjunción (\\(\\land, \\bullet\\)).\nLa disyunción (\\(\\lor\\)).\nEl condicional (\\(\\supset, \\rightarrow\\)).\nEl bicondicional (\\(\\equiv, \\leftrightarrow\\)).\n\nLos símbolos auxiliares, los cuales sirven para delimitar el alcance de las conectivas. Entre ellos encontramos a los paréntesis (\\(( \\ )\\)), los corchetes (\\([ \\ ]\\)) y las llaves (\\(\\{ \\ \\}\\)).\n\nEstos son los elementos que necesitamos para la poder llevar a cabo la formalización.\nAntes de poder llevar a ver cómo analizamos los razonamientos, es primordial tener conocimiento y entrenamiento en cómo formalizar las proposiciones. Recordemos que lo que se trata es de pasar de lo que decimos en lenguaje natural -en nuestro caso el castellano- a un lenguaje formalizado -en este caso la lógica proposicional-.\nRecordemos la noción de proposición:\n\nUn enunciado completo descriptivo con la capacidad de ser verdadero o falso.\n\nEntonces cuando nos embarquemos en la tarea de formalizar proposiciones, tenemos que tener en cuenta su definición, puesto que en ella se encuentran las características que nos dirán cómo tenemos que formalizar.\nAdemás es importante tener en cuenta también las apariciones de las partículas que hacen referencia a las conectivas lógicas. Así como los signos de puntuación nos indican donde empieza y termina una oración, o como tiene que ser el énfasis y las pausas de la misma, las conectivas también nos pueden indicar donde empieza y termina una proposición y cómo es que se unen unas con otras. 1",
+    "crumbs": [
+      "Clases",
+      "Lógica Proposicional"
+    ]
+  },
+  {
+    "objectID": "02-logica-proposicional.html#simbolización",
+    "href": "02-logica-proposicional.html#simbolización",
+    "title": "Lógica Proposicional",
+    "section": "Simbolización",
+    "text": "Simbolización\nPara poder pasar del lenguaje ordinario al lenguaje formal, es necesario tener un entrenamiento que sea capaz de adquirir las habilidades para identificar cada uno de los elementos formales en el lenguaje ordinario. Es decir, poder leer cualquier oración y poder indicar qué parte de la oración es una proposición, una conectiva lógica y donde poner los símbolos auxiliares para que la formula en lógica proposicional tenga el mismo sentido que en lenguaje ordinario.\nAquí vamos a colocar algunos ejemplos básicos para que puedan entender, y luego se irá acompleja cada vez más.\n\n\n\n\n\n\nSobre los ejercicios\n\n\n\nEn el sitio web se encuentran en una solapa separada todos los ejercicios de las unidades.\nIr al link \n\n\nPrimero que nada vamos a ver algunos ejemplos de simbolizaciones básicas:\nDadas los siguientes enunciados simbolice usando la el sistema de lógica proposicional:\n\nJuan trabaja todos los días.\nMaría y Diego están de vacaciones.\nEl agua hierve a una temperatura de 100°C al nivel del mar\n\nResolución:\n\nEn el primero vemos que solo tenemos una proposición debido a que el enunciado es completo y es un enunciado descriptivo por lo que simplemente lo simbolizamos: \\[p\\]\nEn el segundo caso vemos que tenemos dos sujetos: Maria y Diego. Por lo que tenemos que ver qué es lo que están haciendo cada uno de ello. María está de vacaciones. Diego está de vacaciones también. Si bien los dos se encuentran en el mismo estado, son dos sujetos distintos. Por lo que para la lógica proposicional son dos proposiciones distintas: \\(p\\) para Maria y \\(q\\) para Diego. Cuando analizamos un enunciado que, a primera vista, parece una sola proposición pero no lo es, la recomendación es armar un diccionario. Esto quiere decir indicar cual es la referencia de cada una de las proposiciones.\n\nPara este ejercicio sería así: \\[p: María\\ está\\ de\\ vacaciones\\]\n\\[q: Diego\\ está\\ de\\ vacaciones\\]\n\\[p \\bullet q\\]\nComo pueden ver aquí hemos introducido una conectiva lógica, la conjunción entre las dos proposiciones. Así se realiza una unión entre las proposiciones.\n\nEn el tercer caso, por más que parezca un enunciado bastante largo y de cierta complejidad es solo una proposición.\n\nPor lo que su simbolización es la siguiente: \\[p\\]\n\n\nComo hemos dicho más arriba estos son algunos ejemplos básicos, pero ya nos llevan a que tengamos ciertas cuestiones a considerar. Estas van a estar marcadas en el apartado en los pro tips:\n\n\n\n\n\n\nPro tips\n\n\n\n\nVerificar si el enunciado que se desea formalizar es un enunciado descriptivo capaz de ser verdadero o falso.\nSiempre hacer diccionario a la hora de simbolizar. Ayuda a ordenar mejor las proposiciones y evitar confusiones.\nUbicar las conectivas lógicas para encontrar donde puede haber más de una proposición.",
+    "crumbs": [
+      "Clases",
+      "Lógica Proposicional"
+    ]
+  },
+  {
+    "objectID": "02-logica-proposicional.html#footnotes",
+    "href": "02-logica-proposicional.html#footnotes",
+    "title": "Lógica Proposicional",
+    "section": "Notas",
+    "text": "Notas\n\n\nIncluso algunos lógicos las consideran como signos de puntuación. Es decir, van más allá de la analogía aquí propuesta. Esto es un tema de filosofía de la lógica, no es necesario indagar esto en un curso introductorio de lógico como el presente.↩︎",
+    "crumbs": [
+      "Clases",
+      "Lógica Proposicional"
+    ]
+  },
+  {
+    "objectID": "01-logica.html#la-semiótica",
+    "href": "01-logica.html#la-semiótica",
+    "title": "La lógica como disciplina",
+    "section": "La semiótica",
+    "text": "La semiótica\nPor más que la lógica sea una disciplina formal, tiene que tener alguna noción de cómo analizar el lenguaje. Para ello va a nutrirse de la teoría de los signos, ya que todo aquello que digamos, escribamos, o expresemos puede ser considerado como un signo. La teoría de los signos, o también denominada semiótica se divide en tres subareas. Estas áreas se caracterizan por hacer foco en cierta dimensión del lenguaje. Éstas son:\n\nLa sintaxis\nLa semántica\nLa Pragmática\n\nLa primera hace referencia a la relación que tienen los signos entre sí. Recuerden cuando en la escuela secundaria se ejercitaba el análisis sintáctico de las oraciones. Lo que se hacía en dicho análisis era ver como cada una de las palabras de la oración se encontraba relacionada con las otras. Como la oración tenía un sujeto, un predicado un verbo, entre otros elementos sintácticos. El análisis sintáctico de oraciones es solo un ejemplo de lo que comprende la sintaxis dentro de la semiótica.\nLa segunda hace referencia a la relación que tienen el signo con aquello a lo cual refiere. La relación entre el signo y la realidad. Por ejemplo, enunciar lo siguiente:\n\n“El gato del profesor Gavriloff se llama simba” es verdadero\n\nNos habla de una relación semántica debido a que esta diciendo que la oración “El gato del profesor Gavriloff se llama Simba” porta verdad, es verdadera puesto que de hecho es así en la realidad (el gato del profesor Gavriloff si se llama Simba, uno lo llama por ese nombre y responde) es que podemos decir que es verdadera. Todo este ejemplo es un ejemplo de un análisis semántico, un análisis acerca de la relación entre lo que se dice con como es el mundo.\nLa tercera área es la pragmática. Aquí se va a estudiar la relación de cómo se hace uso de los signos. Ni siquiera en cómo es la relación con las cosas en sí mismas, sino en como los agentes hacen uso de los signos. Un ejemplo típico de análisis pragmático es considerar al semáforo y lo que indican sus colores: los colores rojo, amarillo y verde no dicen nada acerca de lo que tenemos que hacer en la calle cuando lo vemos pero en un semáforo todos los peatones y conductores entienden que cuando está en rojo esto significa que los vehículos no pueden avanzar, y que los peatones pueden cruzar la calle; cuando está en amarillo indica que hay que tener precaución al conducir y cuando está en verde significa que los vehículos pueden avanzar y los peatones tienen que esperar hasta que el semáforo esté en rojo para poder cruzar la calle.\nEsto es muy necesario como pre requisito para estudiar apropiadamente lógica. Incluso algunos lógicos han indicado que la lógica puede ser considera una disciplina de la semiótica. Aunque no indagaremos esto por el momento. Lo que es necesario de todo esto es que la lógica trabaja con el lenguaje. Como tiene como objeto de estudio a los razonamientos, tiene que tener ciertas nociones de las disciplinas sobre el lenguaje como base para poder llevar a cabo un mejor análisis.\nAhora bien, las premisas y las conclusiones son proposiciones. A primer visto uno puede denominarlas oraciones, pero el problema con ello es que el concepto de oración se encuentra asociado a la lengua, no a la lógica. Los lógicos han usado el término proposición para referirse a las premisas y a la conclusión de los razonamientos.\nTeniendo en cuenta las siguientes oraciones:\n\n“El gato está sobre la mesa”\n“The cat is on the table”\n“Die Katze ist auf dem Tisch”\n\nTodas tienen la misma proposición \\(p\\) “El gato está sobre la mesa”. Es decir, una proposición es un enunciado completo que tiene la característica de poder ser verdadero o falso. Es un enunciado que es portador de verdad.\n\n\n\n\n\n\nDefinición\n\n\n\nUna proposición es un enunciado descriptivo completo el cual es capaz de ser verdadero o falso.\n\n\nComo se puede observar las oraciones del ejemplo están en distintos idiomas: español, ingles y alemán respectivamente, pero todas comparten la misma proposición. Si supiésemos los tres idiomas sabríamos que dicen lo mismo, eso común que tienen estas oraciones es el contenido proposicional. La proposición tiene que ser un enunciado completo, es decir debe constar de todos los elementos básicos de una oración que tiene sentido. No podemos considerar una proposición que solo sea un nombre como “Pedro” o una oración incompleta como “Juan iba”. Tiene que tener sentido por sí misma, sino no puede extraerse ni formalizarse su contenido proposicional.\n\n\n\n\n\n\nDiferencias a tener en cuenta\n\n\n\nEsto es importante porque como veremos a lo largo de todo el cursado, el análisis lógico es distinto al análisis gramatical o de lengua que hemos estudiado en la escuela.\n\n\nEn la nota más arriba, hemos dicho que la proposición es descriptiva, esto es así debido a que los enunciados de las proposiciones dan cuenta del mundo, por ello es que pueden ser verdaderos o falsos. El lenguaje tiene muchas funciones. Es gracias a esto que podemos realizar muchas acciones en el mundo. Algunas de las funciones del lenguaje son:\n\nDescriptiva\nCuestionar\nComandar\n\nNosotros nos concentraremos en la descriptiva. Solo vamos a formalizar y a concentrarnos en aquellos enunciados que cumplen una función descriptiva. ¿Que hacemos con los otros enunciados? Por el momento no les prestaremos atención ni intentaremos formalizarlos. Esto se debe que, por ejemplo, ni las preguntas ni las ordenes pueden tener algún valor de verdad, no son ni verdaderas ni falsas.",
+    "crumbs": [
+      "Clases",
+      "La lógica como disciplina"
+    ]
+  }
+]

@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Lógica - Teoría de la argumentación</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Lógica</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./clases.html" aria-current="page"> 
+<span class="menu-text">Clases</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./programa.html"> 
+<span class="menu-text">Programa</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">Acerca de</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./07-teoria-de-la-argumentacion.html">Teoría de la argumentación</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./clases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Clases</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-logica.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">La lógica como disciplina</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-logica-deontica.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introducción a la Lógica deóntica</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-teoria-de-la-argumentacion.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Teoría de la argumentación</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#qué-es-la-argumentación" id="toc-qué-es-la-argumentación" class="nav-link active" data-scroll-target="#qué-es-la-argumentación">¿Qué es la argumentación?</a></li>
+  <li><a href="#la-teoría-de-la-argumentación" id="toc-la-teoría-de-la-argumentación" class="nav-link" data-scroll-target="#la-teoría-de-la-argumentación">La teoría de la argumentación</a>
+  <ul class="collapse">
+  <li><a href="#importancia-de-la-teoría-de-la-argumentación" id="toc-importancia-de-la-teoría-de-la-argumentación" class="nav-link" data-scroll-target="#importancia-de-la-teoría-de-la-argumentación">Importancia de la teoría de la argumentación</a></li>
+  <li><a href="#definición-más-rigurosa-de-argumentación" id="toc-definición-más-rigurosa-de-argumentación" class="nav-link" data-scroll-target="#definición-más-rigurosa-de-argumentación">Definición más rigurosa de argumentación</a></li>
+  </ul></li>
+  <li><a href="#objetivo-de-la-argumentación" id="toc-objetivo-de-la-argumentación" class="nav-link" data-scroll-target="#objetivo-de-la-argumentación">Objetivo de la argumentación</a></li>
+  <li><a href="#con-qué-sostenemos-nuestras-conviccionesargumentaciones" id="toc-con-qué-sostenemos-nuestras-conviccionesargumentaciones" class="nav-link" data-scroll-target="#con-qué-sostenemos-nuestras-conviccionesargumentaciones">¿Con qué sostenemos nuestras convicciones/argumentaciones?</a></li>
+  <li><a href="#elemento-mínimo-de-la-argumentación-la-proposición" id="toc-elemento-mínimo-de-la-argumentación-la-proposición" class="nav-link" data-scroll-target="#elemento-mínimo-de-la-argumentación-la-proposición">Elemento mínimo de la argumentación: La proposición</a></li>
+  <li><a href="#encadenamiento-de-proposiciones" id="toc-encadenamiento-de-proposiciones" class="nav-link" data-scroll-target="#encadenamiento-de-proposiciones">Encadenamiento de proposiciones</a></li>
+  <li><a href="#uso-de-premisas" id="toc-uso-de-premisas" class="nav-link" data-scroll-target="#uso-de-premisas">Uso de premisas</a></li>
+  <li><a href="#la-conclusión" id="toc-la-conclusión" class="nav-link" data-scroll-target="#la-conclusión">La conclusión</a></li>
+  <li><a href="#qué-quiere-decir-adhesión-a-la-conclusión" id="toc-qué-quiere-decir-adhesión-a-la-conclusión" class="nav-link" data-scroll-target="#qué-quiere-decir-adhesión-a-la-conclusión">¿Qué quiere decir “adhesión a la conclusión”?</a></li>
+  <li><a href="#cuándo-argumentamos" id="toc-cuándo-argumentamos" class="nav-link" data-scroll-target="#cuándo-argumentamos">¿Cuándo argumentamos?</a></li>
+  <li><a href="#supuestos-para-la-argumentación" id="toc-supuestos-para-la-argumentación" class="nav-link" data-scroll-target="#supuestos-para-la-argumentación">Supuestos para la argumentación</a>
+  <ul class="collapse">
+  <li><a href="#reglas-comunes" id="toc-reglas-comunes" class="nav-link" data-scroll-target="#reglas-comunes">Reglas comunes</a></li>
+  <li><a href="#reglas-de-procedimiento" id="toc-reglas-de-procedimiento" class="nav-link" data-scroll-target="#reglas-de-procedimiento">Reglas de procedimiento</a></li>
+  <li><a href="#racionalidad-compartida" id="toc-racionalidad-compartida" class="nav-link" data-scroll-target="#racionalidad-compartida">Racionalidad compartida</a></li>
+  </ul></li>
+  <li><a href="#conclusión" id="toc-conclusión" class="nav-link" data-scroll-target="#conclusión">Conclusión</a></li>
+  <li><a href="#el-imperio-retórico" id="toc-el-imperio-retórico" class="nav-link" data-scroll-target="#el-imperio-retórico">El imperio retórico</a>
+  <ul class="collapse">
+  <li><a href="#sobre-el-auditorio" id="toc-sobre-el-auditorio" class="nav-link" data-scroll-target="#sobre-el-auditorio">Sobre el auditorio</a>
+  <ul class="collapse">
+  <li><a href="#quienes-son-el-auditorio" id="toc-quienes-son-el-auditorio" class="nav-link" data-scroll-target="#quienes-son-el-auditorio">¿Quienes son el <em>auditorio</em>?</a></li>
+  </ul></li>
+  <li><a href="#persuadir-y-convencer" id="toc-persuadir-y-convencer" class="nav-link" data-scroll-target="#persuadir-y-convencer">Persuadir y convencer</a></li>
+  <li><a href="#géneros-oratorios" id="toc-géneros-oratorios" class="nav-link" data-scroll-target="#géneros-oratorios">Géneros oratorios</a></li>
+  <li><a href="#objetos-a-poner-de-acuerdo-entre-orador-y-auditorio" id="toc-objetos-a-poner-de-acuerdo-entre-orador-y-auditorio" class="nav-link" data-scroll-target="#objetos-a-poner-de-acuerdo-entre-orador-y-auditorio">Objetos a poner de acuerdo entre orador y auditorio</a>
+  <ul class="collapse">
+  <li><a href="#presunciones" id="toc-presunciones" class="nav-link" data-scroll-target="#presunciones">Presunciones</a></li>
+  <li><a href="#valor" id="toc-valor" class="nav-link" data-scroll-target="#valor">Valor</a></li>
+  <li><a href="#jerarquías" id="toc-jerarquías" class="nav-link" data-scroll-target="#jerarquías">Jerarquías</a></li>
+  <li><a href="#lugares-comunes" id="toc-lugares-comunes" class="nav-link" data-scroll-target="#lugares-comunes">Lugares comunes</a></li>
+  </ul></li>
+  <li><a href="#técnicas-argumentativas" id="toc-técnicas-argumentativas" class="nav-link" data-scroll-target="#técnicas-argumentativas">Técnicas argumentativas</a>
+  <ul class="collapse">
+  <li><a href="#tipos-de-argumentos" id="toc-tipos-de-argumentos" class="nav-link" data-scroll-target="#tipos-de-argumentos">Tipos de argumentos</a></li>
+  </ul></li>
+  <li><a href="#amplitud-y-fuerzas-de-los-argumentos" id="toc-amplitud-y-fuerzas-de-los-argumentos" class="nav-link" data-scroll-target="#amplitud-y-fuerzas-de-los-argumentos">Amplitud y fuerzas de los argumentos</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Teoría de la argumentación</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Esta es la última unidad del programa del cursado.</p>
+<p>Esta vez vamos a salir de la teoría de la lógica formal que hemos estado estudiando para poder ir hacia otra teoría.</p>
+<p>Vamos a estudiar algo de teoría de la argumentanción. Esto es así, ya que como bien saben ustedes, no todos los argumentos se pueden analizar con la lógica formal. En todo caso, muchos aspectos de la argumentación en sí misma no son tomados por la lógica formal.</p>
+<p>Para esto vamos a hacer uso de algunos libros de teoría de la argumentación como ser <em>El imperio retórico</em> de Chaim Perelman y <em>Como ganar discusiones o al menos no perderlas</em> de Pablo Da Silveira.</p>
+<section id="qué-es-la-argumentación" class="level2">
+<h2 class="anchored" data-anchor-id="qué-es-la-argumentación">¿Qué es la argumentación?</h2>
+<p>Podemos dar una primera respuesta a la pregunta siguiendo las palabras del filósofo ingles John Stuart Mill</p>
+<blockquote class="blockquote">
+<p>Lo mejor que puede someter a una idea es someterla a una discusión en la que todos tengan una oportunidad de refutarla. Si pasa dicha prueba se va por mejor camino.</p>
+<p>John Stuart Mill</p>
+</blockquote>
+<p><img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/john-stuart-mill-british-philosopher-and-economist-unknown.jpg" class="img-fluid" alt="Image|100"><!-- element style="object-fit: cover" --></p>
+<p>La argumentación es una practica que nos permite discutir una idea con el propósito de convencer al otro, y en algunos casos que nuestra idea ṕueda ser refutada. Hay una cuestión dialógica (alguien que enuncia y alguien que escucha) pero muchos veces ninguna de las partes tiene una exclusividad en la palabra. Es decir, quien escucha muchas veces también puede responder y hasta revatir lo que se está diciendo.</p>
+</section>
+<section id="la-teoría-de-la-argumentación" class="level2">
+<h2 class="anchored" data-anchor-id="la-teoría-de-la-argumentación">La teoría de la argumentación</h2>
+<p>Proviene de la prolongación de dos disciplinas:</p>
+<ol type="1">
+<li><em>Lógica</em>
+<ul>
+<li>Interesa la validez de los argumentos</li>
+</ul></li>
+<li><em>Retórica</em>
+<ul>
+<li>Interesa la fuerza persuasiva de los argumentos</li>
+</ul></li>
+</ol>
+<p>No solo se interesa por la validez lógica de los argumentos, también por el impacto que tienen en el auditorio.</p>
+<section id="importancia-de-la-teoría-de-la-argumentación" class="level3">
+<h3 class="anchored" data-anchor-id="importancia-de-la-teoría-de-la-argumentación">Importancia de la teoría de la argumentación</h3>
+<p>¿Por qué es importante estudiar la teoría de la argumentación? Da Silveira nos da algunas consideraciones sobre esto:</p>
+<ol type="1">
+<li><strong>No</strong> hay una unicidad ni totalidad del conocimiento científico.
+<ul>
+<li>Esto quiere decir que incluso los científicos tienen que Argumentar a la hora de presentar sus teorías y avances científicos.</li>
+<li>El único mecanismo que se ha encontrado hasta el momento es la argumentación.</li>
+</ul></li>
+<li><strong>El establecimiento de la democracia como sistema político de las sociedades occidentales</strong>.
+<ul>
+<li>La democracia tiene como mecanismo del poder a la argumentación. En la antigua Grecia, donde había democracia directa, la única forma de sacar adelante una ley o promulga algo para la <em>polis</em> era mediante la argumentación en el ágora. Por ello eran de suma importancia los sofistas: conocedores de la retórica que lo que hacían era preparar a los políticos para ganar discusiones en el ágora y en los juicios. Eran, en suma, maestros de la argumentación.</li>
+</ul></li>
+</ol>
+</section>
+<section id="definición-más-rigurosa-de-argumentación" class="level3">
+<h3 class="anchored" data-anchor-id="definición-más-rigurosa-de-argumentación">Definición más rigurosa de argumentación</h3>
+<p>Habiendo partido de lo dicho por Stuart Mill, Da Silveira otorga una definición un poco más rigurosa de lo que es la argumentación:</p>
+<blockquote class="blockquote">
+<p>La argumentación es el procedimiento del que nos servimos para sostener las afirmaciones que creemos defendibles y que los demás se niegan a tomar como auto-evidentes. (Da Silveira 2004, 20)</p>
+</blockquote>
+<p>Para llegar a esta definición, Da Silveira parte de otra definición de Argumentación dada por un teórico de la argumentación:</p>
+<blockquote class="blockquote">
+<p>“Una argumentación es un encadenamiento de proposiciones tendientes a producir o a reforzar en el auditorio la adhesión a su conclusión.” (Manin 1985, 84)</p>
+</blockquote>
+<p>Es menester, para un entendimiento profundo de la argumentación, desarmar esta última definición.</p>
+</section>
+</section>
+<section id="objetivo-de-la-argumentación" class="level2">
+<h2 class="anchored" data-anchor-id="objetivo-de-la-argumentación">Objetivo de la argumentación</h2>
+<p>Tratamos de producir un efecto en el otro con cualquier argumentación. Cuando argumentamos hacia un otro (u otros) lo que pretendemos es realizar algo en ellos. En suma, <em>se intenta tratar de modificar su comportamiento</em>.</p>
+<p>Como bien lo destaca Perelman:</p>
+<blockquote class="blockquote">
+<p>Se usa el lenguaje no como medio de comunicación también para cambiar ideas y conductas.</p>
+<p>(Perelman 1970, 177)</p>
+</blockquote>
+<p>Lo importante de aquí es que ese cambio tiene que ser <em>voluntario</em>. Es decir, en el proceso de argumentación no tiene que haber ninguna coerción hacia el otro. No tiene que apelar violencia para que el otro cambie de opinión, o realice alguna acción que nosotros deseamos o pretendemos que haga. En el momento en que pasamos a apelar a la fuerza física, dejamos de argumentar.</p>
+</section>
+<section id="con-qué-sostenemos-nuestras-conviccionesargumentaciones" class="level2">
+<h2 class="anchored" data-anchor-id="con-qué-sostenemos-nuestras-conviccionesargumentaciones">¿Con qué sostenemos nuestras convicciones/argumentaciones?</h2>
+<p>Para sostener nuestras argumentaciones, Da Silveira habla de que hacemos uso de:</p>
+<ul>
+<li>Evidencia empírica</li>
+<li>Razones</li>
+</ul>
+<p>Estas siempre son presentadas a través del lenguaje. Y la unidad mínima de lenguaje con el que trabaja tanto la teoría de la argumentación como la lógica formal es la <em>proposición</em>.</p>
+</section>
+<section id="elemento-mínimo-de-la-argumentación-la-proposición" class="level2">
+<h2 class="anchored" data-anchor-id="elemento-mínimo-de-la-argumentación-la-proposición">Elemento mínimo de la argumentación: La proposición</h2>
+<p>Da Silveira define a la proposición del mismo modo en que hemos venido trabajando en las clases. Es decir la define de la misma manera que la lógica formal.</p>
+<p>Es una noción lógica de proposición. Recuerden que lo particular de la proposición es que es susceptible de ser verdadera o falsa. Esto es así puesto que describe algo acerca del mundo.</p>
+</section>
+<section id="encadenamiento-de-proposiciones" class="level2">
+<h2 class="anchored" data-anchor-id="encadenamiento-de-proposiciones">Encadenamiento de proposiciones</h2>
+<p>Las proposiciones o son:</p>
+<ul>
+<li>Premisas</li>
+<li>Conclusión</li>
+</ul>
+<p>Continuamos con la estructura ya aprendida desde las primeras clases:</p>
+<p><span class="math inline">\(P_{1}, P_{2}, ..., P_{n} \rightarrow C\)</span></p>
+</section>
+<section id="uso-de-premisas" class="level2">
+<h2 class="anchored" data-anchor-id="uso-de-premisas">Uso de premisas</h2>
+<p>Las premisas que se elijan tienen que ver con el acuerdo suficiente entre el argumentador y el auditorio. Puede variar según el contexto en donde uno se encuentra y de lo que se va a argumentar. Esto es de suma importancia para la teoría de la argumentación. En la lógica formal no se considera ningún tipo de contexto. De hecho el contexto no es de interes para la lógica.</p>
+<p>A mayor amplitud del auditorio, las premisas de mayor orden de aceptabilidad va a haber que elegir</p>
+</section>
+<section id="la-conclusión" class="level2">
+<h2 class="anchored" data-anchor-id="la-conclusión">La conclusión</h2>
+<p>Recordemos que:</p>
+<p>La conclusión Sostiene algo diferente a las premisas. Se debe aceptar previamente si se ha aceptado las premisas.</p>
+<p>Lo que es una premisa puede ser la conclusión de otro argumento. Lo que es una conclusión de un argumento puede ser utilizado como premisa de un segundo argumento.</p>
+<p>Teniendo esto en cuenta, <em>Las premisas y la conclusión son funciones que tienen las proposiciones en los argumentos</em>. No hay nada de por sí mismas que las premisas hagan que sean premisas y que las conclusiones sean conclusiones, todo va a depender de cómo cada uno de nosotros armemos nuestra argumentación y de cuál sea el fin que le queremos dar a dicha argumetación.</p>
+</section>
+<section id="qué-quiere-decir-adhesión-a-la-conclusión" class="level2">
+<h2 class="anchored" data-anchor-id="qué-quiere-decir-adhesión-a-la-conclusión">¿Qué quiere decir “adhesión a la conclusión”?</h2>
+<p>Para poder responder a esta pregunta es necesario realizar la siguiente aclaración: Argumentar es distinto de demostrar. La argumentación implica persuasión. La <em>demostración</em> no persuade, simplemente muestra los pasos de cómo llegar de determinadas premisas a una conclusión.</p>
+<p>::: {.callout-warning title=“Otra distinción a considerar} Argumentar <span class="math inline">\(\neq\)</span> Refutación</p>
+<p>Refutar implica que no se pueda contraargumentar a lo propuesto :::</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Recuerden">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Recuerden
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Argumentar es una actividad que se entrena, con tiempo y esfuerzo</p>
+</div>
+</div>
+</section>
+<section id="cuándo-argumentamos" class="level2">
+<h2 class="anchored" data-anchor-id="cuándo-argumentamos">¿Cuándo argumentamos?</h2>
+<p>No es cierto que todo el tiempo que hablamos con los otros nos encontramos argumentando. La argumentación es posible cuando dentro de las partes hay una existencia de desacuerdos. Esto quiere decir que las partes no están de acuerdo respecto a algo: un hecho concreto, una visión de mundo, o cualquier otra cosa. Es muy extenso colocar por qué cosas los seres humanos estamos en desacuerdo.</p>
+<p>Recordemos que lo <em>normal</em> es el desacuerdo entre los seres humanos, ante <em>solo</em> el desacuerdo, también no hay posibilidad de argumentar. La argumentación necesita de un piso en común para poder dirimir las diferencias. Si hay solo diferencias entre las dos partes, entonces no hay ninguna posibilidad de entablar una postura argumentativa.</p>
+<blockquote class="blockquote">
+<p>Ante consensos muy duraderos, es muy posible que se esté imponiendo un punto de vista por sobre el otro (Da Silviera, 35)</p>
+</blockquote>
+<p>Esto de lo que habla Da Silveira lo hemos podido ver estos últimos años.</p>
+<p>Por ello es importante analizar los supuestos que se necesitan para que haya posibildad de argumentar en cualquier ámbito.</p>
+</section>
+<section id="supuestos-para-la-argumentación" class="level2">
+<h2 class="anchored" data-anchor-id="supuestos-para-la-argumentación">Supuestos para la argumentación</h2>
+<ol type="1">
+<li>Lenguaje Común
+<ul>
+<li>El argumentador y el auditorio necesitan de un lenguaje común para poder entenderse.</li>
+<li>Algunas dificultades de esto pueden ser las lenguas o dialectos diferentes: No es lo mismo argumentar entre nosotros, tucumanos, entre alguien del centro del país. Menos aun entre algún latinoamericano o hispanohablante. Incluso menos con alguien que no tiene al español como su lengua materna.</li>
+<li>Las jergas especializadas son vocabularios que usan los profesionales para referirse a cuestiones de sus propias disciplina. La filosofía tiene su propia jerga especializada así como los abogados. Muchas veces si una persona que no es un abogado quiere leer algún texto de un juez, le va a ser de suma dificultad si no tiene algún conocimiento del derecho o le es habitual leer ese tipo de textos.</li>
+</ul></li>
+<li>Reglas Comunes:</li>
+</ol>
+<ul>
+<li>Evaluar hechos</li>
+<li>Criterios de valor</li>
+<li>Reglas de procedimiento</li>
+<li><em>Racionalidad compartida</em></li>
+</ul>
+<section id="reglas-comunes" class="level3">
+<h3 class="anchored" data-anchor-id="reglas-comunes">Reglas comunes</h3>
+<p>Entre el argumentador y el auditorio debe haber reglas comunes para <em>evaluar afirmaciones de hecho</em>: - Debe haber un acuerdo acerca de lo que se va a considerar <em>evidencia</em>. - Contextos distintos pueden llevar a que haya una discrepancia de lo que se considera un hecho.</p>
+<p>Otros criterios comunes van a ser dado acerca de los juicios de valor: - Cuáles son los <em>criterios normativos</em> que se van a tener en cuenta - Que se considera aceptable, no aceptable dentro de la argumentación: Por ejemplo si los insultos personales son considerados parte de la argumentación o no. - Valores como justo e injusto juegan un papel interesante</p>
+</section>
+<section id="reglas-de-procedimiento" class="level3">
+<h3 class="anchored" data-anchor-id="reglas-de-procedimiento">Reglas de procedimiento</h3>
+<p>Son necesarias para ver como se <em>procede</em> en una discusión. Dependiendo el contexto esas reglas se van a encontrar más o menos explícitas. Dentro de un juicio, por ejemplo, los las reglas de procedimiento son explícitas. Pero en una charla con amigos, muchas reglas de procedimientos se encuentran completamente implícitas. Incluso es posible que se conformen a lo largo de la argumentación o por las experiencias compartidas entre los amigos.</p>
+</section>
+<section id="racionalidad-compartida" class="level3">
+<h3 class="anchored" data-anchor-id="racionalidad-compartida">Racionalidad compartida</h3>
+<p>Se le llama así a las reglas que nos permitan inferir debidamente en el debate del argumento. Es decir, cómo se va a realizar la inferencia de las premisas a la conclusión. Por ejemplo encontrar un criterio de contradicción y de coherencia entre lo que se dice de las premisas a la conclusión.</p>
+</section>
+</section>
+<section id="conclusión" class="level2">
+<h2 class="anchored" data-anchor-id="conclusión">Conclusión</h2>
+<p>Discutir puede considerarse una actividad <em>confrontativa</em> y <em>cooperativa</em>. La confrontación se encuentra en el énfasis en los desacuerdos y la persuación hacia el consenso. La cooperación se encuentra en las reglas y el campo común para argumentar. Si se tiene en cuenta esto, nuestras argumentaciones serán más convincentes y promoveremos una sociedad más democrática, algo por lo cual se ha luchado mucho sobre todo en nuestro territorio.</p>
+<hr>
+</section>
+<section id="el-imperio-retórico" class="level1">
+<h1>El imperio retórico</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://en.wikipedia.org/wiki/Cha%C3%AFm_Perelman#/media/File:Cha%C3%AFm_Perelman.jpg" class="img-fluid figure-img"></p>
+<figcaption>Chaim Perelman 1912-1984</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://scontent.ftuc4-1.fna.fbcdn.net/v/t1.6435-9/60354916_664933837261072_1605523393027768320_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=973b4a&amp;_nc_ohc=x2tusZuFnGYAX9uzPhz&amp;_nc_ht=scontent.ftuc4-1.fna&amp;oh=00_AfDsVZleeaYCvLgrlIfOc84cT72pz5haHCfM9hddvroEsw&amp;oe=649C2877" class="img-fluid figure-img"></p>
+<figcaption>El Imperio Retórico (1997 <em>1977</em>)</figcaption>
+</figure>
+</div>
+<p>En este libro el autor realiza de manera sucinta una introducción por todos los aspectos más relevantes de la teoría de la argumentación. Como venimos estudiando lógica formal, es menester tener en cuenta una diferencia de suma importancia:</p>
+<blockquote class="blockquote">
+<p>Argumentación <span class="math inline">\(\neq\)</span> Demostración</p>
+</blockquote>
+<p>Una demostración lógica (como las demostraciones de las relaciones del cuadro de oposición deóntico que hemos visto en la unidad anterior) tiene ciertos aspectos que no lo tiene una argumentación. Las demostraciones que hemos estado observando y realizando no consideran, por ejemplo, el contexto en el cual son realizadas, quienes son los que la realizan, cuáles son los elementos paralinguisticos y extralinguisticos usados al momento de enunciarlas. Todos estos elementos son contemplados por la teoría de la argumentación. Es decir, la adhesión de las tesis del argumento no se dan en un vacío.</p>
+<hr>
+<p>El argumentar tiene como objetivo la adhesión, pero es adhesión es hacia las personas, hacia los <em>espíritus</em> de las personas. Por lo que se tendrá que usar otros recursos más que los meramente lógicos, a los cuales no se quita la importancia, pero no se consideran los único viables a la hora de presentar y convencer al otro con un argumento.</p>
+<p>Esto se puede ver en que las argumentaciones siempre se producen dentro de instituciones. Es decir, cuando uno argumenta, siempre se encuentra en algún tipo de institución: la facultad, el colegio, los tribunales, la fiscalía, la familia, un grupo de amigos, etc. Todas estas instituciones tienen sus propios marcos, reglas y contextos que predisponen y predeterminan cómo se va a dar, tomar y responder ante las argumentaciones que se presenten.</p>
+<p>Como las argumentaciones se dan en marcos institucionales, <em>siempre hay temáticas que no se discuten</em>. No se puede discutir acerca de todo. Un claro ejemplo de ello son las familias en donde siempre hay temas en que uno sabe que no se puede discutir, o en grupo de amigos en donde sabe que ciertos tópicos puestos en la mesa, llevan al detrimento de la relación de amistad.</p>
+<section id="sobre-el-auditorio" class="level2">
+<h2 class="anchored" data-anchor-id="sobre-el-auditorio">Sobre el auditorio</h2>
+<p>Quien argumenta se dirige al hombre completo. No solo a su parte racional, o emocional. Por ello al argumentar se puede y tiene que apelar a las emociones y a la razón. De hecho hoy en día podemos encontrarnos con muchas personas que lo único a lo que apelan es a la emocionalidad sin que su argumento tenga tesis alguna. U otros que, teniendo mucha información, solo aportan datos pero sus argumentos no producen ningún reflejo emocional en el otro. En este sentido, hay que hacer uso de diversos métodos para poder llevar la adhesión al auditorio.</p>
+<p>El orador debe adaptarse al auditorio para cumplir su objetivo y no al revés. No es lo mismo que un jurado adhiera a nuestra tesis de que nuestro defendido sea inocente, a que nuestro auditorio sea una terna de jueces. Se van a emplear razones, emociones distintas, puesto que no es lo mismo un jurado que un juez, por poner solo un ejemplo.</p>
+<section id="quienes-son-el-auditorio" class="level3">
+<h3 class="anchored" data-anchor-id="quienes-son-el-auditorio">¿Quienes son el <em>auditorio</em>?</h3>
+<p>No son necesariamente los que interpela expresamente el orador.</p>
+<p>Son el:</p>
+<blockquote class="blockquote">
+<p>Conjunto de aquellos sobre los cuales el orador quiere influir con su argumentación.</p>
+<p>(Perelman 1997, 35)</p>
+</blockquote>
+<p>El criterio que aplica Perelman es muy amplio. Va desde uno mismo hasta la humanidad misma (auditorio universal). El auditorio universal está compuesto por todos aquellos que estén dispuestos a entender y capaces de seguir la argumentación del orador.</p>
+<section id="auditorio-de-especialistas" class="level4">
+<h4 class="anchored" data-anchor-id="auditorio-de-especialistas">Auditorio de especialistas</h4>
+<p>Dentro de cualquier auditorio, siempre hay un conjunto de tesis y métodos que se encuentran admitidos. Nunca se parte de un auditorio sin algunos supuestos. Dentro de un congreso de químicos, por ejemplo, todos los presentes suponen que hay un grado alto de conocimiento de la teoría química contemporánea, de cómo es la metodología de presentación de los trabajos, entre otras cosas.</p>
+<p>No hay necesidad de explicitar dichas admisiones. Debido a que esto nos llevaría mucho gasto de tiempo que no es relevante para que el orador trate de adherir a su auditorio lo más posible.</p>
+</section>
+</section>
+</section>
+<section id="persuadir-y-convencer" class="level2">
+<h2 class="anchored" data-anchor-id="persuadir-y-convencer">Persuadir y convencer</h2>
+<blockquote class="blockquote">
+<p>Persuadir <span class="math inline">\(\neq\)</span> Convencer</p>
+</blockquote>
+<p>Es otro quien <strong><em>persuade</em></strong>. Quien <strong><em>convence</em></strong> es uno mismo. El auditorio puede <em>persuadir</em> al orador de que alguna de sus premsisas está errada, pero es el orador quien <em>convence</em> a los demás.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="A tener en cuenta">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+A tener en cuenta
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Discurso que persuade <span class="math inline">\(\Rightarrow\)</span> Auditorio particular</p>
+<p>Discurso que convence <span class="math inline">\(\Rightarrow\)</span> Auditorio universal</p>
+<p><strong>Esta distinción está dada en las intenciones</strong></p>
+</div>
+</div>
+<p>Un abogado en el juicio por jurado trata de persuadir al jurado, mientras que un filósofo que escribe un libro sobre filosofía política intenta convencer a todo posible lector de las tesis que está exponiendo en el libro.</p>
+<p>Esto lleva a pensar en aquellas premisas que pueden ser consideradas por todos, si es que deseamos que con cualquier podamos tener mayor fuerza de adhesión. Esto, como bien marca Perelman, nos lleva a la definición de dicurso convincente.</p>
+<p><strong>Discurso convincente</strong>:</p>
+<blockquote class="blockquote">
+<p>Aquel cuyas premisas y argumentos son unversalizables, es decir, aceptables, en principio, por todos los miembros del auditorio universal.</p>
+<p>(Perelman 1997, 39)</p>
+</blockquote>
+<p>Esto lleva a pensar que uno tiene que considerar ciertos criterios para la elección de las premisas. El orador debe partir de premisas que tengan el beneficio de una adhesión suficiente del auditorio. Quien no hace esto, cae en una <em>petición de principio</em> (falacia analizada en la unidad de falacias).</p>
+</section>
+<section id="géneros-oratorios" class="level2">
+<h2 class="anchored" data-anchor-id="géneros-oratorios">Géneros oratorios</h2>
+<p>Determinados por Aristóteles en su <em>Retórica</em>:</p>
+<ol type="1">
+<li>Deliberativo:
+<ul>
+<li>El género deliberativo el orador aconseja o no y su opinión concluye en lo que parece más útil</li>
+</ul></li>
+<li>Judicial:
+<ul>
+<li>El género judicial acusa o defiende para decidir lo justo</li>
+</ul></li>
+<li>Epidíctico:
+<ul>
+<li>El género epidíctico alaba o critica en relación con lo bello y lo feo</li>
+</ul></li>
+</ol>
+</section>
+<section id="objetos-a-poner-de-acuerdo-entre-orador-y-auditorio" class="level2">
+<h2 class="anchored" data-anchor-id="objetos-a-poner-de-acuerdo-entre-orador-y-auditorio">Objetos a poner de acuerdo entre orador y auditorio</h2>
+<ol type="1">
+<li>Aquellos que se refieren <em>a lo real</em>:</li>
+</ol>
+<ul>
+<li>Hechos</li>
+<li>Verdades</li>
+<li>Presunciones</li>
+</ul>
+<ol type="1">
+<li>Aquello que se refieren <em>a lo preferible</em>:</li>
+</ol>
+<ul>
+<li>Valores</li>
+<li>Jerarquías</li>
+<li>Lugares comunes</li>
+</ul>
+<section id="presunciones" class="level3">
+<h3 class="anchored" data-anchor-id="presunciones">Presunciones</h3>
+<p>Lo más dificil de entender de los objetos que se refieren a lo real sean las presunciones: Las presunciones se asocian con lo que se produce normalmente y lo que es razonable tomar como punto de partida</p>
+<p>Alguno ejemplos dados por Perelman de ello son:</p>
+<blockquote class="blockquote">
+<p>“la presunción de que la calidad de un acto manifiesta la calidad de la persona que lo realiza; la presunción de la credulidad natural, que hace que nuestro primer movimiento sea el de acoger como verdadero lo que se nos dice; la presunción de interés, según la cual concluimos que todo enunciado que se nos comunica presumiblemente nos interesa, etc”</p>
+</blockquote>
+<p>Las presunciones suponen <em>lo normal</em>, pero lo normal puede ser discutido dada las circunstancias. Quien la discute es quien tiene la carga de la prueba. Por eso durante los juicios no es abogado defensor de un acusado quien tiene que persuadir acerca de la inocencia de su cliente, sino el abodago acusador quien tiene que persuadir que dicha persona es culpable, puesto que rige la <em>presunción</em> de inocencia.</p>
+</section>
+<section id="valor" class="level3">
+<h3 class="anchored" data-anchor-id="valor">Valor</h3>
+<p>La definición que ortorga Perelman es la siguiente:</p>
+<blockquote class="blockquote">
+<p>“Una ruptura de la indiferencia o de la igualdad entre las cosas, en todas partes donde una de ellas debe ser puesta antes que otra, o por encima de otra; en todas partes donde es juzgada superior y merece que sea preferida.”</p>
+</blockquote>
+<p>Uno puede considerar a ciertos Valores universales como <em>instrumentos de persuasión</em>. Por ejemplo: <strong><em>Lo verdadero, lo bueno, lo bello, lo justo</em></strong>. Los valores universales permiten presentar valores particulares, para establecer acuerdos de grupos particulares.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Distinción entre valores abstractos y concretos">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Distinción entre valores abstractos y concretos
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Valores abstractos <span class="math inline">\(\neq\)</span> Valores concretos</p>
+<p>Abstracto <span class="math inline">\(\Rightarrow\)</span> Justicia</p>
+<p>Concreto <span class="math inline">\(\Rightarrow\)</span> la Iglesia</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-none no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Parecería que los razonamientos fundados sobre <em>valores concretos</em> son más característicos de sociedades conservadoras Un uso de las sociedades conservadoras es apelar a ciertos “valores” como ser la iglesia, la familia, algún grupo de personas en específico, antes de que apelar a valores que alberguen a todos y que puendan ser entendidos de diferente manera.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="jerarquías" class="level3">
+<h3 class="anchored" data-anchor-id="jerarquías">Jerarquías</h3>
+<p>Otro “objeto” a considerar son las jerarquías que hacemos durante un argumentación. Estas pueden ser de distintos tipos y tienen distintas características: 1. Concretas o abstractas: * Jerarquía concreta: Valores relativos a las personas sobre valores relativos a las cosas * Jerarquía abstracta: Superioridad de lo justo ante lo útil 1. Homogéneas o Heterogéneas: * Jerarquía homogénea: Un dolor más débil por uno más fuerte * Jerarquía heterogénea: Respeto de la verdad por sobre la amistad</p>
+</section>
+<section id="lugares-comunes" class="level3">
+<h3 class="anchored" data-anchor-id="lugares-comunes">Lugares comunes</h3>
+<p>Son afirmaciones comunes muy generales referentes a lo que presumiblemente vale más en algún dominio</p>
+</section>
+</section>
+<section id="técnicas-argumentativas" class="level2">
+<h2 class="anchored" data-anchor-id="técnicas-argumentativas">Técnicas argumentativas</h2>
+<p>El <em>estatus</em> de los elementos de la argumentación varia y depende de la adhesión efectiva o presunta del auditorio. Los argumentos que se sostienen para una tesis también pueden ser usados para la contraria. La adhesión estará en función de apreciación de los argumentos en pro y en contra como a las soluciones dispuestas para los problemas en discusión. Esto lleva a que tengamos que analizar los tipos de argumentos.</p>
+<section id="tipos-de-argumentos" class="level3">
+<h3 class="anchored" data-anchor-id="tipos-de-argumentos">Tipos de argumentos</h3>
+<ol type="1">
+<li>Nexo:</li>
+</ol>
+<ul>
+<li>Argumentos cuasilógicos: * Se entienden mejor si se aproximan a la lógica o la matemática, aunque supone adhesión a tesis no formales</li>
+<li>Argumentos fundados sobre la estructura de lo real: * Se basan sobre los lazos que existen entre los elementos de lo real</li>
+<li>Argumentos que fundan la estructura: * Parten de un caso conocido para establecer un modelo o regla general</li>
+</ul>
+<ol type="1">
+<li>Disociación:
+<ul>
+<li>Las disociaciones permiten tomar elementos de lo real y permiten llegar a una nueva organización de lo dado</li>
+</ul></li>
+</ol>
+</section>
+</section>
+<section id="amplitud-y-fuerzas-de-los-argumentos" class="level2">
+<h2 class="anchored" data-anchor-id="amplitud-y-fuerzas-de-los-argumentos">Amplitud y fuerzas de los argumentos</h2>
+<p>La amplitud de los argumentos es fundamental para poder dar cuenta de la eficacia de los argumentos. Las instituciones predisponen hábitos, límites y tiempos sobre la amplitud de argumentos. Incluso llegan a estar reglamentados. La fuerza de los argumentos permite que, durante la argumentación, el auditorio no rebata al orador o genere objeciones a los argumentos dispuestos en dicho acto.</p>
+<p>La fuerza de los argumentos nos va a permitir seleccionar los argumentos para los distintos tipos de auditorios.</p>
+<p>La fuerza de un argumento va a estar influenciado por:</p>
+<ul>
+<li>La eficacia</li>
+<li>La validez</li>
+</ul>
+<p>Los problemas de la amplitud y de sus peligros deben examinarse en función de cada situación argumentativa</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiado");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiado");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Creado por Lic. Ivan Vladimir Gavriloff - UNT - FDyCS - 2024</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
