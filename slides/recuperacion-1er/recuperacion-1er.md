@@ -2,7 +2,9 @@
 title: Recuperación 1er Parcial Lógica
 subtitle: "Facultad de Derecho y Cs. Sociales - 2024"
 author: Gavriloff, Ivan Vladimir
-format: revealjs
+format: 
+    revealjs:
+        embed-resources: true
 ---
 
 ## Punto 1
